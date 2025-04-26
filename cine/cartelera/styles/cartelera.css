@@ -1,0 +1,220 @@
+.section-cartelera-derecha {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+@media (min-width: 1200px) {
+    .section-cartelera-derecha {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.movie-detail-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 20px;
+    max-width: 374px;
+}
+
+@media (min-width: 770px) {
+    .movie-detail-container {
+        max-width: 400px;
+    }
+}
+
+
+.movie-image {
+    max-width: 217px;
+}
+
+.movie-poster-container {
+    position: relative;
+    overflow: hidden;
+    max-width: clamp(12.5rem, 12.115rem + 1.538vw, 13.5rem);
+}
+
+.movie-poster {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.estreno-badge {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background-color: #ff3a44;
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 0 4px 4px 0;
+    z-index: 1;
+}
+
+.movie-title {
+    font-size: clamp(0.875rem, 0.779rem + 0.385vw, 1.125rem);
+    font-weight: 700;
+    color: #14213d;
+    margin: 0;
+}
+
+.contenedor-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.movie-info-badge {
+    display: inline-flex;
+    align-items: center;
+    background-color: #F3F8FF;
+    padding: 0.2rem 1.5rem;
+    gap: 5px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: clamp(0.625rem, 0.577rem + 0.192vw, 0.75rem);
+    color: #104596;
+}
+
+.movie-detail-content {
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+}
+
+.movie-info-badge i {
+    color: #0d6efd;
+}
+
+.detail-label {
+    font-size: 10px;
+    margin-bottom: 0.25rem;
+    color: #14213d;
+}
+
+.detail-value {
+    font-size: 10px;
+    color: #104596;
+    font-weight: bold;
+    margin: 0
+}
+
+.trailer-btn {
+    display: flex;
+    flex-direction: row;
+    width: 112px;
+    height: 30px;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    background-color: #104596;
+    color: white;
+    border-radius: 50px;
+    padding: 0;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.trailer-btn:hover {
+    background-color: #0b5ed7;
+    transform: translateY(-2px);
+    color: white;
+}
+
+.trailer-btn i {
+    font-size: 1.1rem;
+}
+
+.grid-two-section-60-40-right {
+    display: flex !important;
+}
+
+
+/* Filtro Movil */
+.btn-filtros {
+    font-weight: 500;
+    display: block;
+}
+
+.group-filter {
+	display: none;
+	gap: 10px;
+	width: clamp(25rem, 9.375rem + 31.25vw, 37.5rem);
+	align-items: center;
+	margin-bottom: 0;
+}
+
+.group-filter select,
+.group-filter button {
+	margin: 0 !important;
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (min-width: 770px) {
+    .btn-filtros {
+        display: none;
+    }
+    .group-filter {
+        display: flex;
+    }
+}
+
+
+.filtros-modal {
+    display: none;
+    background: rgba(0,0,0,0.3);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+}
+
+.filtros-modal-dialog {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    margin: 0 auto;
+}
+
+.filtros-modal-content {
+    border-radius: 24px 24px 0 0 ;
+    background: #f7fbff;
+    padding: 2rem 1.5rem;
+}
+
+.filtros-modal-title {
+    font-weight: 700;
+    color: #104596;
+    font-size: 20px;
+}
+
+.filtros-select {
+    font-size: 1.1rem;
+    border-radius: 12px;
+}
+
+.filtros-btn-consultar {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.btn-consultar{
+    color: #fff;
+    background-color: #104596;
+}
+
