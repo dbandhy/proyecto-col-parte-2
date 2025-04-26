@@ -1,0 +1,86 @@
+.match-preview {
+  display: flex;
+  flex-direction: column;
+}
+.match-preview .header {
+  background-color: #104596;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.match-preview .body {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  row-gap: 10px;
+  padding: 15px 5px 15px 8px;
+  background-color: white;
+  border-radius: 0 0 10px 10px;
+}
+.match-preview .body .dateContent {
+  grid-column: span 12;
+  display: flex;
+  gap: 14px;
+  justify-content: space-between;
+}
+.match-preview .body .dateContent span {
+  color: #191C36;
+}
+.match-preview .body .dateContent span:first-child {
+  font-size: 9px;
+  font-weight: 400;
+}
+.match-preview .body .dateContent span:last-child {
+  font-size: 12px;
+  font-weight: 700;
+}
+.match-preview .body .teams-scores {
+  grid-column: span 8;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.match-preview .body .teams-scores .team-score {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.match-preview .body .teams-scores .team-score img {
+  width: 25px;
+  height: 25px;
+}
+.match-preview .body .teams-scores .team-score span {
+  font-size: 12px;
+  font-weight: 400;
+}
+.match-preview .body .teams-scores .team-score span:nth-child(2) {
+  color: #104596;
+}
+.match-preview .body .teams-scores .team-score span:last-child {
+  color: #188341;
+}
+.match-preview .body .percentage {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: flex-end;
+  gap: 10px;
+}
+.match-preview .body .percentage span {
+  font-size: 14px;
+  font-weight: 700;
+  color: #FF3842;
+}
+.match-preview .body .percentage button {
+  font-size: 8px;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .match-preview:nth-child(2) {
+    display: none;
+    background-color: red;
+  }
+}

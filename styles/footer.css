@@ -1,0 +1,142 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer {
+	background-color: #0f3c81;
+	color: white;
+	padding: 40px 0;
+	display: grid;
+	gap: 30px;
+}
+
+.footer p {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer a {
+	color: white;
+	text-decoration: none;
+}
+.footer a:hover {
+	text-decoration: underline;
+}
+.footer-title {
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.footer .social-icons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer .social-icons * {
+	font-size: 1.5rem;
+	color: white;
+}
+.footer .btn {
+	background-color: white;
+	color: #0f3c81;
+	border-radius: 30px;
+	font-weight: 700;
+	text-align: center;
+	padding: 0px 30px;
+	font-size: 1rem;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer .btn:hover {
+	background-color: #e0e0e0;
+	color: #0f3c81;
+}
+.footer .member {
+	margin-bottom: 20px;
+}
+.footer .disclaimer {
+	font-size: 14px;
+	text-align: center;
+	color: #cccccc;
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1300px;
+	width: 100%;
+	margin: auto;
+}
+@media (min-width: 769px) {
+	.footer .container {
+		display: flex;
+		justify-content: space-between;
+	}
+	.footer .services,
+	.footer .about {
+		display: block;
+	}
+	.footer .layout {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+	.footer .buttons {
+		margin-left: 30px;
+	}
+}
+@media (max-width: 768px) {
+	.footer .container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer .row {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	.footer .social-icons {
+		margin-top: 20px;
+	}
+	.footer .btn {
+		width: 80%;
+	}
+	.footer .disclaimer {
+		margin: auto;
+		margin-top: 30px;
+	}
+	.footer .services,
+	.footer .about {
+		display: none;
+	}
+}
+
+.buttons-footer {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-auto-rows: auto;
+	justify-items: stretch;
+	max-width: 320px;
+	gap: 15px;
+}
+
+.footer .social-icons {
+	margin-top: 0px;
+}
+
+.disclaimer-text span {
+    color: #ffffff;
+}
+.disclaimer-text span:nth-child(2) {
+    color: #FFDA54;
+}
+
+
+footer .social-icons i {
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+}
+
+footer .social-icons i:hover {
+    color: #fff;
+}

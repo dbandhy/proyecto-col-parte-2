@@ -1,0 +1,38 @@
+:root {
+    --max-width-content: 1200px;
+  }
+  
+  .body-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #f3f8ff;
+  }
+  
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+    max-width: var(--max-width-content);
+    margin: 0 auto;
+  }
+  
+  .hero-banner img {
+    object-fit: cover;
+    height: 250px;
+  }
+  
+  .lot-card {
+    font-weight: bold;
+  }
+  
+  @media (max-width: 767.98px) {
+    .main-container {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+  

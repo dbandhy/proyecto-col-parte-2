@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- PRECONNECTS -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+		<link rel="preconnect" href="https://cdn.colombia.com">
+		<link rel="dns-prefetch" href="https://cdn.colombia.com">
+		<link rel="preconnect" href="https://securepubads.g.doubleclick.net">
+		<link rel="dns-prefetch" href="https://securepubads.g.doubleclick.net">
+		<link rel="preconnect" href="https://www.googletagmanager.com">
+		<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+		<link rel="preconnect" href="https://sb.scorecardresearch.com">
+		<link rel="dns-prefetch" href="https://sb.scorecardresearch.com">
+		<link rel="preconnect" href="https://stpd.cloud">
+		<link rel="dns-prefetch" href="https://stpd.cloud">
+		<link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lotería</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+			integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!-- OPEN GRAPH -->
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="Colombia.com">
+		<meta property="og:title" content="{Nombre o título de la Categoria, Ejemplo: Actualidad} - Colombia.com">
+		<meta property="og:url" content="{Url de la Categoria}">
+		<meta property="og:image" content="https://cdn.colombia.com/images/logo-300.jpg">
+		<meta property="og:description" content="{meta descripción}">
+		<meta property="og:locale" content="es_CO">  
+	   <meta property="fb:pages" content="120864984617693">
+	   <meta property="fb:app_id" content="515434948646892">
+	
+		<!-- TWITTER CARD -->
+		<meta name="twitter:site" content="@ColombiacomTW">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="{Nombre o título de la Categoria, Ejemplo: Actualidad} - Colombia.com">
+		<meta name="twitter:description" content="{meta descripción}">
+		<meta name="twitter:image" content="https://cdn.colombia.com/images/logo-300.jpg">
+		<meta name="twitter:image:alt" content="Colombia.com">
+		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+		<link rel="stylesheet" href="../styles/actualidad.css" />
+		<link rel="stylesheet" href="../styles/style.css" />
+		<!-- Estilos componentes -->
+		<link rel="stylesheet" href="../styles/header.css" />
+		<link rel="stylesheet" href="../styles/footer.css" />
+		<link rel="stylesheet" href="../loteria/styles/loteria.css">
+
+		<script type="application/ld+json">
+			[{
+				"@context": "https://schema.org",
+				"@type": "WebSite",
+				"url": "https://www.colombia.com/",
+				"potentialAction": { "@type": "SearchAction", "target": "https://www.colombia.com/buscador/?q={search_term_string}", "query-input": "required name=search_term_string" }
+			},
+			{
+				"@context": "https://schema.org",
+				"@type": "BreadcrumbList",
+				"itemListElement": [
+					{ "@type": "ListItem", "position": 1, "name": "Colombia.com", "item": "https://www.colombia.com/" }
+					{ "@type": "ListItem", "position": 2, "name": "{Nombre o título de la Categoria, Ejemplo: Actualidad}",  "item": "{Url de la Categoria}" }
+			
+				]
+			}]
+		</script>
+	</head>
+	<body class="body-container">
+		<div id="main-header"></div>
+		<!-- Section for Lotería Images -->
+		<section class="loteria-section">
+			<!-- Desktop Layout -->
+			<div class="lottery-container">
+			<!-- Lottery Games Section -->
+			<div class="lottery-content">
+				<h2 class="lottery-title">Loterías que se juegan hoy</h2>
+				
+				<div class="lottery-games-container">
+				<!-- Row 1 -->
+				<div class="lottery-game">
+					<div class="game-icon chontico-noche"></div>
+					<p class="game-name">Chontico Noche</p>
+					<div class="game-time"><i class="far fa-clock"></i> 15:30</div>
+				</div>
+				
+				<div class="lottery-game">
+					<div class="game-icon revancha"></div>
+					<p class="game-name">Revancha</p>
+					<div class="game-time"><i class="far fa-clock"></i> 15:30</div>
+				</div>
+				
+				<div class="lottery-game">
+					<div class="game-icon pijao"></div>
+					<p class="game-name">Pijao De Oro</p>
+					<div class="game-time"><i class="far fa-clock"></i> 15:30</div>
+				</div>
+				
+				<div class="lottery-game">
+					<div class="game-icon dorado"></div>
+					<p class="game-name">Dorado Tarde</p>
+					<div class="game-time"><i class="far fa-clock"></i> 15:30</div>
+				</div>
+				
+				<!-- Row 2 -->
+				<div class="lottery-game">
+					<div class="game-icon fantastica"></div>
+					<p class="game-name">Fantástica Noche</p>
+					<div class="game-time"><i class="far fa-clock"></i> 15:30</div>
+				</div>
+				
+				<div class="lottery-game">
+					<div class="game-icon saman"></div>
+					<p class="game-name">Samán De La Suerte</p>
+					<div class="game-time"><i class="far fa-clock"></i> 15:30</div>
+				</div>
+				
+				<div class="lottery-game">
+					<div class="game-icon loteria-valle"></div>
+					<p class="game-name">Lotería Del Valle</p>
+					<div class="game-time"><i class="far fa-clock"></i> 15:30</div>
+				</div>
+				</div>
+			</div>
+			
+			<!-- Captain America Poster -->
+			<div class="poster-container d-none d-md-block">
+				<img src="../assets/img/poster-vertical.png" alt="Capitán América" class="poster-image">
+				
+			</div>
+			
+			<!-- Right Social Icons -->
+			<div class="right-social-icons d-none d-md-block">
+				<div class="siguenos">
+				<span>síguenos</span>
+				<div class="arrow-down"></div>
+				</div>
+				<a href="#" class="social-icon-right comparte-ahora">comparte ahora</a>
+				<a href="#" class="social-icon-right"><i class="fab fa-whatsapp"></i></a>
+				<a href="#" class="social-icon-right"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social-icon-right"><i class="fab fa-youtube"></i></a>
+				<a href="#" class="social-icon-right"><i class="fab fa-instagram"></i></a>
+				<a href="#" class="social-icon-right"><i class="fab fa-twitter"></i></a>
+			</div>
+			</div>
+		</section>
+
+		<!-- Grid Principal -->
+		<main class="main-container">
+			<!-- Columna para los Social-Bar -->
+			<div class="position-absolute">
+				<!-- Barra Lateral de Redes Sociales -->
+				<div class="social-bar d-none d-md-block">
+					<div class="share-count">3.1K<span class="share-count">compartidos</span></div>
+					<div class="container-social-icons">
+						<div class="social-icon facebook"><i class="fab fa-facebook-f"></i></div>
+						<div class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></div>
+						<div class="social-icon twitter"><i class="fab fa-twitter"></i></div>
+						<div class="social-icon email"><i class="fas fa-envelope"></i></div>
+					</div>
+				</div>
+			</div>
+			
+			
+	<!-- Seccion actualizacion y noticias -->
+			<section class="main-section-content py-3">
+				<div class="container-max-width">
+					<div class="update-info d-none d-md-flex">
+						<i class="fas fa-circle text-danger me-2 blink"></i> ACTUALIZACIÓN - JUEVES, 7
+						SEPTIEMBRE 2025, 7:33PM
+					</div>
+					<div class="grid-articles-1">
+						<div class="card-article-1 card-article-1-doble-fila">
+							<img src="../assets/img/breaking-news-1.png" alt="Maduro y Petro" />
+							<div class="card-article-1-content">
+								<p class="card-article-1-tag">FRONTERA CON VENEZUELA</p>
+								<h2 class="card-article-1-title">
+									<i class="fas fa-circle text-warning me-1"></i>
+									Régimen de Maduro ordenó el cierre de la frontera con Colombia este viernes
+								</h2>
+								<p class="card-article-1-autor">Por: <b>Juan Carlos García Sierra</b></p>
+							</div>
+						</div>
+						<div class="card-article-1">
+							<p class="card-article-1-tag">GUSTAVO PETRO</p>
+							<h2 class="card-article-1-title">
+								<i class="fas fa-circle text-warning me-1"></i>Petro se desmarca: no irá a posesión
+								de Nicolás Maduro el viernes
+							</h2>
+							<p class="card-article-1-autor">Por: <b>Juan Carlos García Sierra</b></p>
+						</div>
+						<div class="card-article-1 card-article-1-doble-fila">
+							<p class="card-article-1-tag">GUSTAVO PETRO</p>
+							<h2 class="card-article-1-title">
+								<i class="fas fa-circle text-warning me-1"></i>Petro se desmarca: no irá a posesión
+								de Nicolás Maduro el viernes
+							</h2>
+							<p class="card-article-1-autor">Por: <b>Juan Carlos García Sierra</b></p>
+							<iframe
+								width="460"
+								height="215"
+								src="https://www.youtube.com/embed/cB7L9okS2aE?si=xv0R7O8uoSmWfASl"
+								title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerpolicy="strict-origin-when-cross-origin"
+								allowfullscreen
+							></iframe>
+						</div>
+						<div class="card-article-1">
+							<p class="card-article-1-tag">GUSTAVO PETRO</p>
+							<h2 class="card-article-1-title">
+								<i class="fas fa-circle text-warning me-1"></i>Petro se desmarca: no irá a posesión
+								de Nicolás Maduro el viernes
+							</h2>
+							<p class="card-article-1-autor">Por: <b>Juan Carlos García Sierra</b></p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Seccion contenedor de botones -->
+			<section class="main-section-content py-3 bg-white">
+				<div
+					class="container-max-width d-none d-lg-flex justify-content-center align-items-center w-100"
+				>
+					<div class="my-1 d-flex justify-content-between w-100" style="max-width: 900px">
+						<button class="btn btn-primary rounded-pill">Noche de velitas</button>
+						<button class="btn btn-primary rounded-pill">Ingrid Karina</button>
+						<button class="btn btn-primary rounded-pill">Racionamiento de agua</button>
+						<button class="btn btn-primary rounded-pill">Millonarios VS Santa Fe</button>
+						<button class="btn btn-primary rounded-pill">Ricardo Bonilla</button>
+					</div>
+				</div>
+			</section>
+			<!-- Seccion grilla de noticias en dos columnas -->
+			<section class="main-section-content pb-3 bg-white">
+				<div class="container-max-width">
+					<div class="grid-two-section-60-40">
+						<!-- Seccion izquierdo -->
+						<div class="grid-two-section-60-40-lft">
+							<div class="grid-noticias-principales card-bottom-separator mb-3">
+								<div
+									class="card-article-2 card-article-2-principal card-bottom-separator pt-2 align-content-start"
+								>
+									<img
+										src="../assets/img/breaking-news-8.png"
+										alt="Cotización del dólar en Colombia: este es su precio hoy, 10 de enero"
+									/>
+									<div class="card-article-2-content justify-content-start">
+										<p class="card-article-2-tag">ECONOMÍA</p>
+										<h2 class="card-article-2-title">
+											Cotización del dólar en Colombia: este es su precio hoy, 10 de enero
+										</h2>
+										<a href="#" class="card-article-2-leer-mas">Leer más</a>
+										<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+									</div>
+								</div>
+								<div class="grid-articles-2 grid-mas-noticias">
+									<div class="grid-articles-2">
+										<div class="card-article-2 card-bottom-separator">
+											<img
+												src="../assets/img/breaking-news-3.png"
+												alt="Galán respaldó las movilizaciones de venezolanos"
+											/>
+											<div class="card-article-2-content">
+												<p class="card-article-2-tag">COLOMBIANOS</p>
+												<h2 class="card-article-2-title">
+													Galán respaldó las movilizaciones de venezolanos
+												</h2>
+												<a href="#" class="card-article-2-leer-mas">Leer más</a>
+												<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+											</div>
+										</div>
+										<div class="card-article-2 card-bottom-separator">
+											<img
+												src="../assets/img/breaking-news-4.png"
+												alt="Donald Trump reconoció a Edmundo González"
+											/>
+											<div class="card-article-2-content">
+												<p class="card-article-2-tag">COLOMBIANOS</p>
+												<h2 class="card-article-2-title">
+													Donald Trump reconoció a Edmundo González
+												</h2>
+												<a href="#" class="card-article-2-leer-mas">Leer más</a>
+												<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+											</div>
+										</div>
+										<div class="card-article-2">
+											<img
+												src="../assets/img/breaking-news-5.png"
+												alt="Costa Rica hizo oficial su apoyo a Edmundo González"
+											/>
+											<div class="card-article-2-content">
+												<p class="card-article-2-tag">COLOMBIANOS</p>
+												<h2 class="card-article-2-title">
+													Costa Rica hizo oficial su apoyo a Edmundo González
+												</h2>
+												<a href="#" class="card-article-2-leer-mas">Leer más</a>
+												<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="grid-articles-2 grid-mas-noticias">
+								<div class="d-flex justify-content-between align-items-center hide-800">
+									<h2 class="section-title m-0 p-0">MÁS NOTICIAS</h2>
+									<a href="#" class="btn-azul-blanco">Ver todo</a>
+								</div>
+								<div
+									class="card-article-2 card-article-2-variant-column card-bottom-separator pt-2"
+								>
+									<img
+										src="../assets/img/breaking-news-10.png"
+										alt="Donald Trump reconoció a Edmundo González"
+									/>
+									<div class="card-article-2-content">
+										<p class="card-article-2-tag">CINE</p>
+										<h2 class="card-article-2-title">Donald Trump reconoció a Edmundo González</h2>
+										<a href="#" class="card-article-2-leer-mas">Leer más</a>
+										<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+									</div>
+								</div>
+								<div
+									class="card-article-2 card-article-2-variant-column card-bottom-separator pt-2"
+								>
+									<img
+										src="../assets/img/breaking-news-7.png"
+										alt="Costa Rica hizo oficial su apoyo a Edmundo González"
+									/>
+									<div class="card-article-2-content">
+										<p class="card-article-2-tag">CINE</p>
+										<h2 class="card-article-2-title">
+											Costa Rica hizo oficial su apoyo a Edmundo González
+										</h2>
+										<a href="#" class="card-article-2-leer-mas">Leer más</a>
+										<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+									</div>
+								</div>
+								<div class="grid-articles-2">
+									<div class="card-article-2 card-bottom-separator">
+										<img src="../assets/img/breaking-news-6.png" alt="Maduro y Petro" />
+										<div class="card-article-2-content">
+											<p class="card-article-2-tag">CINE</p>
+											<h2 class="card-article-2-title">
+												Venezuela tiene carteles de se busca con la cara expresidentes
+											</h2>
+											<a href="#" class="card-article-2-leer-mas">Leer más</a>
+											<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+										</div>
+									</div>
+									<div class="card-article-2 card-bottom-separator">
+										<img src="../assets/img/breaking-news-5.png" alt="Maduro y Petro" />
+										<div class="card-article-2-content">
+											<p class="card-article-2-tag">CINE</p>
+											<h2 class="card-article-2-title">
+												¡Qué alivio! Colombianos en EE.UU pueden recibir apoyo por discapacidad
+											</h2>
+											<a href="#" class="card-article-2-leer-mas">Leer más</a>
+											<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+										</div>
+									</div>
+									<div class="card-article-2 card-bottom-separator">
+										<img src="../assets/img/breaking-news-13.png" alt="Maduro y Petro" />
+										<div class="card-article-2-content">
+											<p class="card-article-2-tag">CINE</p>
+											<h2 class="card-article-2-title">
+												<i class="fas fa-circle text-warning me-1"></i>
+												La hora en la que arranca el nuevo capítulo de "Dragon Ball Daima"
+											</h2>
+											<a href="#" class="card-article-2-leer-mas">Leer más</a>
+											<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+										</div>
+									</div>
+									<div class="card-article-2 card-bottom-separator">
+										<img src="../assets/img/breaking-news-12.png" alt="Maduro y Petro" />
+										<div class="card-article-2-content">
+											<p class="card-article-2-tag">CINE</p>
+											<h2 class="card-article-2-title">
+												<i class="fas fa-circle text-warning me-1"></i>
+												La hora en la que arranca el nuevo capítulo de "Dragon Ball Daima"
+											</h2>
+											<a href="#" class="card-article-2-leer-mas">Leer más</a>
+											<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Seccion derecho -->
+						<div class="grid-two-section-60-40-rgt d-grid gap-4">
+							<div class="flyer pb-3 row">
+								<div class="sidebar-ad col-10">
+									<img
+										src="../assets/img/breaking-news-banner.png"
+										alt="¿Cuánto tiempo toma tonificar el cuerpo con yoga de silla según mi edad?"
+										class="img-fluid img-yoga"
+									/>
+								</div>
+
+								<div class="col-2">
+									<div class="social-sidebar-bn">
+										<div class="social-icons-bn">
+											<a href="#" class="social-icon-link">
+												<div class="social-icon-bn shopping">
+													<i class="fas fa-shopping-cart"></i>
+												</div>
+											</a>
+											<a href="#" class="social-icon-link">
+												<div class="social-icon-bn whatsapp">
+													<i class="fab fa-whatsapp"></i>
+												</div>
+											</a>
+											<a href="#" class="social-icon-link">
+												<div class="social-icon-bn facebook">
+													<i class="fab fa-facebook-f"></i>
+												</div>
+											</a>
+											<a href="#" class="social-icon-link">
+												<div class="social-icon-bn youtube">
+													<i class="fab fa-youtube"></i>
+												</div>
+											</a>
+											<a href="#" class="social-icon-link">
+												<div class="social-icon-bn instagram">
+													<i class="fab fa-instagram"></i>
+												</div>
+											</a>
+											<a href="#" class="social-icon-link">
+												<div class="social-icon-bn twitter">
+													<i class="fab fa-twitter"></i>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="grid-articles-2 grid-lo-ultimo-colombia">
+								<div class="d-flex justify-content-center align-items-center hide-800">
+									<h2 class="section-title m-0 p-0">Lo último en Colombia</h2>
+								</div>
+								<div class="card-article-2 card-article-2-principal card-bottom-separator pt-2">
+									<img src="../assets/img/breaking-news-14.png" alt="Maduro y Petro" />
+									<div class="card-article-2-content">
+										<h2 class="card-article-2-title">
+											Cotización del dólar en Colombia: este es su precio hoy, 10 de enero
+										</h2>
+										<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+										<p>
+											María Corina Machado reaparece en un video y dice que ya está libre. Leer más
+											<a href="#" class="card-article-2-leer-mas">Leer más</a>
+										</p>
+									</div>
+								</div>
+								<div class="grid-articles-2">
+									<div class="card-article-2 card-bottom-separator">
+										<img src="../assets/img/breaking-news-5.png" alt="Maduro y Petro" />
+										<div class="card-article-2-content">
+											<h2 class="card-article-2-title">
+												Costa Rica hizo oficial su apoyo a Edmundo González
+											</h2>
+											<a href="#" class="card-article-2-leer-mas">Leer más</a>
+											<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+										</div>
+									</div>
+									<div class="card-article-2 card-bottom-separator">
+										<img src="../assets/img/breaking-news-5.png" alt="Maduro y Petro" />
+										<div class="card-article-2-content">
+											<h2 class="card-article-2-title">
+												Costa Rica hizo oficial su apoyo a Edmundo González
+											</h2>
+											<a href="#" class="card-article-2-leer-mas">Leer más</a>
+											<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+										</div>
+									</div>
+									<div class="card-article-2">
+										<img src="../assets/img/breaking-news-5.png" alt="Maduro y Petro" />
+										<div class="card-article-2-content">
+											<h2 class="card-article-2-title">
+												Costa Rica hizo oficial su apoyo a Edmundo González
+											</h2>
+											<a href="#" class="card-article-2-leer-mas">Leer más</a>
+											<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-indicador-economico">
+								<p class="card-indicador-economico-title mb-3">Indicadores Económicos</p>
+								<div class="row d-flex justify-content-center align-items-center">
+									<div class="col-5 d-flex flex-column justify-content-center align-items-start">
+										<span class="card-indicador-economicos-label">Dólar (TRM)</span>
+										<span class="card-indicador-economicos-date">7-Dic-2024</span>
+									</div>
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<i class="bi bi-arrow-right-circle-fill fs-1 text-warning"></i>
+									</div>
+									<div class="col-5 d-flex flex-column justify-content-center align-items-end">
+										<span class="card-indicador-economico-value">$4,396.52</span>
+									</div>
+								</div>
+								<div class="row d-flex justify-content-center align-items-center">
+									<div class="col-5 d-flex flex-column justify-content-center align-items-start">
+										<span class="card-indicador-economicos-label">EURO</span>
+										<span class="card-indicador-economicos-date">7-Dic-2024</span>
+									</div>
+									<div class="col-2 d-flex justify-content-center align-items-center">
+										<i class="bi bi-arrow-right-circle-fill fs-1 text-warning"></i>
+									</div>
+									<div class="col-5 d-flex flex-column justify-content-center align-items-end">
+										<span class="card-indicador-economico-value">$4,664.94</span>
+									</div>
+								</div>
+								<div class="row d-flex justify-content-center align-items-center mt-3">
+									<div class="col-5">
+										<div>
+											<span class="card-indicador-economicos-label">Colcap</span>
+											<span class="card-indicador-economicos-date">1,381.66</span>
+										</div>
+										<div>
+											<span class="card-indicador-economicos-label">DTF</span>
+											<span class="card-indicador-economicos-date">9,20%</span>
+										</div>
+									</div>
+									<div class="col-7">
+										<div>
+											<span class="card-indicador-economicos-label">Petróleo WTI</span>
+											<span class="card-indicador-economicos-date">us$ 67,28</span>
+										</div>
+										<div>
+											<span class="card-indicador-economicos-label">Café (Libra)</span>
+											<span class="card-indicador-economicos-date">us$ 3,37</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Seccion flayer y grilla multimedia y tramitologia -->
+			<section class="main-section-content bg-white">
+				<div class="container-max-width">
+					<div class="flyer pb-3">
+						<img src="../assets/img/flyer-desk.png" alt="flyer" />
+					</div>
+					<div class="grid-two-section-60-40">
+						<div class="grid-articles-2 grid-multimedia">
+							<div class="d-flex justify-content-between align-items-center hide-800">
+								<h2 class="section-title m-0 p-0">MULTIMEDIA</h2>
+								<a href="#" class="btn-azul-blanco">Ver todo</a>
+							</div>
+							<div class="card-article-2 card-article-2-principal card-bottom-separator pt-2">
+								<img src="../assets/img/breaking-news-1.png" alt="Maduro y Petro" />
+								<div class="card-article-2-content">
+									<p class="card-article-2-tag">CINE</p>
+									<h2 class="card-article-2-title">
+										Reapareció María Corina Machado: "Estoy bien, estoy segura"
+									</h2>
+									<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+									<p>
+										María Corina Machado reaparece en un video y dice que ya está libre. Leer más
+										<a href="#" class="card-article-2-leer-mas">Leer más</a>
+									</p>
+								</div>
+							</div>
+							<div class="grid-articles-2 card-bottom-separator">
+								<div class="card-article-2">
+									<img src="../assets/img/breaking-news-1.png" alt="Maduro y Petro" />
+									<div class="card-article-2-content">
+										<p class="card-article-2-tag">CINE</p>
+										<h2 class="card-article-2-title">
+											La hora en la que arranca el nuevo capítulo de "Dragon Ball Daima"
+										</h2>
+										<a href="#" class="card-article-2-leer-mas">Leer más</a>
+										<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+									</div>
+								</div>
+								<div class="card-article-2">
+									<img src="../assets/img/breaking-news-1.png" alt="Maduro y Petro" />
+									<div class="card-article-2-content">
+										<p class="card-article-2-tag">CINE</p>
+										<h2 class="card-article-2-title">
+											La hora en la que arranca el nuevo capítulo de "Dragon Ball Daima"
+										</h2>
+										<a href="#" class="card-article-2-leer-mas">Leer más</a>
+										<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+									</div>
+								</div>
+								<div class="card-article-2">
+									<img src="../assets/img/breaking-news-1.png" alt="Maduro y Petro" />
+									<div class="card-article-2-content">
+										<p class="card-article-2-tag">CINE</p>
+										<h2 class="card-article-2-title">
+											La hora en la que arranca el nuevo capítulo de "Dragon Ball Daima"
+										</h2>
+										<a href="#" class="card-article-2-leer-mas">Leer más</a>
+										<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+									</div>
+								</div>
+								<div class="card-article-2">
+									<img src="../assets/img/breaking-news-1.png" alt="Maduro y Petro" />
+									<div class="card-article-2-content">
+										<p class="card-article-2-tag">CINE</p>
+										<h2 class="card-article-2-title">
+											La hora en la que arranca el nuevo capítulo de "Dragon Ball Daima"
+										</h2>
+										<a href="#" class="card-article-2-leer-mas">Leer más</a>
+										<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="grid-tramitologia">
+							<h2 class="section-title m-0 p-0">TRAMITOLOGÍA</h2>
+							<!-- Trámite 1 -->
+							<div class="card-tramite-item">
+								<img src="../assets/icons/logo_visa.png" alt="Visa" class="img-fluid" />
+								<h3 class="tramite-title">Solicitud de Expedición De Visa</h3>
+							</div>
+							<!-- Trámite 2 -->
+							<div class="card-tramite-item">
+								<img
+									src="../assets/icons/logo_id.png"
+									alt="Tarjeta de Identidad"
+									class="img-fluid"
+								/>
+								<h3 class="tramite-title">Trámite Tarjeta de Identidad</h3>
+							</div>
+							<!-- Trámite 3 -->
+							<div class="card-tramite-item">
+								<img src="../assets/icons/logo_passport.png" alt="Pasaporte" class="img-fluid" />
+								<h3 class="tramite-title">Trámite para Obtener el Pasaporte</h3>
+							</div>
+							<!-- Trámite 4 -->
+							<div class="card-tramite-item">
+								<img src="../assets/icons/logo_sign.png" alt="Apostillar" class="img-fluid" />
+								<h3 class="tramite-title">¿Cómo apostillar un Documento?</h3>
+							</div>
+							<!-- Trámite 5 -->
+							<div class="card-tramite-item">
+								<img src="../assets/icons/logo_document.png" alt="Documentos" class="img-fluid" />
+								<h3 class="tramite-title">Documentos para estudiar o trabajar en el exterior</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<div id="main-footer"></div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="../static/loadComponents.js"></script>
+		<!-- Script de Boxicons (agregar antes de cerrar el body) -->
+		<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+	</body>
+</html>

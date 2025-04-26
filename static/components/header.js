@@ -1,0 +1,101 @@
+class HeaderComponent extends HTMLElement {
+  connectedCallback() {
+    this.render()
+  }
+
+  render () {
+    this.innerHTML = `
+      <div id="main-header">
+        <header class="header">
+          <!-- Barra superior -->
+          <div class="top-bar">
+            <div class="top-links">
+              <a href="#"><i class="fa fa-futbol mb-3"></i><p class="logo-texto">&nbsp;Partidos Hoy</p></a>
+              <a href="#"><i class="fa fa-film mb-3"></i><p class="logo-texto">&nbsp;Cartelera</p></a>
+              <a href="#"><i class="fa fa-map mb-3"></i><p class="logo-texto">&nbsp;Colombianos en USA</p></a>
+            </div>
+            <div class="social-icons">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-youtube"></i>
+              <i class="fab fa-tiktok"></i>
+            </div>
+          </div>
+          
+          <!-- Cabecera principal -->
+          <div class="main-header">
+            <div class="left-container d-flex align-items-center">
+              <button class="menu-toggle">☰</button>
+              <div class="desktop-news-btn d-none d-md-flex align-items-center">
+                <span class="red-dot">●</span>
+                <span>NOTICIAS</span>
+              </div>
+            </div>
+            
+            <h1 class="mx-md-auto text-md-center">
+                <img src="/assets/icons/colombia-com-footer.png" alt="Logo Colombia.com">
+            </h1>
+            
+            <!-- Botón NAVIDAD para desktop -->
+            <button class="campain-btn d-none d-md-block">NAVIDAD</button>
+            
+            <!-- Iconos para móvil -->
+            <div class="top-links d-flex d-md-none">
+              <a href="#"><i class="fa fa-futbol"></i></a>
+              <a href="#"><i class="fa fa-film"></i></a>
+              <a href="#"><i class="fa fa-map"></i></a>
+            </div>
+          </div>
+
+          <!-- Contenedor de botones (NOTICIAS y NAVIDAD) -->
+          <div class="menu-logo d-flex d-md-none">
+            <button class="news-btn">NOTICIAS</button>
+            <button class="campain-btn">NAVIDAD</button>
+          </div>
+
+          <!-- Menú de navegación -->
+          <nav>
+            <div class="menu-links">
+              <a itemprop="actualidad" href="/actualidad/">ACTUALIDAD</a>
+              <a itemprop="fútbol" href="#">FÚTBOL</a>
+              <a itemprop="entrenimiento" href="#">ENTRETENIMIENTO</a>
+              <a itemprop="cine" href="#">CINE</a>
+              <a itemprop="vida" href="#">VIDA</a>
+              <a itemprop="gastronomia" href="#">GASTRONOMÍA</a>
+              <a itemprop="turismo" href="#">TURISMO</a>
+              <a itemprop="radio" href="#">RADIO</a>
+              <a itemprop="colombianos" href="#">COLOMBIANOS</a>
+            </div>
+            
+            <!-- Barra de búsqueda -->
+            <div class="search-bar">
+              <input type="text" placeholder="Buscar...">
+              <button type="button" class="fa fa-search" aria-label="Buscar"></button>
+            </div>
+          </nav>
+
+          <!-- Flyer/Banner -->
+          <div class="flyer">
+            <img class="flyer" src="/assets/img/flyer-desk.png" alt="flyer">
+          </div>
+
+          <!-- Menú desplegable móvil -->
+          <nav class="mobile-menu">
+            <a href="#">ACTUALIDAD</a>
+            <a href="#">FÚTBOL</a>
+            <a href="#">ENTRETENIMIENTO</a>
+            <a href="#">CINE</a>
+            <a href="#">VIDA</a>
+            <a href="#">GASTRONOMÍA</a>
+            <a href="#">TURISMO</a>
+            <a href="#">RADIO</a>
+            <a href="#">COLOMBIANOS</a>
+          </nav>
+        </header>
+      </div>
+    `
+  }
+}
+
+customElements.define('header-component', HeaderComponent)

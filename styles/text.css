@@ -1,0 +1,27 @@
+.text {
+  /* COLORS */
+  /* WEIGHTS */
+  /* SIZES */
+  /* UTILITIES */
+}
+.text.color-primary {
+  color: #104596;
+}
+.text.color-white {
+  color: white;
+}
+.text.color-success {
+  color: #188341;
+}
+.text.color-dark {
+  color: #191C36;
+}
+.text.weight-regular {
+  font-weight: 400;
+}
+.text.weight-bold {
+  font-weight: 700;
+}
+.text.center {
+  text-align: center;
+}

@@ -1,0 +1,52 @@
+.button {
+  font-family: Verdana;
+  outline: none;
+  text-decoration: none;
+  border-radius: 20px;
+  border: none;
+  background-color: #104596;
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* COLORS */
+  /* SIZES */
+  /* ROUNDED */
+}
+.button.color-primary {
+  background-color: #104596;
+  color: white;
+}
+.button.color-primary.ghost {
+  background-color: transparent;
+  color: #104596;
+  border: 1px solid #104596;
+}
+.button.color-warning {
+  background-color: #FFDA54;
+  color: #104596;
+}
+.button.color-success {
+  background-color: #188341;
+  color: white;
+}
+.button.size-large {
+  font-size: 12px;
+  padding: 10px 30px;
+}
+.button.size-medium {
+  font-size: 8px;
+  padding: 5px 10px;
+}
+.button.rounded-large {
+  border-radius: 30px;
+}
+.button.rounded {
+  border-radius: 20px;
+}
+.button.rounded-small {
+  border-radius: 3px;
+}

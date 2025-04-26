@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- PRECONNECTS -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="preconnect" href="https://cdn.colombia.com">
+    <link rel="dns-prefetch" href="https://cdn.colombia.com">
+    <link rel="preconnect" href="https://securepubads.g.doubleclick.net">
+    <link rel="dns-prefetch" href="https://securepubads.g.doubleclick.net">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://sb.scorecardresearch.com">
+    <link rel="dns-prefetch" href="https://sb.scorecardresearch.com">
+    <link rel="preconnect" href="https://stpd.cloud">
+    <link rel="dns-prefetch" href="https://stpd.cloud">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="preload" href="style.css" as="style"> <!--Estilo CSC-->
+    <link rel="subresource" href="main.js" as="script"> <!--Java Script CSC-->
+
+
+    <!-- METAS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{Title}</title>
+    <meta name="description" content="{metadescription}">
+    <meta name="author" content="Colombia.com">
+    <meta name="copyright" content="Colombia.com">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <meta name="googleboot" content="index,follow">
+    <meta name="bingboot" content="index,follow">
+    <meta name="language" content="spanish">
+    <meta name="distribution" content="global">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="content-encoding" content="gzip"/>
+    <meta http-equiv="cache-control" content="public"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <!-- LINKS -->
+    <link rel="canonical" href="https://www.colombia.com/">    
+    <link rel="alternate" href="https://www.colombia.com/rss/" type="application/rss+xml" title="RSS - Colombia.com">
+    
+    <!-- SCHEMA Principal-->
+|      
+    <script type="application/ld+json">
+[{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://www.colombia.com/",
+    "potentialAction": { "@type": "SearchAction", "target": "https://www.colombia.com/buscador/?q={search_term_string}", "query-input": "required name=search_term_string" }
+},
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Colombia.com", "item": "https://www.colombia.com/" }
+    ]
+}]
+</script>
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Colombia.com">
+    <meta property="og:title" content="Últimas noticias y servicios de Colombia - Colombia.com">
+    <meta property="og:url" content="https://www.colombia.com">
+    <meta property="og:image" content="https://cdn.colombia.com/images/logo-300.jpg">
+    <meta property="og:description" content="{meta descripción}">
+    <meta property="og:locale" content="es_CO">  
+   <meta property="fb:pages" content="120864984617693">
+   <meta property="fb:app_id" content="515434948646892">
+
+    <!-- TWITTER CARD -->
+    <meta name="twitter:site" content="@ColombiacomTW">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Últimas noticias y servicios de Colombia - Colombia.com">
+    <meta name="twitter:description" content="{meta descripción}">
+    <meta name="twitter:image" content="https://cdn.colombia.com/images/logo-300.jpg">
+    <meta name="twitter:image:alt" content="Colombia.com">
+
+</head>
+
+
+
+
+
+<body>
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav>
+      <ul itemscope="" itemtype="https://schema.org/SiteNavigationElement">
+        <li itemprop="name" > <a itemprop="url"> Link 1 <a></li>
+        <li itemprop="name" > <a itemprop="url"> Link 2 <a></li>
+        <li itemprop="name" > <a itemprop="url"> Link 3 <a></li>
+        <li itemprop="name" > <a itemprop="url"> Link 4 <a></li>
+        <li itemprop="name" > <a itemprop="url"> Link 5 <a></li>
+      </ul>
+    </nav>
+     
+    <!-- IMÁGENES -->
+    <img src="{ruta de la imagen imaportante}" alt="{descripción de la imagen importante}" loading="eager">
+    <img src="{ruta de la imagen secundaria}" alt="{descripción de la imagen secundaria}" loading="lazy">
+
+    <!-- ESTRUCTURA DE TÍTULOS - TRANSVERSAL -->
+    <section>
+    <h1>Título más importante</h1>
+        <h2>Subtítulo prioridad 2</h2>
+            <h3>Subtítulo prioridad 3</h3>
+                <h4>Subtítulo prioridad 4</h4>
+                <p>Todos los textos deben ir siempre en un P</p>
+                <strong>Palabras clave importantes que quereremos en negritas</strong>
+                <b>Palabras que queremos colocar en negritas</b>
+                <a href="link" title="{Título del anchor text}">Anchor text, debe contener información relevante sobre la URL enlazada</a>
+    </section>
+
+
+<!-- Por cada Noticia que esta en la Portada debe ir, si hay 50 notas en la Portada debe ir las 50.-->
+
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": ["NewsArticle"],
+"headline": "{Titulo de la nota descripción} ",
+"datePublished": "{hora de Publicación UTM-5 Ejemplo:2025-03-20T21:25:11-05:00}",
+"dateModified": " {hora de Modificación UTM-5 Ejemplo:2025-03-20T21:25:11-05:00}",
+"image": { "@type": "ImageObject", "url": "{ruta de la imagen de la nota}", "width": 1200, "height": 650 },<!-- Por cada nota que esta en la Portada debe ir este tamaño para el discrovery-->
+"creator": { "@type": "Thing", "name": "{Nombre del creador}" },
+"author": { "@type": "Person", "name": "{Nombre del creador}", "url": "{ruta de las notas del creador: https://www.colombia.com/staff/2152/daniel-gonzalez}"},
+
+"publisher": {"@type": "NewsMediaOrganization", "@id": "https://www.colombia.com"},
+"mainEntityOfPage": {"@type": "WebPage", "@id": "{ruta de la nota principal: https://www.colombia.com/actualidad/nacionales/ministerio-de-defensa-adelanto-el-consejo-de-seguridad-en-el-cesar-512404"}
+}
+</script>
+
+<footer>
+
+
+<!-- Por cada ficha de Cine-->
+
+    <script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Movie",
+"name": "{Titulo de la pelicula}",
+"mainEntityOfPage": "{URL de la ficha de la pelicula}",
+"dateCreated": "{hora de Publicación UTM-5 Ejemplo:2025-03-20T21:25:11-05:00}",
+"director": "{Director de la pelicula}",
+"image": "{ruta de la imagen de la pelicula}"
+}
+</script>
+
+<!-- Por cada Canal de televisión-->
+
+<script type="application/ld+json">
+{
+"@context": "https://schema.org/",
+"@type": "TelevisionStation",
+"name": "{Nombre del Canal}",
+"mainEntityOfPage": "{URL de la ficha del canal}",
+"image": "{ruta de la imagen del canal}",
+"address": "{Dirección de la Radio}"
+}
+</script>
+
+<!-- Por cada Estación de Radio-->
+
+<script type="application/ld+json">
+{
+"@context": "https://schema.org/",
+"@type": "RadioStation",
+"name": "{Nombre de la radio o programa}",
+"mainEntityOfPage": "{URL de la ficha de la Radio}",
+"image": "{ruta de la imagen de la radio}",
+"address": "{Dirección de la Radio}"
+}
+</script>
+
+
+    <!-- FOOTER -->
+    <section>
+        <ul>
+          <ul itemscope="" itemtype="https://schema.org/SiteNavigationElement">
+        <li itemprop="name" > <a itemprop="url"> Link 1 <a></li>
+        <li itemprop="name" > <a itemprop="url"> Link 2 <a></li>
+        <li itemprop="name" > <a itemprop="url"> Link 3 <a></li>
+        <li itemprop="name" > <a itemprop="url"> Link 4 <a></li>
+        <li itemprop="name" > <a itemprop="url"> Link 5 <a></li>
+      </ul>
+      </section>
+</body>
+</html>
+

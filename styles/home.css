@@ -1,0 +1,20 @@
+@charset "UTF-8";
+:root {
+  --max-width-content: 1200px;
+}
+
+.body-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #f3f8ff;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-auto-rows: auto;
+}
