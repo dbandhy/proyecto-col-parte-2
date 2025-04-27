@@ -159,17 +159,7 @@ nav {
 	}
 }
 
-.menu-logo {
-	display: flex;
-	align-items: center;
-	width: 100%;
-	display: flex;
-	justify-content: flex-start; /* Alinear a la izquierda */
-	padding: 10px 15px;
-	background-color: #ffffff;
-	margin: 0;
-	order: 2; /* Colocar después del header principal */
-}
+
 
 .news-btn {
 	background-color: #f1f5f9;
@@ -315,16 +305,7 @@ nav a:hover {
 		display: none;
 	}
 
-	/* Reorganizar menu-logo para los botones */
-	.menu-logo {
-		width: 100%;
-		display: flex;
-		justify-content: flex-start; /* Alinear a la izquierda */
-		padding: 10px 15px;
-		background-color: #ffffff;
-		margin: 0;
-		order: 2; /* Colocar después del header principal */
-	}
+
 
 	/* Ajustar botones */
 	.news-btn {
@@ -429,17 +410,6 @@ nav a:hover {
 	gap: 30px;
 }
 
-/* Logo y navegación superior */
-.menu-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-top: 20px;
-}
-
-.menu-header .menu-logo img {
-	width: 150px;
-}
 
 .menu-quick-icons {
 	display: flex;
@@ -451,18 +421,6 @@ nav a:hover {
 	font-size: 22px;
 }
 
-.menu-search {
-	display: flex;
-	width: 40%;
-}
-
-.menu-search input {
-	width: 100%;
-	padding: 10px 15px;
-	border: none;
-	border-radius: 20px 0 0 20px;
-	outline: none;
-}
 
 .search-btn {
 	background-color: #ffd700;
