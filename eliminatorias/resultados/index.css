@@ -1,0 +1,247 @@
+:root {
+  --max-width-content: 1200px;
+}
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.body-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-auto-rows: auto;
+  background: #F3F8FF;
+}
+
+.section-main {
+  background-color: #F3F8FF;
+  padding: 20px 0 35px 0;
+  width: 100%;
+}
+.section-main .content {
+  display: grid;
+  max-width: var(--max-width-content);
+  grid-template-columns: 8fr 4fr;
+  grid-template-areas: "qualifiers social-sidebar" "qualifiers colombia-news";
+  grid-auto-rows: max-content;
+  column-gap: 33px;
+  row-gap: 40px;
+  margin: 0 auto;
+}
+.section-main .content .qualifiers {
+  grid-area: qualifiers;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding: 20px 30px;
+  align-items: center;
+}
+.section-main .content .qualifiers .rounds {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  max-width: 100%;
+}
+.section-main .content .qualifiers .rounds .scores {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  border-radius: 10px;
+  border: 1px solid #104596;
+  width: 100%;
+  max-width: 100%;
+}
+.section-main .content .qualifiers .rounds .scores .header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-main .content .qualifiers .rounds .scores .header .title {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.section-main .content .qualifiers .rounds .scores .header > .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #F3F8FF;
+  width: 26px;
+  height: 26px;
+}
+.section-main .content .qualifiers .rounds .scores .header > .icon i {
+  color: #104596;
+}
+.section-main .content .qualifiers .rounds .scores .score {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content max-content max-content 1fr;
+  column-gap: 10px;
+  grid-template-areas: "hour country-1 separator-1 results separator-2 country-2" "hour details-1 separator-1 options separator-2 details-2";
+  row-gap: 20px;
+  padding: 20px 0;
+  border-bottom: 0.25px solid #104596;
+}
+.section-main .content .qualifiers .rounds .scores .score .hour {
+  grid-area: hour;
+  padding-right: 20px;
+}
+.section-main .content .qualifiers .rounds .scores .score .country-1 {
+  grid-area: country-1;
+  display: flex;
+  justify-content: flex-end;
+}
+.section-main .content .qualifiers .rounds .scores .score .country-2 {
+  grid-area: country-2;
+}
+.section-main .content .qualifiers .rounds .scores .score .separator-1 {
+  grid-area: separator-1;
+}
+.section-main .content .qualifiers .rounds .scores .score .separator-2 {
+  grid-area: separator-2;
+}
+.section-main .content .qualifiers .rounds .scores .score .results {
+  grid-area: results;
+  display: flex;
+  justify-content: center;
+}
+.section-main .content .qualifiers .rounds .scores .score .details-1 {
+  grid-area: details-1;
+  justify-content: flex-end;
+}
+.section-main .content .qualifiers .rounds .scores .score .details-1 .detail {
+  justify-content: flex-end;
+}
+.section-main .content .qualifiers .rounds .scores .score .details-2 {
+  grid-area: details-2;
+}
+.section-main .content .qualifiers .rounds .scores .score .options {
+  grid-area: options;
+}
+.section-main .content .qualifiers .rounds .scores .score .separator-1, .section-main .content .qualifiers .rounds .scores .score .separator-2 {
+  display: flex;
+  width: 1px;
+  height: 100%;
+  background-color: #104596;
+}
+.section-main .content .qualifiers .rounds .scores .score .details-1, .section-main .content .qualifiers .rounds .scores .score .details-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.section-main .content .qualifiers .rounds .scores .score .country-1, .section-main .content .qualifiers .rounds .scores .score .country-2 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.section-main .content .qualifiers .rounds .scores .score .country-1 img, .section-main .content .qualifiers .rounds .scores .score .country-2 img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.section-main .content .social-sidebar {
+  grid-area: social-sidebar;
+}
+.section-main .content .colombia-news {
+  grid-area: colombia-news;
+}
+.section-main .content .publicity-1 {
+  grid-area: publicity-1;
+  display: none;
+}
+
+.desplegable-round-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 42px;
+  padding: 0 17px 0 20px;
+  border-radius: 10px;
+  background-color: #104596;
+}
+.desplegable-round-header > .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+  width: 26px;
+  height: 26px;
+}
+.desplegable-round-header > .icon i {
+  color: #104596;
+}
+
+.detail {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.detail img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+@media (max-width: 1200px) {
+  .section-main {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .section-main .content {
+    grid-template-columns: 1fr;
+    grid-template-areas: "qualifiers" "publicity-1";
+  }
+  .section-main .content .qualifiers .rounds .scores .score {
+    grid-template-columns: 1fr repeat(3, max-content) 1fr;
+    grid-template-areas: "country-1 hour hour hour country-2" "country-1 results results results country-2" "country-1 options options options country-2" "details-1 details-1 separator-1 details-2 details-2";
+  }
+  .section-main .content .qualifiers .rounds .scores .score .separator-2 {
+    display: none;
+  }
+  .section-main .content .qualifiers .rounds .scores .score .country-1, .section-main .content .qualifiers .rounds .scores .score .country-2 {
+    align-self: center;
+    flex-direction: row-reverse;
+  }
+  .section-main .content .qualifiers .rounds .scores .score .hour {
+    justify-self: center;
+    padding: 0;
+  }
+  .section-main .content .qualifiers .rounds .scores .score .separator-1 {
+    justify-self: center;
+  }
+  .section-main .content .qualifiers .rounds .scores .score .details-1 img, .section-main .content .qualifiers .rounds .scores .score .details-2 img {
+    width: 15px;
+    height: 15px;
+  }
+  .section-main .content .publicity-1 {
+    display: flex !important;
+    justify-content: center;
+  }
+  .section-main .content .publicity-1 img {
+    width: max-content;
+    height: max-content;
+  }
+  .section-main .content .colombia-news {
+    display: none;
+  }
+  .section-main .content .social-sidebar {
+    display: none;
+  }
+}

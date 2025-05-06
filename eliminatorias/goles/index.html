@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eliminatorias - Resultados</title>
+
+  <link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+	/>
+	<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+	/>
+	<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+	/>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+		rel="stylesheet"
+	/>
+	<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+		crossorigin="anonymous"
+		referrerpolicy="no-referrer"
+	/>
+  <!-- COMPONENTS STYLES -->
+   <link rel="stylesheet" href="../../styles/components.css">
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="../../styles/header.css" />
+  <link rel="stylesheet" href="../../styles/footer.css" />
+  <link rel="stylesheet" href="../../static/components/button/button.css">
+  <link rel="stylesheet" href="../../static/components/Text/index.css">
+  <link rel="stylesheet" href="../../static/components/HeaderDesplegable/index.css">
+  <link rel="stylesheet" href="../../static/components/cardNotice/cardNotice.css">
+  <link rel="stylesheet" href="../../static/components/SocialSidebar/index.css">
+
+  <script src="../../static/responsive.js"></script>
+
+  <!-- COMPONENTS -->
+  <script src="../../static/components/footer.js"></script>
+	<script src="../../static/components/header.js"></script>
+  <script src="../../static/components/Text/index.js"></script>
+  <script src="../../static/components/button/index.js"></script>
+  <script src="../../static/components/HeaderDesplegable/index.js"></script>
+  <script src="../../static/components/SocialSidebar/index.js"></script>
+  <script src="../../static/components/cardNotice/cardNotice.js"></script>
+</head>
+<body class="body-container">
+  <header-component></header-component>
+  <div class="main-container">
+    <div class="section-main">
+      <div class="content">
+        <div class="qualifiers">
+          <text-component
+            size-mobile="18"
+            size-desktop="25"
+            text="ELIMINATORIAS"
+            weight="bold"
+            color="primary"
+          ></text-component>
+          <div class="tabs theme-sky">
+            <div class="tab">Resultados</div>
+            <div class="tab active">Posiciones</div>
+            <div class="tab">Goles</div>
+          </div>
+          <header-desplegable-component class="w-100" text="Fase Regular" size="medium"></header-desplegable-component>
+          <div class="stadistics">
+            <div class="stadistics-item header">
+              <text-component size-mobile="12" size-desktop="12" text="Pos" weight="bold" color="primary"></text-component>
+              <text-component size-mobile="12" size-desktop="12" text="Jugador" weight="bold" color="primary"></text-component>
+              <text-component size-mobile="12" size-desktop="12" text="Equipo" weight="bold" color="primary"></text-component>
+              <text-component size-mobile="12" size-desktop="12" text="Goles" weight="bold" color="primary" classnames="justify-self-end"></text-component>
+            </div>
+            <div class="stadistics-item">
+              <text-component size-mobile="12" size-desktop="12" text="1" weight="bold" color="dark"></text-component>
+              <text-component size-mobile="12" size-desktop="12" text="L. Messi" weight="regular" color="dark"></text-component>
+              <div class="country">
+                <img src="../../assets/img/breaking-news-5.png" alt="">
+                <text-component size-mobile="12" size-desktop="12" text="Argentina" weight="regular" color="primary"></text-component>
+              </div>
+              <div class="total-points">
+                <text-component size-mobile="12" size-desktop="12" text="25" weight="regular" color="white"></text-component>
+              </div>
+            </div>
+          </div>
+          <div class="options">
+            <img src="../../assets/img/breaking-news-5.png" alt="powered-by score 24">
+            <button-component
+              text="Ver más"
+              size="large"
+              color="primary"
+              rounded="large"
+            ></button-component>
+          </div>
+        </div>
+        <section class="social-sidebar">
+          <social-sidebar
+            image="../../assets/img/breaking-news-banner.png"
+            link=""
+          ></social-sidebar>
+        </section>
+        <div class="colombia-news">
+          <div class="colombiaNews">
+            <span class="text color-primary weight-bold center">LO ÚLTIMO EN COLOMBIA</span>
+            <div class="news">
+              <card-notice-component
+                id="main-card-one"
+                image="../../assets/img/breaking-news-5.png"
+                news="Donald Trump reconoció a Edmundo González"
+                orientation="vertical"
+                author="Por Juan Carlos Garcia Sierra"
+                distribution="none"
+                classnames="new"
+              ></card-notice-component>
+              <card-notice-component
+                id="main-card-one"
+                image="../../assets/img/breaking-news-5.png"
+                news="Donald Trump reconoció a Edmundo González"
+                orientation="horizontal"
+                author="Por Juan Carlos Garcia Sierra"
+                distribution="equals"
+                classnames="new"
+              ></card-notice-component>
+              <card-notice-component
+                id="main-card-one"
+                image="../../assets/img/breaking-news-5.png"
+                news="Donald Trump reconoció a Edmundo González"
+                orientation="horizontal"
+                author="Por Juan Carlos Garcia Sierra"
+                distribution="equals"
+                classnames="new"
+              ></card-notice-component>
+              <card-notice-component
+                id="main-card-one"
+                image="../../assets/img/breaking-news-5.png"
+                news="Donald Trump reconoció a Edmundo González"
+                orientation="horizontal"
+                author="Por Juan Carlos Garcia Sierra"
+                distribution="equals"
+                classnames="new"
+              ></card-notice-component>
+            </div>
+          </div>
+        </div>
+        <div class="publicity-1">
+          <img src="../../assets/img/banner-copa-america.png" alt="Siente la emoción Copa América USA 2024" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer-component></footer-component>
+  <script>
+    updateResponsiveAttributes()
+  </script>
+</body>
+</html>a

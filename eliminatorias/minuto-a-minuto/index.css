@@ -1,0 +1,231 @@
+:root {
+  --max-width-content: 1200px;
+}
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.body-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-auto-rows: auto;
+  background: #F3F8FF;
+}
+
+.section-main {
+  background-color: #F3F8FF;
+  padding: 20px 0 35px 0;
+  width: 100%;
+}
+.section-main .content {
+  display: grid;
+  max-width: var(--max-width-content);
+  grid-template-columns: 8fr 4fr;
+  grid-template-areas: "header header" "graphics graphics" "futbol-detail qualifiers" "futbol-detail social-sidebar";
+  column-gap: 38px;
+  row-gap: 40px;
+  margin: 0 auto;
+}
+.section-main .content .header {
+  grid-area: header;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.section-main .content .header .options {
+  display: flex;
+  gap: 22px;
+}
+.section-main .content .header .options .option {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.section-main .content .header .options .option img, .section-main .content .header .options .option svg {
+  width: 18px;
+  height: 10px;
+  object-fit: cover;
+}
+.section-main .content .qualifiers {
+  grid-area: qualifiers;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding: 20px 30px;
+  align-items: center;
+  height: max-content;
+}
+.section-main .content .qualifiers .stadistics {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  padding: 24px 20px;
+  background-color: #F5F9FF;
+  border-radius: 10px;
+}
+.section-main .content .qualifiers .stadistics .stadistics-item {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 20px;
+  row-gap: 10px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: white;
+  padding: 0 8px;
+}
+.section-main .content .qualifiers .stadistics .stadistics-item.header {
+  padding-bottom: 10px;
+  background-color: transparent;
+}
+.section-main .content .qualifiers .stadistics .stadistics-item .country {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+.section-main .content .qualifiers .stadistics .stadistics-item .country img {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.section-main .content .qualifiers .stadistics .stadistics-item .total-points {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #104596;
+  justify-self: flex-end;
+}
+.section-main .content .qualifiers .stadistics .stadistics-item > * {
+  align-self: center;
+  justify-self: center;
+}
+.section-main .content .graphics {
+  grid-area: graphics;
+}
+.section-main .content .futbol-detail {
+  grid-area: futbol-detail;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding: 20px 25px 40px 25px;
+  align-items: center;
+  height: max-content;
+}
+.section-main .content .futbol-detail .histories {
+  display: flex;
+  border-radius: 10px;
+  background-color: #F5F9FF;
+  padding: 10px 18px 33px 18px;
+  gap: 8px;
+  flex-direction: column;
+}
+.section-main .content .futbol-detail .histories .history {
+  display: flex;
+  padding: 9px 17px;
+  border-radius: 20px;
+  background-color: white;
+  align-items: center;
+  gap: 22px;
+}
+.section-main .content .futbol-detail .histories .history .indicators {
+  display: flex;
+  gap: 8px;
+}
+.section-main .content .futbol-detail .histories .history .indicators .indicator {
+  border: 1px solid #104596;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-main .content .futbol-detail .histories .history .indicators .indicator img, .section-main .content .futbol-detail .histories .history .indicators .indicator svg, .section-main .content .futbol-detail .histories .history .indicators .indicator i {
+  width: 17px;
+  height: 17px;
+}
+.section-main .content .social-sidebar {
+  grid-area: social-sidebar;
+}
+.section-main .content .publicity-1 {
+  grid-area: publicity-1;
+  display: none;
+}
+
+.footer-qualifiers {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-qualifiers img {
+  width: 150px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.futbol-card {
+  width: 10px;
+  height: 17px;
+  border-radius: 2px;
+}
+.futbol-card.yellow {
+  background-color: #FFDA54;
+}
+.futbol-card.red {
+  background-color: #FF3842;
+}
+
+@media (max-width: 768px) {
+  .section-main {
+    background-color: white;
+  }
+  .section-main .content {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "graphics" "futbol-detail" "publicity-1" "qualifiers";
+  }
+  .section-main .content .social-sidebar {
+    display: none;
+  }
+  .section-main .content .publicity-1 {
+    display: flex !important;
+    justify-content: center;
+  }
+  .section-main .content .publicity-1 img {
+    width: max-content;
+    height: max-content;
+  }
+  .section-main .content .header {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .section-main .content .header .options {
+    align-self: flex-start;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .footer-qualifiers {
+    display: none;
+  }
+}

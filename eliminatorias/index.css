@@ -1,0 +1,331 @@
+:root {
+  --max-width-content: 1200px;
+}
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.body-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-auto-rows: auto;
+  background: #F3F8FF;
+}
+
+.section-main {
+  background-color: #F3F8FF;
+  padding: 20px 0 35px 0;
+  width: 100%;
+}
+.section-main .content {
+  display: grid;
+  max-width: var(--max-width-content);
+  grid-template-columns: 8fr 4fr;
+  grid-auto-rows: max-content;
+  column-gap: 33px;
+  row-gap: 35px;
+  margin: 0 auto;
+}
+.section-main .content .updates {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.section-main .content .updates .news {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "news-1 news-2" "news-3 news-3";
+  column-gap: 14px;
+  row-gap: 15px;
+}
+.section-main .content .updates .news .news-1 {
+  grid-area: news-1;
+}
+.section-main .content .updates .news .news-2 {
+  grid-area: news-2;
+}
+.section-main .content .updates .news .news-3 {
+  grid-area: news-3;
+}
+.section-main .content .updates .news .publicity {
+  grid-area: publicity-1;
+  display: none;
+}
+
+.section-secondary {
+  display: grid;
+  background-color: white;
+  padding: 40px 0 43px 0;
+  width: 100%;
+}
+.section-secondary .content {
+  max-width: var(--max-width-content);
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  margin: 0 auto;
+  grid-template-areas: "section-ligues publicity-1" "section-news-1 colombia-news" "multimedia nothing";
+  grid-auto-flow: column;
+  column-gap: 33px;
+  row-gap: 40px;
+}
+.section-secondary .content .section-ligues {
+  grid-area: section-ligues;
+}
+.section-secondary .content .publicity-1 {
+  grid-area: publicity-1;
+  display: flex;
+  justify-content: center;
+}
+.section-secondary .content .publicity-1 img {
+  width: max-content;
+  height: max-content;
+}
+.section-secondary .content .section-news-1 {
+  grid-area: section-news-1;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.section-secondary .content .section-news-1 .news {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 22px;
+}
+.section-secondary .content .section-news-1 .news .news-1 {
+  grid-area: news-1;
+}
+.section-secondary .content .section-news-1 .news .news-2 {
+  grid-area: news-2;
+}
+.section-secondary .content .section-news-1 .news .news-3 {
+  grid-area: news-3;
+}
+.section-secondary .content .section-news-1 .news .news-4 {
+  grid-area: news-4;
+}
+.section-secondary .content .section-news-1 .btn-more-news {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.section-secondary .content .section-news-1 .btn-more-news .button {
+  position: relative;
+  z-index: 2;
+}
+.section-secondary .content .section-news-1 .btn-more-news .separator-line {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #104596;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.section-secondary .content .colombia-news {
+  grid-area: colombia-news;
+}
+
+/* FUTURE COMPONENTS */
+.section-multimedia {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.section-multimedia .videos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: 16px;
+}
+
+.qualifiers {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding: 20px 30px;
+  align-items: center;
+}
+.qualifiers .scores {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  border-radius: 10px;
+  border: 1px solid #104596;
+  width: 100%;
+}
+.qualifiers .scores .score {
+  display: grid;
+  grid-template-columns: 1fr 1fr max-content 1fr 1fr;
+  grid-template-areas: "hour country-1 results country-2 options";
+  column-gap: 20px;
+  padding-bottom: 25px;
+  padding-top: 20px;
+  border-bottom: 0.25px solid #104596;
+}
+.qualifiers .scores .score:last-child {
+  border-bottom: none;
+}
+.qualifiers .scores .score .country-1, .qualifiers .scores .score .country-2 {
+  display: flex;
+  gap: 10px;
+}
+.qualifiers .scores .score .country-1 img, .qualifiers .scores .score .country-2 img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.qualifiers .scores .score .hour {
+  grid-area: hour;
+}
+.qualifiers .scores .score .country-1 {
+  grid-area: country-1;
+  justify-content: flex-end;
+}
+.qualifiers .scores .score .results {
+  grid-area: results;
+  align-self: center;
+}
+.qualifiers .scores .score .country-2 {
+  grid-area: country-2;
+}
+.qualifiers .scores .score .options {
+  grid-area: options;
+}
+.qualifiers .options {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.qualifiers .options img {
+  width: 150px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.ligues-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.ligues-container .list-ligues {
+  display: grid;
+  row-gap: 13px;
+}
+.ligues-container .list-ligues .ligue {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 37px;
+  gap: 25px;
+}
+.ligues-container .list-ligues .ligue img {
+  width: 30px;
+  height: 30px;
+}
+.ligues-container .list-ligues .ligue a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #191C36;
+}
+.ligues-container.version-1 {
+  background-color: #F3F8FF;
+  padding: 20px 20px 26px 30px;
+  justify-content: center;
+}
+.ligues-container.version-1 .list-ligues {
+  grid-template-columns: 1fr;
+}
+.ligues-container.version-1 .list-ligues .ligue {
+  padding: 0 37px;
+  background-color: white;
+  border-radius: 40px;
+  height: 47px;
+}
+.ligues-container.version-1 .list-ligues .ligue a {
+  text-decoration: none;
+}
+.ligues-container.version-2 .list-ligues {
+  grid-template-columns: 1fr 1fr;
+  column-gap: 100px;
+  justify-content: space-between;
+}
+.ligues-container.version-2 .list-ligues .ligue {
+  padding: 0;
+}
+.ligues-container.version-2 .list-ligues .ligue a {
+  text-decoration: underline;
+}
+
+.date-content {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  align-items: center;
+}
+.date-content div:first-child {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #FF3842;
+}
+.date-content span {
+  font-size: 9px;
+  font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+  .section-main, .section-secondary {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .section-main .content {
+    grid-template-columns: 1fr;
+  }
+  .section-main .content .updates .news {
+    grid-template-columns: 1fr;
+    grid-template-areas: "news-1" "publicity-1" "news-2" "news-3";
+  }
+  .section-main .content .updates .news .publicity {
+    display: flex !important;
+    justify-content: center;
+  }
+  .section-main .content .updates .news .publicity img {
+    width: max-content;
+    height: max-content;
+  }
+  .section-main .content .social-sidebar {
+    display: none;
+  }
+  .section-secondary .content {
+    grid-template-columns: 1fr;
+    grid-template-areas: "section-ligues" "section-news-1" "publicity-1" "colombia-news" "multimedia";
+  }
+  .qualifiers .scores .score {
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-areas: "country-1 hour country-2" "country-1 results country-2" "country-1 options country-2";
+    row-gap: 10px;
+  }
+  .qualifiers .scores .score .country-1, .qualifiers .scores .score .country-2 {
+    flex-direction: row-reverse;
+    align-self: center;
+  }
+  .qualifiers .scores .score .hour, .qualifiers .scores .score .results, .qualifiers .scores .score .options {
+    align-self: center;
+    justify-self: center;
+  }
+}
