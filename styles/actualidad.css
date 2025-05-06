@@ -19,6 +19,19 @@
   grid-auto-rows: auto;
 }
 
+.section-multimedia {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.section-multimedia .videos {
+  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 16px;
+}
+
 /* NUEVOS ESTILOS */
 .content {
   grid-column: 2/12;

@@ -232,7 +232,6 @@ p {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  max-width: 487px;
   background-color: white;
   border-radius: 8px;
   padding: 11px 26px;
@@ -395,7 +394,31 @@ p {
 
 /* Noticias de PARANORMAL */
 .paranormal-item {
-  flex: 1;
+  width: fit-content;
+  max-width: 190px;
+}
+
+.left-content{
+  max-width: clamp(25rem, 23.828rem + 2.344vw, 25.938rem)
+}
+
+@media (min-width: 1050px) {
+  .paranormal-item{
+    max-width: none !important;
+  }
+  .left-content{
+    width: clamp(28.125rem, 23.623rem + 8.475vw, 31.25rem);
+    max-width: 100% !important;
+  }
+  
+}
+
+
+
+.news-right {
+  max-width: clamp(18.125rem, 17.344rem + 1.563vw, 18.75rem);
+  width: fit-content;
+  height: 100%;
 }
 
 .paranormal-image {
@@ -409,11 +432,20 @@ p {
   display: none;
 }
 
-/* Media queries para responsive */
-@media (max-width: 768px) {
+.noticias-container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1050px) {
   .news-container {
     flex-direction: column;
     place-items: center;
+  }
+  .paranormal-container{
+    max-width: none !important;
   }
 
   .news-section {
@@ -422,13 +454,18 @@ p {
 
   .news-item {
     margin-bottom: 15px;
-    width: 100%;
-    max-width: fit-content;
+    width: 100% !important;
+    max-width: fit-content !important;
   }
 
   .news-item h2 {
     display: none;
   }
+}
+
+/* Media queries para responsive */
+@media (max-width: 768px) {
+  
 
   /* Mostrar elementos solo para móvil */
   .mobile-only {
@@ -548,7 +585,7 @@ p {
   margin: 0 auto;
 }
 
-.body-panel{
+.body-panel {
   display: flex;
   flex-direction: row;
 }
@@ -590,7 +627,15 @@ p {
 }
 
 .card-notice {
-  max-width: 750px;
+  width: fit-content;
+  max-width: clamp(25rem, 14.81rem + 21.739vw, 34.375rem)
+}
+
+@media screen and (max-width: 1050px) {
+  .card-notice {
+    max-width: 420px;
+  }
+
 }
 
 /* Estilo para las imágenes */
@@ -645,22 +690,26 @@ p {
 
 /* Responsividad */
 @media (max-width: 991px) {
-  .grupo-recetas-jugadores{
+  .grupo-recetas-jugadores {
     display: flex !important;
     flex-direction: column !important;
     gap: 15px;
   }
+
   .body-panel {
     flex-direction: column;
   }
+
   .news-banner-ad {
     display: none;
   }
-  .video-feature{
+
+  .video-feature {
     padding-bottom: 10px;
     border-bottom: 0.4px solid #104596;
   }
-  .group-notice{
+
+  .group-notice {
     padding-bottom: 10px;
     border-bottom: 0.4px solid #104596;
   }
@@ -679,7 +728,7 @@ p {
   flex-wrap: wrap;
 }
 
-.card-jugador{
+.card-jugador {
   background-color: #F3F8FF;
   border-radius: 20px;
   padding: 80px;
@@ -703,7 +752,7 @@ p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.section-tv{
+.section-tv {
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -762,7 +811,7 @@ p {
 
   .section-tv {
     padding: 20px;
-    
+
   }
 
   .banner-news {
@@ -775,19 +824,20 @@ p {
   background-color: #ffffff;
 }
 
-.text-tab{
+.text-tab {
   color: #104596;
 }
-.carousel-container{
+
+.carousel-container {
   width: 100% !important;
 }
 
-.slider-carte{
+.slider-carte {
   display: grid;
   grid-template-columns: 1fr
 }
 
-.grid-slider{
+.grid-slider {
   display: grid;
   grid-template-columns: 1fr
 }
@@ -805,12 +855,12 @@ p {
   border-radius: 8px;
 }
 
-.text-hora{
+.text-hora {
   color: #104596;
   font-size: 13px;
 }
 
-.card-loteria{
+.card-loteria {
   display: flex;
   flex-direction: row;
   padding: 12px;
@@ -820,7 +870,7 @@ p {
 
 .last-lottery h5 {
   color: #104596;
-  font-size:18px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -881,10 +931,11 @@ p {
     margin-right: auto;
     text-align: center;
   }
-  .slider-carte{
+
+  .slider-carte {
     min-width: none;
     max-width: clamp(18.75rem, -4.412rem + 88.235vw, 75rem);
-    
+
   }
 
 
@@ -1068,7 +1119,7 @@ p {
 .section-videos-horoscopo {
   background-color: #fff;
   margin-top: 20px;
-  
+
 }
 
 .section-videos-horoscopo .section-title {
@@ -1132,7 +1183,7 @@ p {
   /* Chrome, Safari, Opera */
 }
 
-.group-zodiac{
+.group-zodiac {
   display: flex;
   flex-direction: column;
   color: #104596;
@@ -1163,7 +1214,7 @@ p {
   height: 100%;
 }
 
-.group-horoscopo{
+.group-horoscopo {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
@@ -1194,7 +1245,7 @@ p {
   font-size: 0.85rem;
 }
 
-.group-notice{
+.group-notice {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -1202,11 +1253,12 @@ p {
 
 /* Responsive */
 @media (max-width: 768px) {
-  
+
   .video-feature img {
     height: auto;
   }
-  .group-notice{
+
+  .group-notice {
     flex-direction: column;
   }
 
@@ -1927,11 +1979,11 @@ p {
 }
 
 
-.mobile-only{
+.mobile-only {
   display: flex !important;
 }
 
-.desktop-only{
+.desktop-only {
   display: none !important;
 }
 
@@ -1958,6 +2010,7 @@ p {
   .desktop-only {
     display: flex !important;
   }
+
   .mobile-only {
     display: none !important;
   }
@@ -2272,7 +2325,6 @@ p {
     padding: 20px;
     border-radius: 20px;
     background-color: #e8f2fc
-    
   }
 
   .tv-header-mobile {
@@ -2829,21 +2881,21 @@ p {
   color: #333;
 }
 
-.group-categoria{
+.group-categoria {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   justify-items: center;
   gap: 10px;
 }
 
-.group-emisora{
+.group-emisora {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   justify-items: center;
   gap: 10px;
 }
 
-.tv-icons{
+.tv-icons {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   justify-items: center;
@@ -2855,14 +2907,17 @@ p {
   .col-lg-2-4 {
     width: 25%;
   }
-  .group-categoria{
+
+  .group-categoria {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  .group-emisora{
+
+  .group-emisora {
     grid-template-columns: repeat(3, 1fr);
   }
-  .tv-icons{
+
+  .tv-icons {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -3094,7 +3149,7 @@ p {
   position: relative;
 }
 
-.ferias-header{
+.ferias-header {
   flex-direction: row;
   gap: 20px;
 }
@@ -3104,16 +3159,19 @@ p {
   .col-lg-2-4 {
     width: 25%;
   }
-  .ferias-header{
+
+  .ferias-header {
     flex-direction: column;
   }
+
   .herramientas-seccion {
     width: 100%;
   }
-  .group-horoscopo{
+
+  .group-horoscopo {
     grid-template-columns: 1fr 1fr;
   }
-  
+
 }
 
 @media (max-width: 768px) {
@@ -3292,11 +3350,11 @@ p {
   margin-bottom: 15px;
 }
 
-.recetas-section{
+.recetas-section {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  
+
 }
 
 /* Estilos responsive */
@@ -3512,7 +3570,7 @@ p {
   color: white;
 }
 
-.img-emisora{
+.img-emisora {
   max-width: 100px;
   max-height: 100px;
 }
@@ -3622,7 +3680,7 @@ p {
   margin: 0;
 }
 
-.categoria-circle{
+.categoria-circle {
   max-width: 90px;
   max-height: 120px;
 }
@@ -3663,7 +3721,7 @@ p {
   margin: 0;
 }
 
-.grupo-recetas-jugadores{
+.grupo-recetas-jugadores {
   display: grid;
   grid-template-columns: 60% 40%;
   gap: 15px;
@@ -3937,6 +3995,7 @@ p {
   display: flex;
   align-items: center;
 }
+
 .day-night-checkbox {
   opacity: 0;
   width: 140px;
@@ -3948,6 +4007,7 @@ p {
   margin: 0;
   cursor: pointer;
 }
+
 .day-night-label {
   display: flex;
   align-items: center;
@@ -3963,6 +4023,7 @@ p {
   box-sizing: border-box;
   cursor: pointer;
 }
+
 .switch-slider {
   position: absolute;
   top: 6px;
@@ -3975,31 +4036,39 @@ p {
   transition: left 0.3s, background 0.3s;
   z-index: 1;
 }
-.day-night-checkbox:checked + .day-night-label {
+
+.day-night-checkbox:checked+.day-night-label {
   background: #174a8c;
 }
-.day-night-checkbox:checked + .day-night-label .switch-slider {
+
+.day-night-checkbox:checked+.day-night-label .switch-slider {
   left: 88px;
   background: #174a8c;
 }
+
 .switch-icon {
   z-index: 2;
   display: flex;
   align-items: center;
   transition: color 0.3s;
 }
+
 .switch-icon.sun svg {
   filter: drop-shadow(0 0 2px #174a8c);
 }
-.day-night-checkbox:checked + .day-night-label .switch-icon.sun svg {
+
+.day-night-checkbox:checked+.day-night-label .switch-icon.sun svg {
   opacity: 0.7;
 }
-.day-night-checkbox:checked + .day-night-label .switch-icon.moon svg {
+
+.day-night-checkbox:checked+.day-night-label .switch-icon.moon svg {
   opacity: 1;
 }
+
 .switch-icon.moon svg {
   opacity: 0.7;
 }
-.day-night-checkbox:checked + .day-night-label .switch-icon.moon svg {
+
+.day-night-checkbox:checked+.day-night-label .switch-icon.moon svg {
   opacity: 1;
 }
