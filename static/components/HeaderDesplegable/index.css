@@ -1,0 +1,31 @@
+.header-desplegable {
+  padding: 10px 20px 6px 20px;
+  background-color: #104596;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  border-radius: 20px;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+}
+.header-desplegable span, .header-desplegable i {
+  color: white;
+  width: max-content;
+}
+.header-desplegable.size-small {
+  padding: 0 15px;
+  height: 24px;
+}
+.header-desplegable.size-small span {
+  font-size: 10px;
+}
+.header-desplegable.size-medium {
+  padding: 0 25px;
+  height: 38px;
+}
+.header-desplegable.size-medium span {
+  font-size: 14px;
+}

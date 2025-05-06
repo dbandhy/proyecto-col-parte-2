@@ -12,6 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: max-content;
   /* COLORS */
   /* SIZES */
   /* ROUNDED */
@@ -25,6 +26,10 @@
   color: #104596;
   border: 1px solid #104596;
 }
+.button.color-danger {
+  background-color: #FF3641;
+  color: white;
+}
 .button.color-warning {
   background-color: #FFDA54;
   color: #104596;
@@ -33,20 +38,28 @@
   background-color: #188341;
   color: white;
 }
-.button.size-large {
-  font-size: 12px;
-  padding: 10px 30px;
+.button.size-small {
+  font-size: 8px;
+  height: 18px;
 }
 .button.size-medium {
+  font-size: 12px;
+  height: 32px;
+}
+.button.size-largue {
   font-size: 8px;
   padding: 5px 10px;
 }
-.button.rounded-large {
-  border-radius: 30px;
-}
-.button.rounded {
-  border-radius: 20px;
+.button.size-x-large {
+  font-size: 10px;
+  height: 34px;
 }
 .button.rounded-small {
   border-radius: 3px;
+}
+.button.rounded-medium {
+  border-radius: 20px;
+}
+.button.rounded-large {
+  border-radius: 30px;
 }

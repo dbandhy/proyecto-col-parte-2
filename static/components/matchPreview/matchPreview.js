@@ -45,7 +45,7 @@ class MatchPreviewComponent extends HTMLElement {
           </div>
           <div class="percentage">
             <span>15' +</span>
-            <button class="button color-success size-medium rounded-small">En Vivo</button>
+            <button class="button color-success size-small rounded-small">En Vivo</button>
           </div>
         </div>
       </div>

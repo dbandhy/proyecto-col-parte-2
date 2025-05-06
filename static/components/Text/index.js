@@ -1,8 +1,6 @@
-import { getDeviceByWidth } from '../../responsive'
-
 class TextComponent extends HTMLElement {
   static get observedAttributes() {
-    return ['size-mobile', 'size-desktop', 'text','weight','color', 'align'];
+    return ['size-mobile', 'size-desktop', 'text','weight','color', 'text-align', 'classnames'];
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
@@ -15,11 +13,11 @@ class TextComponent extends HTMLElement {
       this.render();
     }
     if (name === 'color') {
-      this.align = newValue;
+      this.color = newValue;
       this.render();
     }
-    if (name === 'align') {
-      this.align = newValue;
+    if (name === 'text-align') {
+      this.textAlign = newValue;
       this.render();
     }
     if (name === 'size-mobile') {
@@ -28,6 +26,10 @@ class TextComponent extends HTMLElement {
     }
     if (name === 'size-desktop') {
       this.sizeDesktop = newValue;
+      this.render();
+    }
+    if (name === 'classnames') {
+      this.classnames = newValue;
       this.render();
     }
   }
@@ -56,12 +58,20 @@ class TextComponent extends HTMLElement {
     return this._color
   }
 
-  set align (val) {
-    this._align = val
+  set text_align (val) {
+    this._textAlign = val
     this.render()
   }
-  get align () {
-    return this._align
+  get textAlign () {
+    return this._textAlign
+  }
+
+  set classnames (val) {
+    this._classnames = val
+    this.render()
+  }
+  get classnames () {
+    return this._classnames
   }
 
   set sizeMobile (val) {
@@ -78,17 +88,16 @@ class TextComponent extends HTMLElement {
   }
 
   generateClassnames () {
-    let classnames = ''
+    let classnames = 'text'
     const typeDevice = getDeviceByWidth()
 
-    console.log('typeDevice', typeDevice)
-
-    if (this.sizeMobile) {
-      
-      switch (this.sizeMobile) {
-      
-      }
-      classnames += ` size-mobile-${this.sizeMobile}`
+    switch (typeDevice) {
+      case 'mobile':
+        classnames += ` size-${this.sizeMobile}`
+        break
+      case 'desktop':
+        classnames += ` size-${this.sizeDesktop}`
+        break
     }
     if (this.weight) {
       classnames += ` weight-${this.weight}`
@@ -96,17 +105,22 @@ class TextComponent extends HTMLElement {
     if (this.color) {
       classnames += ` color-${this.color}`
     }
-    if (this.align) {
-      classnames += ` align-${this.align}`
+    if (this.textAlign) {
+      classnames += ` align-${this.textAlign}`
     }
+    if (this.classnames) {
+      classnames += ` ${this.classnames}`
+    }
+
     return classnames
   }
 
   render () {
     const classNames = this.generateClassnames()
-
+    this.style.height = 'max-content'
+    this.style.width = 'max-content'
     this.innerHTML = `
-      <span class=${classNames}>${this.text}</span>
+      <span class="${classNames}">${this.text}</span>
     `
   }
 }

@@ -1,0 +1,14 @@
+.header-news-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .header-news-section {
+    justify-content: center;
+  }
+  .header-news-section .button {
+    display: none;
+  }
+}

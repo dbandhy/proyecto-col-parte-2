@@ -1,6 +1,6 @@
 class NewsCardComponent extends HTMLElement {
   static get observedAttributes() {
-    return ['title','image','news','author'];
+    return ['category','image','title','author','orientation','variants'];
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
@@ -12,12 +12,20 @@ class NewsCardComponent extends HTMLElement {
       this.image = newValue;
       this.render();
     }
-    if (name === 'news') {
-      this.news = newValue;
+    if (name === 'category') {
+      this.category = newValue;
       this.render();
     }
     if (name === 'author') {
       this.author = newValue;
+      this.render();
+    }
+    if (name === 'orientation') {
+      this.orientation = newValue;
+      this.render();
+    }
+    if (name === 'variants') {
+      this.variants = newValue;
       this.render();
     }
   }
@@ -36,17 +44,23 @@ class NewsCardComponent extends HTMLElement {
 
   render () {
     this.innerHTML = `
-      <div class="card">
+      <div class="news-card-main">
         <img src="${this.image}" alt="">
-        <div class="title">
-          <span>${this.title}</span>
-        </div>
-        <div class="body">
-          <div>
-            <div class="play-icon"><div></div></div>
-            <span class="title">Aston Villa Confirmó dóndo jugará Jhon Durán</span>
+        <div class="content">
+          <div class="category">
+            <span>${this.category}</span>
           </div>
-          <div class="author">Por: Juan Carlos Garcia Sierra</div>
+          <div class="body">
+            <div class="title">
+              <div class="news-play-icon"><div></div></div>
+              <span>${this.title}</span>
+              <a href="#">Leer más</a>
+            </div>
+            <div class="author">
+              <span>Por:</span>
+              <span>Juan Carlos Garcia Sierra</span>
+            </div>
+          </div>
         </div>
       </div>
     `

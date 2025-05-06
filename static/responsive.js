@@ -15,6 +15,7 @@ const updateResponsiveAttributes = () => {
       noSubtitle: Array.from(document.getElementsByClassName('no-subtitle-responsive'))
     }
   }
+
   if (window.innerWidth < 768) {
     cards.distribution.largeContent.forEach(card => card.setAttribute('distribution', 'equals'));
     cards.distribution.largeImage.forEach(card => card.setAttribute('distribution', 'large-content'));
@@ -29,13 +30,10 @@ const updateResponsiveAttributes = () => {
   }
 };
 
-export const getDeviceByWidth = () => {
+const getDeviceByWidth = () => {
   const innerWidth = window.innerWidth;
   if (innerWidth < 768) {
     return 'mobile';
   }
   return 'desktop';
 }
-
-window.addEventListener('resize', updateResponsiveAttributes);
-updateResponsiveAttributes();

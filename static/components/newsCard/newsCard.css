@@ -1,45 +1,82 @@
-.card {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.news-card-main {
   display: flex;
   padding: 23px;
   background-color: white;
   width: 100%;
   gap: 12px;
+  flex-direction: column;
 }
-.card img {
+.news-card-main img {
   width: 100%;
   height: 150px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
-.card > .title {
+.news-card-main .content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.news-card-main .content .category {
   width: 100%;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   border-bottom: 0.25px solid #191C36;
 }
-.card > .title span {
+.news-card-main .content .category span {
   font-size: 15px;
   color: #191C36;
   font-weight: 700;
 }
-.card .body {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.news-card-main .content .body {
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 10px;
 }
-.card .body .title {
-  font-size: 25px;
-  color: #191C36;
+.news-card-main .content .body .title span, .news-card-main .content .body .title a {
   font-weight: 700;
 }
-.card .body .author {
+.news-card-main .content .body .title span:first-child {
+  font-size: 25px;
+  color: #191C36;
+}
+.news-card-main .content .body .title a {
+  font-size: 12px;
+  color: #104596;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+.news-card-main .content .body .author {
+  color: #191C36;
+  display: flex;
+  gap: 5px;
+}
+.news-card-main .content .body .author span {
   font-size: 9px;
   color: #191C36;
+}
+.news-card-main .content .body .author span:first-child {
   font-weight: 400;
+}
+.news-card-main .content .body .author span:last-child {
+  font-weight: 700;
+}
+
+.news-play-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FBC800;
+  position: relative;
+  display: inline-block;
+}
+.news-play-icon div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 8px solid #104596;
 }

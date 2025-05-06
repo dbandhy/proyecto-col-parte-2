@@ -1,6 +1,16 @@
 class CardNoticeComponent extends HTMLElement {
   static get observedAttributes() {
-    return ['orientation','distribution', 'category','news','author','subtitle','image','classnames'];
+    return [
+      'orientation',
+      'distribution',
+      'category',
+      'news',
+      'author',
+      'subtitle',
+      'image',
+      'video',
+      'classnames'
+    ];
   }
   
   attributeChangedCallback(name, oldValue, newValue) {
@@ -34,6 +44,10 @@ class CardNoticeComponent extends HTMLElement {
     }
     if (name === 'classnames') {
       this.classnames = newValue;
+      this.render();
+    }
+    if (name === 'video') {
+      this.video = newValue;
       this.render();
     }
   }
@@ -70,6 +84,46 @@ class CardNoticeComponent extends HTMLElement {
     return this._news
   }
 
+  set category(val) {
+    this._category = val;
+    this.render();
+  }
+  get category() {
+    return this._category
+  }
+
+  set author(val) {
+    this._author = val;
+    this.render();
+  }
+  get author() {
+    return this._author
+  }
+
+  set subtitle(val) {
+    this._subtitle = val;
+    this.render();
+  }
+  get subtitle() {
+    return this._subtitle
+  }
+
+  set image(val) {
+    this._image = val;
+    this.render();
+  }
+  get image() {
+    return this._image
+  }
+
+  set video(val) {
+    this._video = val;
+    this.render();
+  }
+  get video() {
+    return this._video
+  }
+
   connectedCallback () {
     this.render()
   }
@@ -85,7 +139,7 @@ class CardNoticeComponent extends HTMLElement {
     if (this.classnames) {
       classnames += ` ${this.classnames}`
     }
-    if (!this.image) {
+    if (!this.image && !this.video) {
       classnames += ' none-image'
     }
     return classnames
@@ -96,6 +150,7 @@ class CardNoticeComponent extends HTMLElement {
     this.innerHTML = `
       <div class="card-news ${classNames}">
         ${this.image ? `<img src="${this.image}" alt="news"></img>` : ''}
+        ${this.video ? `<iframe width="100" height="100" src="${this.video}" allowfullscreen></iframe>` : ''}
         <div class="news-content">
           ${this.category ? `<span class="category">${this.category}</span>` : ''}
           <span class="title">${this.news}</span>
