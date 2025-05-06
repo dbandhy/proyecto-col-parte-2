@@ -27,16 +27,23 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
+		<script src="../static/responsive.js"></script>
+
 		<link rel="stylesheet" href="../styles/actualidad.css" />
 		<link rel="stylesheet" href="../styles/style.css" />
 		<link rel="stylesheet" href="../styles/text.css">
-		<link rel="stylesheet" href="../static/components/cardNotice/cardNotice.css">
 		<!-- Estilos componentes -->
 		<link rel="stylesheet" href="../styles/header.css" />
 		<link rel="stylesheet" href="../styles/footer.css" />
+		<link rel="stylesheet" href="../static/components/cardNotice/cardNotice.css">
 		<link rel="stylesheet" href="../static/components/button/button.css">
-
+		<link rel="stylesheet" href="../static/components/Text/index.css">
+		<link rel="stylesheet" href="../static/components/HeaderNewsSection/index.css">
+		<!-- COMPONENTES -->
+		<script src="../static/components/button/index.js"></script>
+		<script src="../static/components/Text/index.js"></script>	
 		<script src="../static/components/cardNotice/cardNotice.js"></script>
+		<script src="../static/components/HeaderNewsSection/index.js"></script>
 	</head>
 	<body class="body-container">
 		<div id="main-header"></div>
@@ -132,7 +139,6 @@
 			<section class="main-section-content bg-white">
 				<div class="container-max-width d-lg-flex justify-content-center align-items-center w-100">
 					<div class="section-secondary-news">
-						<!-- <div class="content"> -->
 							<div class="news-advanced">
 								<section class="button-bar mt-4 header">
 									<div class="container">
@@ -155,6 +161,10 @@
 											category="FÚTBOL"
 											author="Por Juan Carlos Garcia Sierra"
 											distribution="large-image"
+											class="
+												no-category-responsive
+												distribution-none-responsive
+											"
 										></card-notice-component>
 									</div>
 									<div class="news-two">
@@ -165,7 +175,7 @@
 											category="FÚTBOL"
 											author="Por Juan Carlos Garcia Sierra"
 											distribution="equals"
-											class="orientation-vertical-responsive"
+											class="orientation-vertical-responsive no-category-responsive"
 										></card-notice-component>
 									</div>
 									<div class="news-three">
@@ -176,7 +186,7 @@
 											category="FÚTBOL"
 											author="Por Juan Carlos Garcia Sierra"
 											distribution="equals"
-											class="orientation-vertical-responsive"
+											class="orientation-vertical-responsive no-category-responsive"
 										></card-notice-component>
 									</div>
 									<div class="news-fourth">
@@ -187,7 +197,7 @@
 											category="FÚTBOL"
 											author="Por Juan Carlos Garcia Sierra"
 											distribution="equals"
-											class="orientation-vertical-responsive"
+											class="orientation-vertical-responsive no-category-responsive"
 										></card-notice-component>
 									</div>
 									<div class="news-five">
@@ -198,7 +208,7 @@
 											category="FÚTBOL"
 											author="Por Juan Carlos Garcia Sierra"
 											distribution="equals"
-											class="orientation-vertical-responsive"
+											class="orientation-vertical-responsive no-category-responsive"
 										></card-notice-component>
 									</div>
 									<div class="button-view-more justify-content-center">
@@ -250,7 +260,6 @@
 										<h2 class="section-title more-news-title m-0 p-0">MÁS NOTICIAS</h2>
 										<button class="button">Ver todo</button>
 									</div>
-									
 									<div class="news-list">
 										<card-notice-component
 											image="../assets/img/breaking-news-10.png"
@@ -259,7 +268,7 @@
 											category="FÚTBOL"
 											author="Por Juan Carlos Garcia Sierra"
 											distribution="large-image"
-											class="orientation-vertical-responsive"
+											class="orientation-vertical-responsive no-category-responsive distribution-none-responsive"
 										></card-notice-component>
 										<card-notice-component
 											image="../assets/img/breaking-news-10.png"
@@ -268,7 +277,7 @@
 											category="FÚTBOL"
 											author="Por Juan Carlos Garcia Sierra"
 											distribution="large-image"
-											class="orientation-vertical-responsive"
+											class="orientation-vertical-responsive no-category-responsive distribution-none-responsive"
 										></card-notice-component>
 										<card-notice-component
 											image="../assets/img/breaking-news-10.png"
@@ -277,7 +286,7 @@
 											category="FÚTBOL"
 											author="Por Juan Carlos Garcia Sierra"
 											distribution="large-content"
-											class="distribution-equals-responsive"
+											class="distribution-equals-responsive no-category-responsive"
 										></card-notice-component>
 										<card-notice-component
 											image="../assets/img/breaking-news-10.png"
@@ -286,7 +295,7 @@
 											category="FÚTBOL"
 											author="Por Juan Carlos Garcia Sierra"
 											distribution="large-content"
-											class="distribution-equals-responsive"
+											class="distribution-equals-responsive no-category-responsive"
 										></card-notice-component>
 										<card-notice-component
 											image="../assets/img/breaking-news-10.png"
@@ -295,7 +304,7 @@
 											category="FÚTBOL"
 											author="Por Juan Carlos Garcia Sierra"
 											distribution="large-content"
-											class="distribution-equals-responsive"
+											class="distribution-equals-responsive no-category-responsive"
 										></card-notice-component>
 										<card-notice-component
 											image="../assets/img/breaking-news-10.png"
@@ -304,10 +313,9 @@
 											category="FÚTBOL"
 											author="Por Juan Carlos Garcia Sierra"
 											distribution="large-content"
-											class="distribution-equals-responsive"
+											class="distribution-equals-responsive no-category-responsive"
 										></card-notice-component>
 									</div>
-									
 									<div class="d-flex justify-content-center">
 										<a href="#" class="button">Ver más</a>
 									</div>
@@ -414,103 +422,83 @@
 										<img src="../assets/img/flyer-desk.png" alt="flyer">
 									</div>
 								</section>
-								<section class="multimedia">
-									<div class="multimedia-section">
-										<div class="grid-articles-2 grid-multimedia">
-											<div class="d-flex justify-content-between align-items-center hide-800">
-												<h2 class="section-title m-0 p-0">MULTIMEDIA</h2>
-												<a href="#" class="button">Ver todo</a>
-											</div>
-											<div class="card-article-2 card-article-2-principal card-bottom-separator pt-2">
-												<img src="/assets/img/breaking-news-1.png" alt="Maduro y Petro" />
-												<div class="card-article-2-content">
-													<p class="card-article-2-tag">CINE</p>
-													<h2 class="card-article-2-title">
-														Reapareció María Corina Machado: "Estoy bien, estoy segura"
-													</h2>
-													<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
-													<p>
-														María Corina Machado reaparece en un video y dice que ya está libre. Leer más
-														<a href="#" class="card-article-2-leer-mas">Leer más</a>
-													</p>
-												</div>
-											</div>
-											<div class="grid-articles-2 card-bottom-separator">
-												<div class="card-article-2">
-													<img src="/assets/img/breaking-news-1.png" alt="Maduro y Petro" />
-													<div class="card-article-2-content">
-														<p class="card-article-2-tag">CINE</p>
-														<h2 class="card-article-2-title">
-															La hora en la que arranca el nuevo capítulo de "Dragon Ball Daima"
-														</h2>
-														<a href="#" class="card-article-2-leer-mas">Leer más</a>
-														<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
-													</div>
-												</div>
-												<div class="card-article-2">
-													<img src="/assets/img/breaking-news-1.png" alt="Maduro y Petro" />
-													<div class="card-article-2-content">
-														<p class="card-article-2-tag">CINE</p>
-														<h2 class="card-article-2-title">
-															La hora en la que arranca el nuevo capítulo de "Dragon Ball Daima"
-														</h2>
-														<a href="#" class="card-article-2-leer-mas">Leer más</a>
-														<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
-													</div>
-												</div>
-												<div class="card-article-2">
-													<img src="/assets/img/breaking-news-1.png" alt="Maduro y Petro" />
-													<div class="card-article-2-content">
-														<p class="card-article-2-tag">CINE</p>
-														<h2 class="card-article-2-title">
-															La hora en la que arranca el nuevo capítulo de "Dragon Ball Daima"
-														</h2>
-														<a href="#" class="card-article-2-leer-mas">Leer más</a>
-														<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
-													</div>
-												</div>
-												<div class="card-article-2">
-													<img src="/assets/img/breaking-news-1.png" alt="Maduro y Petro" />
-													<div class="card-article-2-content">
-														<p class="card-article-2-tag">CINE</p>
-														<h2 class="card-article-2-title">
-															La hora en la que arranca el nuevo capítulo de "Dragon Ball Daima"
-														</h2>
-														<a href="#" class="card-article-2-leer-mas">Leer más</a>
-														<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="d-flex justify-content-center my-3">
-											<button class="button">Ver más</button>
-										</div>
+								<div class="section-multimedia">
+									<header-news-section
+										title-text="MULTIMEDIA"
+										button-text="Ver todo"
+									></header-news-section>
+									<div class="videos">
+										<card-notice-component
+											video="https://www.youtube.com/embed/Q7yrRaY488A?si=07MGk24bTobMn2mB"
+											news="Donald Trump reconoció a Edmundo González"
+											category="COLOMBIANOS"
+											orientation="vertical"
+											author="Por Juan Carlos Garcia Sierra"
+											distribution="large-image"
+											subtitle="La ayuda a quien lo necesita no solo beneficia a una persona comunidades"
+											class="no-category-responsive"
+										></card-notice-component>
+										<card-notice-component
+											video="https://www.youtube.com/embed/Q7yrRaY488A?si=07MGk24bTobMn2mB"
+											news="Donald Trump reconoció a Edmundo González"
+											category="COLOMBIANOS"
+											orientation="horizontal"
+											author="Por Juan Carlos Garcia Sierra"
+											distribution="large-content"
+											subtitle="La ayuda a quien lo necesita no solo beneficia a una persona comunidades"
+											class="distribution-equals-responsive no-category-responsive no-subtitle-responsive"
+										></card-notice-component>
+										<card-notice-component
+											video="https://www.youtube.com/embed/Q7yrRaY488A?si=07MGk24bTobMn2mB"
+											news="Donald Trump reconoció a Edmundo González"
+											category="COLOMBIANOS"
+											orientation="horizontal"
+											author="Por Juan Carlos Garcia Sierra"
+											distribution="large-content"
+											subtitle="La ayuda a quien lo necesita no solo beneficia a una persona comunidades"
+											class="distribution-equals-responsive no-category-responsive no-subtitle-responsive"
+										></card-notice-component>
+										<card-notice-component
+											video="https://www.youtube.com/embed/Q7yrRaY488A?si=07MGk24bTobMn2mB"
+											news="Donald Trump reconoció a Edmundo González"
+											category="COLOMBIANOS"
+											orientation="horizontal"
+											author="Por Juan Carlos Garcia Sierra"
+											distribution="large-content"
+											subtitle="La ayuda a quien lo necesita no solo beneficia a una persona comunidades"
+											class="distribution-equals-responsive no-category-responsive no-subtitle-responsive"
+										></card-notice-component>
+										<card-notice-component
+											video="https://www.youtube.com/embed/Q7yrRaY488A?si=07MGk24bTobMn2mB"
+											news="Donald Trump reconoció a Edmundo González"
+											category="COLOMBIANOS"
+											orientation="horizontal"
+											author="Por Juan Carlos Garcia Sierra"
+											distribution="large-content"
+											subtitle="La ayuda a quien lo necesita no solo beneficia a una persona comunidades"
+											class="distribution-equals-responsive no-category-responsive no-subtitle-responsive"
+										></card-notice-component>
 									</div>
-								</section>
+								</div>	
 								<section class="paperwork">
 									<div class="grid-tramitologia">
 										<h2 class="section-title m-0 p-0">TRAMITOLOGÍA</h2>
-										<!-- Trámite 1 -->
 										<div class="card-tramite-item bg-white">
 											<img src="/assets/icons/logo_visa.png" alt="Visa" class="img-fluid" />
 											<h3 class="tramite-title">Solicitud de Expedición De Visa</h3>
 										</div>
-										<!-- Trámite 2 -->
 										<div class="card-tramite-item bg-white">
 											<img src="/assets/icons/logo_id.png" alt="Tarjeta de Identidad" class="img-fluid" />
 											<h3 class="tramite-title">Trámite Tarjeta de Identidad</h3>
 										</div>
-										<!-- Trámite 3 -->
 										<div class="card-tramite-item bg-white">
 											<img src="/assets/icons/logo_passport.png" alt="Pasaporte" class="img-fluid" />
 											<h3 class="tramite-title">Trámite para Obtener el Pasaporte</h3>
 										</div>
-										<!-- Trámite 4 -->
 										<div class="card-tramite-item bg-white">
 											<img src="/assets/icons/logo_sign.png" alt="Apostillar" class="img-fluid" />
 											<h3 class="tramite-title">¿Cómo apostillar un Documento?</h3>
 										</div>
-										<!-- Trámite 5 -->
 										<div class="card-tramite-item bg-white">
 											<img src="/assets/icons/logo_document.png" alt="Documentos" class="img-fluid" />
 											<h3 class="tramite-title">Documentos para estudiar o trabajar en el exterior</h3>
@@ -524,7 +512,6 @@
 									<img src="../assets/img/banner-copa-america.png" alt="" srcset="">
 								</div>
 							</div>
-						<!-- </div> -->
 					</div>
 				</div>
 			</section>
@@ -535,5 +522,8 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script src="../static/loadComponents.js"></script>
+		<script>
+			updateResponsiveAttributes()
+		</script>
 	</body>
 </html>
