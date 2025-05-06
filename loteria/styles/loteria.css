@@ -25,6 +25,664 @@
     }
 }
 
+/* Estilos para la sección del banner de resultados de lotería */
+.lottery-result-banner {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+  }
+  
+  /* Estilos para escritorio */
+  .lottery-banner {
+	background-color: #104596;
+	position: relative;
+	display: flex;
+	min-height: 300px;
+	overflow: hidden;
+	border-radius: 0;
+  }
+  
+  .lottery-banner::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('../assets/img/curva-amarilla.png') no-repeat;
+	background-size: contain;
+	z-index: 1;
+  }
+  
+  .lottery-banner-content {
+	position: relative;
+	z-index: 2;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 50%;
+  }
+  
+  .lottery-info {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+  }
+  
+  .lottery-logo-container {
+	width: 120px;
+	height: 80px;
+	background-color: #FFD700;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 20px;
+  }
+  
+  .lottery-logo {
+	max-width: 80%;
+	max-height: 80%;
+  }
+  
+  .lottery-title {
+	color: #FFD700;
+  }
+  
+  .lottery-title h2 {
+	font-size: 28px;
+	font-weight: bold;
+	margin: 0;
+  }
+  
+  .lottery-title p {
+	font-size: 18px;
+	margin: 5px 0 0;
+  }
+  
+  .lottery-date {
+	color: white;
+	margin-bottom: 20px;
+  }
+  
+  .lottery-date p:first-child {
+	font-size: 16px;
+	margin: 0;
+  }
+  
+  .lottery-date p:last-child {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 5px 0 0;
+  }
+  
+  .winning-number {
+	color: white;
+  }
+  
+  .winning-number p {
+	font-size: 18px;
+	margin: 0 0 10px;
+  }
+  
+  .number-circles {
+	display: flex;
+	gap: 10px;
+  }
+  
+  .number-circle {
+	width: 60px;
+	height: 60px;
+	background-color: #FFD700;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 30px;
+	font-weight: bold;
+	color: #104596;
+  }
+  
+  .lottery-banner-image {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	z-index: 2;
+  }
+  
+  .lottery-banner-image img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+  }
+  
+  .lottery-coins {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+	width: 40%;
+	max-height: 100px;
+  }
+  
+  .lottery-coins img {
+	width: 100%;
+	height: auto;
+  }
+  
+  /* Barra inferior con próximo sorteo - Escritorio */
+  .next-draw-bar {
+	background-color: #FFD700;
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 30px;
+	align-items: center;
+  }
+  
+  .quinta-number {
+	display: flex;
+	align-items: center;
+  }
+  
+  .quinta-number span {
+	font-size: 18px;
+	font-weight: bold;
+	color: #104596;
+	margin-right: 15px;
+  }
+  
+  .quinta-circle {
+	width: 50px;
+	height: 50px;
+	background-color: #104596;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+	font-weight: bold;
+	color: #FFD700;
+  }
+  
+  .next-draw-timer {
+	display: flex;
+	align-items: center;
+  }
+  
+  .next-draw-timer span {
+	font-size: 18px;
+	font-weight: bold;
+	color: #104596;
+	margin-right: 15px;
+  }
+  
+  .timer {
+	font-size: 32px;
+	font-weight: bold;
+	color: #104596;
+  }
+  
+  /* Estilos para móvil */
+  .lottery-banner-mobile {
+	background-color: #104596;
+	position: relative;
+	padding: 20px;
+	overflow: hidden;
+  }
+  
+  .lottery-banner-mobile::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('../assets/img/curva-amarilla.png') no-repeat;
+	background-size: cover;
+	z-index: 1;
+  }
+  
+  .lottery-mobile-header {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+  }
+  
+  .lottery-logo-container-mobile {
+	width: 80px;
+	height: 60px;
+	background-color: #FFD700;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 15px;
+  }
+  
+  .lottery-logo-mobile {
+	max-width: 80%;
+	max-height: 80%;
+  }
+  
+  .lottery-title-mobile {
+	color: #FFD700;
+  }
+  
+  .lottery-title-mobile h2 {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0;
+  }
+  
+  .lottery-title-mobile p {
+	font-size: 14px;
+	margin: 2px 0 0;
+  }
+  
+  .lottery-date-mobile {
+	position: relative;
+	z-index: 2;
+	color: white;
+	margin-bottom: 15px;
+  }
+  
+  .lottery-date-mobile p:first-child {
+	font-size: 14px;
+	margin: 0;
+  }
+  
+  .lottery-date-mobile p:last-child {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 2px 0 0;
+  }
+  
+  .winning-number-mobile {
+	position: relative;
+	z-index: 2;
+	color: white;
+	margin-bottom: 15px;
+  }
+  
+  .winning-number-mobile p {
+	font-size: 16px;
+	margin: 0 0 8px;
+  }
+  
+  .number-circles-mobile {
+	display: flex;
+	gap: 8px;
+  }
+  
+  .number-circle-mobile {
+	width: 40px;
+	height: 40px;
+	background-color: #FFD700;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 22px;
+	font-weight: bold;
+	color: #104596;
+  }
+  
+  /* Barra inferior con próximo sorteo - Móvil */
+  .next-draw-bar-mobile {
+	background-color: #FFD700;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 15px;
+	align-items: center;
+	margin: 0 -20px -20px;
+  }
+  
+  .quinta-number-mobile {
+	display: flex;
+	align-items: center;
+  }
+  
+  .quinta-number-mobile span {
+	font-size: 14px;
+	font-weight: bold;
+	color: #104596;
+	margin-right: 10px;
+  }
+  
+  .quinta-circle-mobile {
+	width: 30px;
+	height: 30px;
+	background-color: #104596;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	font-weight: bold;
+	color: #FFD700;
+  }
+  
+  .next-draw-timer-mobile {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+  }
+  
+  .next-draw-timer-mobile span {
+	font-size: 14px;
+	font-weight: bold;
+	color: #104596;
+  }
+  
+  .timer-mobile {
+	font-size: 22px;
+	font-weight: bold;
+	color: #104596;
+  }
+  
+  /* Media queries para ajustes responsivos */
+  @media (max-width: 767.98px) {
+	.lottery-result-banner {
+	  padding: 0;
+	}
+  }
+
+  /* Estilos para la sección de información sobre lotería */
+.lottery-info-container {
+	background-color: #f5f7fa;
+	border-radius: 8px;
+	padding: 25px;
+	margin-bottom: 30px;
+  }
+  
+  .text-primary {
+	color: #104596 !important;
+  }
+  
+  .lottery-info-content {
+	margin-bottom: 30px;
+  }
+  
+  .lottery-info-content p {
+	margin-bottom: 15px;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #333;
+  }
+  
+  .lottery-info-content strong {
+	font-weight: bold;
+  }
+  
+  .disclaimer {
+	font-size: 12px;
+	color: #666;
+	line-height: 1.4;
+  }
+  
+  .recommended-videos {
+	margin-top: 30px;
+  }
+  
+  .videos-title {
+	color: #104596;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 15px;
+  }
+  
+  .video-container {
+	position: relative;
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	border-radius: 8px;
+  }
+  
+  .video-thumbnail {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+  
+  .video-play-button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50px;
+	height: 50px;
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+  }
+  
+  .video-overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 15px;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+	color: white;
+  }
+  
+  .video-title {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 5px;
+  }
+  
+  .video-category {
+	font-size: 14px;
+	background-color: #00a651;
+	display: inline-block;
+	padding: 5px 15px;
+	border-radius: 3px;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 767.98px) {
+	.lottery-info-container {
+	  padding: 15px;
+	}
+	
+	.lottery-info-content p {
+	  font-size: 13px;
+	}
+	
+	.disclaimer {
+	  font-size: 11px;
+	}
+	
+	.video-container {
+	  height: 180px;
+	}
+  }
+
+/* Estilos para la sección de Resultados de Loterías */
+.lottery-results-section {
+	padding: 30px 0;
+	background-color: #f5f7fa;
+  }
+  
+  .lottery-header {
+	margin-bottom: 25px;
+  }
+  
+  .section-title {
+	color: #104596;
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0;
+  }
+  
+  /* Estilos para escritorio */
+  .lottery-grid {
+	margin-top: 20px;
+  }
+  
+  .lottery-card {
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+	padding: 20px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+  }
+  
+  .lottery-logo {
+	width: 100%;
+	height: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 15px;
+	background-color: #fff;
+  }
+  
+  .lottery-logo img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
+  }
+  
+  .lottery-name {
+	font-size: 16px;
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 10px;
+  }
+  
+  .lottery-result {
+	font-size: 14px;
+	color: #666;
+	margin-bottom: 15px;
+	line-height: 1.4;
+  }
+  
+  .ver-mas-btn {
+	background-color: #104596;
+	color: white;
+	padding: 8px 20px;
+	border-radius: 20px;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: auto;
+  }
+  
+  .ver-mas-btn:hover {
+	background-color: #0d3a7d;
+  }
+  
+  /* Estilos para móvil */
+  .lottery-mobile {
+	padding: 0 15px;
+  }
+  
+  .lottery-mobile-header {
+	margin-bottom: 20px;
+  }
+  
+  .lottery-mobile-header h2 {
+	color: #104596;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0;
+  }
+  
+  .lottery-card-mobile {
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+	padding: 15px;
+	margin-bottom: 15px;
+  }
+  
+  .lottery-logo-mobile {
+	width: 100%;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 10px;
+  }
+  
+  .lottery-logo-mobile img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
+  }
+  
+  .lottery-name-mobile {
+	font-size: 16px;
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 5px;
+  }
+  
+  .lottery-result-mobile {
+	font-size: 14px;
+	color: #666;
+	margin-bottom: 5px;
+	line-height: 1.4;
+  }
+  
+  .lottery-author {
+	font-size: 12px;
+	color: #888;
+	margin: 0;
+  }
+  
+  .leer-mas {
+	color: #104596;
+	font-weight: bold;
+	text-decoration: none;
+  }
+  
+  /* Media queries para ajustes responsivos */
+  @media (max-width: 767.98px) {
+	.lottery-results-section {
+	  padding: 20px 0;
+	}
+	
+	.lottery-header {
+	  padding: 0 15px;
+	}
+  }
+  
+  /* Estilos para la barra lateral de navegación en móvil */
+  .sidebar-nav {
+	position: fixed;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: #ffcc00;
+	padding: 10px 5px;
+	border-radius: 5px 0 0 5px;
+	z-index: 100;
+	writing-mode: vertical-lr;
+	text-orientation: mixed;
+	font-weight: bold;
+	font-size: 12px;
+	letter-spacing: 1px;
+  }
+
 /* Lotería Section Styles */
 .loteria-section {
 	width: 100%;
@@ -88,6 +746,8 @@
 	background-size: cover;
 	background-position: center;
   }
+
+  
   
   /* Using the provided path for icons */
   .chontico-noche {
@@ -142,6 +802,112 @@
   .game-time i {
 	margin-right: 5px;
   }
+
+  /* Estilos para la sección de Resultados Miloto */
+.miloto-results-section {
+	width: 100%;
+	max-width: var(--max-width-content);
+	margin: 0 auto;
+	padding: 20px 0;
+	border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .miloto-results-container {
+	display: flex;
+	justify-content:center;
+	align-items:flex-start;
+	padding: 10px 0;
+  }
+  
+  .miloto-results-content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-right: 50px;
+  }
+  
+  .miloto-results-title {
+	color: #104596;
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0 0 5px 0;
+  }
+  
+  .miloto-results-date {
+	color: #333;
+	font-size: 16px;
+	margin: 0 0 15px 0;
+  }
+  
+  .miloto-results-button {
+	background-color: #104596;
+	color: white;
+	padding: 8px 20px;
+	border-radius: 20px;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+	transition: all 0.3s ease;
+  }
+  
+  .miloto-results-button:hover {
+	background-color: white;
+	color: #104596;
+  }
+  
+  .miloto-results-logo {
+	max-width: 300px;
+  }
+  
+  .miloto-logo-image {
+	width: 100%;
+	height: auto;
+  }
+  
+  /* Solo mostrar en escritorio */
+  @media (max-width: 767.98px) {
+	.miloto-results-section {
+	  display: none;
+	}
+  }
+
+  .sc-section {
+	padding: 30px 0;
+	background-color: #fff;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.sc-header {
+	margin-bottom: 25px;
+}
+
+/* Estilos para escritorio */
+.sc-grid {
+	display: flex;
+	gap: 30px; /* Aumentado a 30px para mayor separación */
+	justify-content: space-between;
+}
+
+.sc-card {
+	width: calc(33.33% - 20px); /* Ajustado para el nuevo gap */
+	background-color: #f5f7fa;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.sc-image {
+	width: 100%;
+	height: 150px;
+	overflow: hidden;
+	position: relative; /* Para la esquina doblada */
+}
+
+.sc-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
   
   /* Poster Styles */
   .poster-container {
@@ -318,176 +1084,7 @@
 	}
 }
 
-/* Estilos para la sección Sobre Colombia */
-.section-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #000000;
-    text-transform: lowercase;
-}
 
-.sobre-colombia-description {
-    max-width: 600px;
-    margin: 0 auto;
-    font-size: 0.9rem;
-    color: #555;
-}
-
-.sobre-colombia-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 15px;
-}
-
-.sobre-colombia-card {
-    background: #fff;
-    overflow: hidden;
-}
-
-.card-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.card-content {
-    padding: 18px;
-}
-
-.card-title {
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: #104596;
-    margin-bottom: 5px;
-}
-
-.card-text {
-    font-size: 0.8rem;
-    color: #555;
-    margin-bottom: 5px;
-}
-
-.card-badge {
-    display: inline-block;
-    color: #104596;
-    font-size: 0.7rem;
-    margin-bottom: 5px;
-}
-
-.card-article-2-leer-mas {
-    color: #104596;
-    font-size: 0.8rem;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-/* Media queries para desktop */
-@media (min-width: 992px) {
-    .section-title {
-        font-size: 1.5rem;
-    }
-    
-    .sobre-colombia-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas:
-            "card1 central central card2"
-            "card3 central central card4";
-        gap: 20px;
-    }
-    
-    .sobre-colombia-card:nth-child(1) {
-        grid-area: card1;
-    }
-    
-    .sobre-colombia-card:nth-child(2) {
-        grid-area: card2;
-    }
-    
-    .sobre-colombia-card:nth-child(3) {
-        grid-area: central;
-    }
-    
-    .sobre-colombia-card:nth-child(4) {
-        grid-area: card3;
-    }
-    
-    .sobre-colombia-card:nth-child(5) {
-        grid-area: card4;
-    }
-    
-    .sobre-colombia-card-central .card-image {
-        height: auto;
-    }
-    
-    .sobre-colombia-card-central .card-title {
-        font-size: 1.1rem;
-    }
-    
-    .card-title {
-        font-size: 1rem;
-    }
-    
-    .card-content {
-        padding: 15px;
-    }
-}
-
-
-
-.diccionario-popular {
-	background-color: #f3f8ff;
-	padding: 30px ;
-	text-align: center;
-  }
-  
-  .diccionario-popular h2 {
-	color: #104596;
-	font-size: 24px;
-	font-weight: bold;
-	margin-bottom: 15px;
-  }
-  
-  .diccionario-popular p {
-	margin-bottom: 20px;
-	margin-top: 20px;
-  }
-  
-  .palabras-populares {
-	display: flex;
-	justify-content: center;
-	gap: 40px;
-	margin-bottom: 60px;
-	margin-top: 60px;
-	flex-wrap: wrap;
-  }
-  
-  .palabras-populares a {
-	background-color: #104596;
-	color: white;
-	padding: 6px 30px;
-	border-radius: 20px;
-	text-decoration: none;
-	font-size: 14px;
-	font-weight: 700;
-	font-style: Verdana;
-	font-weight: bold;
-  }
-  
-  .alfabeto {
-	display: flex;
-	justify-content: center;
-	gap: 25px;
-	flex-wrap: wrap;
-	margin-bottom: 60px;
-  }
-  
-  .alfabeto a {
-	color: #104596;
-	text-decoration: none;
-	font-weight: bold;
-	font-style: Verdana;
-  }
 /* Estilos para la sección de Mitos Colombianos */
 .mitos-colombianos-section {
 	padding: 30px 0;
@@ -502,7 +1099,7 @@
   }
   
   .section-title {
-	color: #104596;
+	color: #0066ff;
 	font-size: 24px;
 	font-weight: bold;
 	margin: 0;
@@ -749,7 +1346,7 @@
   
   .section-title {
 	color: #104596;
-	font-size: 24px;
+	font-size: 18px;
 	font-weight: bold;
 	margin: 0;
   }
@@ -1493,3 +2090,199 @@
 	border-radius: 4px;
 	margin-bottom: 1rem;
 }
+
+/* Estilos para la sección de sorteos recientes */
+.sorteos-recientes-container {
+	background-color: #fff;
+	border-radius: 8px;
+	padding: 20px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .sorteos-title {
+	color: #104596;
+	font-size: 24px;
+	font-weight: bold;
+  }
+  
+  /* Estilos para el encabezado de sorteos */
+  .dropdown-lottery {
+	background-color: #FFD700;
+	color: #333;
+	border: none;
+	border-radius: 20px;
+	padding: 8px 20px;
+	font-weight: bold;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+  }
+  
+  .search-date-input {
+	border: 1px solid #ddd;
+	border-radius: 20px;
+	padding: 8px 15px;
+	padding-right: 40px;
+	width: 200px;
+  }
+  
+  .btn-refresh {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #FFD700;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+  }
+  
+  /* Estilos para los títulos de las columnas */
+  .sorteo-title-row {
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+	justify-content: space-between;
+  }
+  
+  .sorteo-title-left {
+	flex: 1;
+  }
+  
+  .sorteo-title-right {
+	width: 100px;
+	text-align: center;
+  }
+  
+  .sorteo-title-left h4, .sorteo-title-right h4 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #333;
+  }
+  
+  /* Estilos para las filas de resultados */
+  .sorteo-day-row {
+	padding: 15px 0;
+	border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .sorteo-date {
+	width: 180px;
+	font-size: 14px;
+	color: #333;
+  }
+  
+  .sorteo-numbers {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+  }
+  
+  .number-circle {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #ff3b3b;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 18px;
+  }
+  
+  .quinta-number {
+	width: 100px;
+	display: flex;
+	justify-content: center;
+  }
+  
+  .quinta-circle {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #FFD700;
+	color: #104596;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 18px;
+  }
+  
+  .btn-ver-mas-resultados {
+	background-color: #104596;
+	color: white;
+	border: none;
+	border-radius: 20px;
+	padding: 8px 15px;
+	font-size: 14px;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 991.98px) {
+	.sorteo-date {
+	  width: 120px;
+	  font-size: 12px;
+	}
+	
+	.number-circle, .quinta-circle {
+	  width: 30px;
+	  height: 30px;
+	  font-size: 14px;
+	}
+	
+	.sorteo-numbers {
+	  gap: 5px;
+	}
+	
+	.quinta-number {
+	  width: 50px;
+	}
+	
+	.search-date-input {
+	  width: 150px;
+	}
+  }
+  
+  @media (max-width: 767.98px) {
+	.sorteos-header {
+	  flex-direction: column;
+	  align-items: flex-start;
+	}
+	
+	.dropdown-container, .search-date-container {
+	  margin-bottom: 10px;
+	  width: 100%;
+	}
+	
+	.dropdown-lottery, .search-date-input {
+	  width: 100%;
+	}
+	
+	.refresh-button {
+	  align-self: center;
+	  margin-left: 0;
+	  margin-top: 10px;
+	}
+	
+	.sorteo-day-row {
+	  flex-direction: column;
+	  align-items: flex-start;
+	}
+	
+	.sorteo-date {
+	  width: 100%;
+	  margin-bottom: 10px;
+	}
+	
+	.sorteo-numbers {
+	  margin-bottom: 10px;
+	}
+	
+	.quinta-number {
+	  width: 100%;
+	  justify-content: flex-start;
+	}
+  }

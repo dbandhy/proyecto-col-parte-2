@@ -87,122 +87,408 @@
 	</head>
 	<body class="body-container">
 		<div id="main-header"></div>
-		<!-- Section for Lotería Images -->
-		<section class="loteria-section">
-			<!-- Desktop Layout -->
-			<div class="lottery-container">
-			<!-- Lottery Games Section -->
-			<div class="lottery-content">
-				<h2 class="lottery-title">Loterías que se juegan hoy</h2>
-				
-				<div class="lottery-games-container">
-				<!-- Row 1 -->
-				<div class="lottery-game">
-					<div class="game-icon chontico-noche"></div>
-					<p class="game-name">Chontico Noche</p>
-					<div class="game-time"><i class="far fa-clock"></i> 15:30</div>
-				</div>
-				
-				<div class="lottery-game">
-					<div class="game-icon revancha"></div>
-					<p class="game-name">Revancha</p>
-					<div class="game-time"><i class="far fa-clock"></i> 15:30</div>
-				</div>
-				
-				<div class="lottery-game">
-					<div class="game-icon pijao"></div>
-					<p class="game-name">Pijao De Oro</p>
-					<div class="game-time"><i class="far fa-clock"></i> 15:30</div>
-				</div>
-				
-				<div class="lottery-game">
-					<div class="game-icon dorado"></div>
-					<p class="game-name">Dorado Tarde</p>
-					<div class="game-time"><i class="far fa-clock"></i> 15:30</div>
-				</div>
-				
-				<!-- Row 2 -->
-				<div class="lottery-game">
-					<div class="game-icon fantastica"></div>
-					<p class="game-name">Fantástica Noche</p>
-					<div class="game-time"><i class="far fa-clock"></i> 15:30</div>
-				</div>
-				
-				<div class="lottery-game">
-					<div class="game-icon saman"></div>
-					<p class="game-name">Samán De La Suerte</p>
-					<div class="game-time"><i class="far fa-clock"></i> 15:30</div>
-				</div>
-				
-				<div class="lottery-game">
-					<div class="game-icon loteria-valle"></div>
-					<p class="game-name">Lotería Del Valle</p>
-					<div class="game-time"><i class="far fa-clock"></i> 15:30</div>
-				</div>
-				</div>
-			</div>
-			
-			<!-- Captain America Poster -->
-			<div class="poster-container d-none d-md-block">
-				<img src="../assets/img/poster-vertical.png" alt="Capitán América" class="poster-image">
-				
-			</div>
-			
-			<!-- Right Social Icons -->
-			<div class="right-social-icons d-none d-md-block">
-				<div class="siguenos">
-				<span>síguenos</span>
-				<div class="arrow-down"></div>
-				</div>
-				<a href="#" class="social-icon-right comparte-ahora">comparte ahora</a>
-				<a href="#" class="social-icon-right"><i class="fab fa-whatsapp"></i></a>
-				<a href="#" class="social-icon-right"><i class="fab fa-facebook-f"></i></a>
-				<a href="#" class="social-icon-right"><i class="fab fa-youtube"></i></a>
-				<a href="#" class="social-icon-right"><i class="fab fa-instagram"></i></a>
-				<a href="#" class="social-icon-right"><i class="fab fa-twitter"></i></a>
-			</div>
-			</div>
-		</section>
+
+		
+		
 
 		<!-- Grid Principal -->
+		
 		<main class="main-container">
-			<!-- Columna para los Social-Bar -->
-			<div class="position-absolute">
-				<!-- Barra Lateral de Redes Sociales -->
-				<div class="social-bar d-none d-md-block">
-					<div class="share-count">3.1K<span class="share-count">compartidos</span></div>
-					<div class="container-social-icons">
-						<div class="social-icon facebook"><i class="fab fa-facebook-f"></i></div>
-						<div class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></div>
-						<div class="social-icon twitter"><i class="fab fa-twitter"></i></div>
-						<div class="social-icon email"><i class="fas fa-envelope"></i></div>
+			<section class="lottery-result-banner">
+				<div class="container-max-width">
+				  <!-- Versión escritorio -->
+				  <div class="lottery-banner d-none d-md-flex">
+					<div class="lottery-banner-content">
+					  <div class="lottery-info">
+						<div class="lottery-logo-container">
+						  <img src="../assets/img/emisora-6.png" alt="Sorteo Dorado" class="lottery-logo">
+						</div>
+						
+					  </div>
+					  
+					  <div class="lottery-date">
+						<p>Fecha de sorteo</p>
+						<p>Sábado 22 de marzo de 2025</p>
+					  </div>
+					  
+					  <div class="winning-number">
+						<p>Número ganador:</p>
+						<div class="number-circles">
+						  <div class="number-circle">3</div>
+						  <div class="number-circle">9</div>
+						  <div class="number-circle">4</div>
+						  <div class="number-circle">0</div>
+						</div>
+					  </div>
 					</div>
-				</div>
-			</div>
-
-			<!-- Sección de Resultados Miloto - Solo para escritorio -->
-			<section class="miloto-results-section d-none d-md-block">
-				<div class="container">
-				  <div class="miloto-results-container">
-					<div class="miloto-results-content">
-					  <h2 class="miloto-results-title">Resultados Miloto</h2>
-					  <p class="miloto-results-date">del martes 18 de marzo 2025</p>
-					  <a href="#" class="miloto-results-button">Ver más</a>
+					
+					<div class="lottery-banner-image">
+					  <img src="../assets/img/fecha-sorteo.png" alt="Ganador de lotería">
 					</div>
-					<div class="miloto-results-logo">
-					  <img src="../assets/icons/loteria-loto.png" alt="Miloto Logo" class="miloto-logo-image">
+					
+					
+				  </div>
+				  
+				  <!-- Barra inferior con próximo sorteo - Escritorio -->
+				  <div class="next-draw-bar d-none d-md-flex">
+					<div class="quinta-number">
+					  <span>La quinta</span>
+					  <div class="quinta-circle">0</div>
+					</div>
+					<div class="next-draw-timer">
+					  <span>Próximo sorteo</span>
+					  <div class="timer">02:10:45</div>
+					</div>
+				  </div>
+				  
+				  <!-- Versión móvil -->
+				  <div class="lottery-banner-mobile d-md-none">
+					<div class="lottery-mobile-header">
+					  <div class="lottery-logo-container-mobile">
+						<img src="../assets/img/logo-dorado.png" alt="Sorteo Dorado" class="lottery-logo-mobile">
+					  </div>
+					  <div class="lottery-title-mobile">
+						<h2>Dorado Mañana</h2>
+						<p>Sorteo N° 5076</p>
+					  </div>
+					</div>
+					
+					<div class="lottery-date-mobile">
+					  <p>Fecha de sorteo</p>
+					  <p>Sábado 22 de marzo de 2025</p>
+					</div>
+					
+					<div class="winning-number-mobile">
+					  <p>Número ganador:</p>
+					  <div class="number-circles-mobile">
+						<div class="number-circle-mobile">3</div>
+						<div class="number-circle-mobile">9</div>
+						<div class="number-circle-mobile">4</div>
+						<div class="number-circle-mobile">0</div>
+					  </div>
+					</div>
+					
+					<!-- Barra inferior con próximo sorteo - Móvil -->
+					<div class="next-draw-bar-mobile">
+					  <div class="quinta-number-mobile">
+						<span>La quinta</span>
+						<div class="quinta-circle-mobile">0</div>
+					  </div>
+					  <div class="next-draw-timer-mobile">
+						<span>Próximo sorteo</span>
+						<div class="timer-mobile">02:10:45</div>
+					  </div>
 					</div>
 				  </div>
 				</div>
 			  </section>
 
-			  <!-- Sección de Resultados de Loterías -->
-				<section class="lottery-results-section">
+			 <!-- Seccion Información lotería y flyer -->
+			<section class="main-section-content bg-white mt-5">
+				<div class="container-max-width">
+				<div class="grid-two-section-60-40">
+					<!-- Columna izquierda: Información sobre lotería -->
+					<div class="lottery-info-container">
+					<div class="d-flex justify-content-between align-items-center hide-800 mb-4">
+						<h2 class="section-title m-0 p-0 text-primary">INFORMACIÓN SOBRE LA LOTERÍA</h2>
+					</div>
+					
+					<!-- Contenido informativo sobre la lotería -->
+					<div class="lottery-info-content">
+						<p>La <strong>Lotería Dorado Mañana</strong> de Colombia es un juego de azar que se ha convertido en una opción popular entre los colombianos.</p>
+						
+						<p>El <strong>sorteo matutino</strong> de la Lotería Dorado se lleva a cabo todos los días -a excepción del domingo- a las 11:00 horas (16:00 GMT) en Colombia.</p>
+						
+						<p>El mecanismo de juego de la Lotería Dorado Mañana es sencillo y fácil de entender. Los jugadores deben adquirir un billete que consta de una serie de cuatro cifras. Durante el sorteo, se extraen cuatro números de una tómbola que contiene cifras del 0 al 9. El orden de los números extraídos es esencial para determinar los premios correspondientes.</p>
+						
+						<p>La Lotería Dorado Mañana es una de las opciones más atractivas entre los juegos de azar en Colombia.</p>
+						
+						<p class="disclaimer">Esta página web tiene un carácter puramente informativo y no está afiliado ni respaldado por Dorado Mañana ni ninguna entidad relacionada. Los datos proporcionados en este sitio web se ofrecen únicamente con fines informativos y de entretenimiento. Se recomienda encarecidamente verificar los resultados de los sorteos y cualquier otra información oficial en los canales y fuentes oficiales proporcionados por Dorado Mañana.</p>
+					</div>
+					
+					<!-- Videos recomendados -->
+					<div class="recommended-videos">
+						<h3 class="videos-title">Videos recomendados</h3>
+						<div class="video-container">
+						<img src="../assets/img/poster-captain-america.png" alt="¿Se complica la clasificación al mundial?" class="video-thumbnail">
+						<div class="video-play-button">
+							<i class="fas fa-play"></i>
+						</div>
+						<div class="video-overlay">
+							<div class="video-title">¿SE COMPLICA LA CLASIFICACIÓN AL MUNDIAL?</div>
+							<div class="video-category">ELIMINATORIAS</div>
+						</div>
+						</div>
+					</div>
+					</div>
+					
+					<!-- Columna derecha: Banner publicitario (mantener como está) -->
+					<div class="flyer pb-3 row ">
+					<div class="sidebar-ad col-10">
+						<img
+						src="../assets/img/breaking-news-banner.png"
+						alt="¿Cuánto tiempo toma tonificar el cuerpo con yoga de silla según mi edad?"
+						class="img-fluid img-yoga"
+						/>
+					</div>
+			
+					<div class="col-2">
+						<div class="social-sidebar-bn">
+						<div class="social-icons-bn">
+							<a href="#" class="social-icon-link">
+							<div class="social-icon-bn shopping">
+								<i class="fas fa-shopping-cart"></i>
+							</div>
+							</a>
+							<a href="#" class="social-icon-link">
+							<div class="social-icon-bn whatsapp">
+								<i class="fab fa-whatsapp"></i>
+							</div>
+							</a>
+							<a href="#" class="social-icon-link">
+							<div class="social-icon-bn facebook">
+								<i class="fab fa-facebook-f"></i>
+							</div>
+							</a>
+							<a href="#" class="social-icon-link">
+							<div class="social-icon-bn youtube">
+								<i class="fab fa-youtube"></i>
+							</div>
+							</a>
+							<a href="#" class="social-icon-link">
+							<div class="social-icon-bn instagram">
+								<i class="fab fa-instagram"></i>
+							</div>
+							</a>
+							<a href="#" class="social-icon-link">
+							<div class="social-icon-bn twitter">
+								<i class="fab fa-twitter"></i>
+							</div>
+							</a>
+						</div>
+						</div>
+					</div>
+					</div>
+					<div class="d-block d-sm-none d-md-none d-lg-none d-xl-none">
+						<img src="../assets/img/banner-copa-america.png" alt="Siente la emoción Copa América USA 2024" class="img-fluid">
+					</div>
+				</div>
+				</div>
+			</section>
+
+			<!-- resultados -->
+			<section class="section-last-news py-5 container-max-width">
+				<div class="container">
+				<div class="row">
+					
+					<div class="col-lg-8 mb-4">
+					<div class="sorteos-recientes-container">
+						<h3 class="sorteos-title mb-4">Sorteos recientes</h3>
+						
+						<div class="sorteos-header d-flex align-items-center mb-4">
+						<div class="dropdown-container me-3">
+							<button class="dropdown-lottery">
+							Dorado mañana
+							<i class="fas fa-chevron-down ms-2"></i>
+							</button>
+						</div>
+						
+						<div class="search-date-container position-relative">
+							<input type="text" placeholder="Buscar por fechas" class="search-date-input">
+							<i class="far fa-calendar-alt position-absolute end-0 top-50 translate-middle-y me-3"></i>
+						</div>
+						
+						<div class="refresh-button ms-3">
+							<button class="btn-refresh">
+							<i class="fas fa-sync-alt"></i>
+							</button>
+						</div>
+						</div>
+						
+						<div class="sorteo-title-row d-flex mb-3">
+						<div class="sorteo-title-left">
+							<h4 class="mb-0">EL DORADO MAÑANA</h4>
+						</div>
+						<div class="sorteo-title-right">
+							<h4 class="mb-0">La Quinta</h4>
+						</div>
+						</div>
+						
+						<!-- Resultados por día -->
+						<div class="sorteo-results">
+						<!-- Día 1 -->
+						<div class="sorteo-day-row d-flex justify-content-between align-items-center mb-3">
+							<div class="sorteo-date">Sábado 22 de marzo 2025</div>
+							<div class="sorteo-numbers d-flex">
+							<div class="number-circle">3</div>
+							<div class="number-circle">9</div>
+							<div class="number-circle">4</div>
+							<div class="number-circle">0</div>
+							</div>
+							<div class="quinta-number">
+							<div class="quinta-circle">0</div>
+							</div>
+						</div>
+						
+						<!-- Día 2 -->
+						<div class="sorteo-day-row d-flex justify-content-between align-items-center mb-3">
+							<div class="sorteo-date">Viernes 21 de marzo 2025</div>
+							<div class="sorteo-numbers d-flex">
+							<div class="number-circle">3</div>
+							<div class="number-circle">9</div>
+							<div class="number-circle">4</div>
+							<div class="number-circle">0</div>
+							</div>
+							<div class="quinta-number">
+							<div class="quinta-circle">0</div>
+							</div>
+						</div>
+						
+						<!-- Día 3 -->
+						<div class="sorteo-day-row d-flex justify-content-between align-items-center mb-3">
+							<div class="sorteo-date">Jueves 20 de marzo 2025</div>
+							<div class="sorteo-numbers d-flex">
+							<div class="number-circle">3</div>
+							<div class="number-circle">9</div>
+							<div class="number-circle">4</div>
+							<div class="number-circle">0</div>
+							</div>
+							<div class="quinta-number">
+							<div class="quinta-circle">0</div>
+							</div>
+						</div>
+						
+						<!-- Día 4 -->
+						<div class="sorteo-day-row d-flex justify-content-between align-items-center mb-3">
+							<div class="sorteo-date">Miércoles 19 de marzo 2025</div>
+							<div class="sorteo-numbers d-flex">
+							<div class="number-circle">3</div>
+							<div class="number-circle">9</div>
+							<div class="number-circle">4</div>
+							<div class="number-circle">0</div>
+							</div>
+							<div class="quinta-number">
+							<div class="quinta-circle">0</div>
+							</div>
+						</div>
+						
+						<!-- Día 5 -->
+						<div class="sorteo-day-row d-flex justify-content-between align-items-center mb-3">
+							<div class="sorteo-date">Martes 18 de marzo 2025</div>
+							<div class="sorteo-numbers d-flex">
+							<div class="number-circle">3</div>
+							<div class="number-circle">9</div>
+							<div class="number-circle">4</div>
+							<div class="number-circle">0</div>
+							</div>
+							<div class="quinta-number">
+							<div class="quinta-circle">0</div>
+							</div>
+						</div>
+						
+						<!-- Versión móvil: mostrar menos resultados inicialmente -->
+						<div class="d-lg-none">
+							<button class="btn-ver-mas-resultados w-100 mt-3">Ver más resultados</button>
+						</div>
+						</div>
+					</div>
+					</div>
+			
+					<!-- Columna 3: Loterías (mantener como está) -->
+					<div class="col-lg-4">
+					<div class="last-lottery p-4 rounded">
+						<h5 class="fw-bold">LOTERÍAS QUE SE JUEGAN HOY</h5>
+						<ul class="list-unstyled">
+						<div class="d-flex justify-content-center align-items-center d-lg-none"
+							style="height: 100px;">
+							<div class="day-night-switch">
+							<input type="checkbox" id="dayNightSwitch" class="day-night-checkbox" />
+							<label for="dayNightSwitch" class="day-night-label">
+								<span class="switch-slider"></span>
+								<span class="switch-icon sun">
+								<svg width="32" height="32" viewBox="0 0 32 32">
+									<circle cx="16" cy="16" r="9" fill="#FFD93B" />
+									<g stroke="#174a8c" stroke-width="2">
+									<circle cx="16" cy="16" r="9" fill="none" />
+									<line x1="16" y1="2" x2="16" y2="6" />
+									<line x1="16" y1="26" x2="16" y2="30" />
+									<line x1="2" y1="16" x2="6" y2="16" />
+									<line x1="26" y1="16" x2="30" y2="16" />
+									<line x1="6.93" y1="6.93" x2="9.76" y2="9.76" />
+									<line x1="22.24" y1="22.24" x2="25.07" y2="25.07" />
+									<line x1="6.93" y1="25.07" x2="9.76" y2="22.24" />
+									<line x1="22.24" y1="9.76" x2="25.07" y2="6.93" />
+									</g>
+								</svg>
+								</span>
+								<span class="switch-icon moon">
+								<svg width="32" height="32" viewBox="0 0 32 32">
+									<path d="M24 22a10 10 0 0 1-9.95-11.1A10 10 0 1 0 24 22Z"
+									fill="#fff" stroke="#174a8c" stroke-width="2" />
+									<circle cx="25" cy="13" r="1" fill="#174a8c" />
+									<circle cx="27" cy="16" r="1" fill="#174a8c" />
+									<circle cx="23" cy="16" r="1" fill="#174a8c" />
+								</svg>
+								</span>
+							</label>
+							</div>
+						</div>
+			
+						<li class="d-flex justify-content-between align-items-center mb-3 card-loteria">
+							<div class="d-flex align-items-center gap-2">
+							<img src="/assets/icons/channel-1.png" width="30" alt="Lotería" />
+							<span>Caribeña</span>
+							</div>
+							<span class="badge bg-warning text-dark d-none d-lg-block">☀️</span>
+							<span class="text-hora d-block d-lg-none">9:30 AM</span>
+						</li>
+						<li class="d-flex justify-content-between align-items-center mb-3 card-loteria">
+							<div class="d-flex align-items-center gap-2">
+							<img src="/assets/icons/channel-2.png" width="30" alt="Lotería" />
+							<span>Sinuao</span>
+							</div>
+							<span class="badge bg-primary text-dark d-none d-lg-block">🌙</span>
+							<span class="text-hora d-block d-lg-none">10:00 AM</span>
+						</li>
+						<li class="d-flex justify-content-between align-items-center mb-3 card-loteria">
+							<div class="d-flex align-items-center gap-2">
+							<img src="/assets/icons/channel-3.png" width="30" alt="Lotería" />
+							<span>Motilón</span>
+							</div>
+							<span class="badge bg-primary text-dark d-none d-lg-block">🌙</span>
+							<span class="text-hora d-block d-lg-none">11:30 AM</span>
+						</li>
+						<li class="d-flex justify-content-between align-items-center mb-3 card-loteria">
+							<div class="d-flex align-items-center gap-2">
+							<img src="/assets/icons/channel-3.png" width="30" alt="Lotería" />
+							<span>Motilón</span>
+							</div>
+							<span class="badge bg-warning text-dark d-none d-lg-block">☀️</span>
+							<span class="text-hora d-block d-lg-none">3:00 PM</span>
+						</li>
+						<li class="d-flex justify-content-between align-items-center card-loteria">
+							<div class="d-flex align-items-center gap-2">
+							<img src="/assets/icons/channel-1.png" width="30" alt="Lotería" />
+							<span>Caribeña</span>
+							</div>
+							<span class="badge bg-warning text-dark d-none d-lg-block">☀️</span>
+							<span class="text-hora d-block d-lg-none">5:00 PM</span>
+						</li>
+						</ul>
+					</div>
+					</div>
+				</div>
+				</div>
+			</section>
+
+			  <!-- Seccion contenido promocionad -->
+			<section class="lottery-results-section">
 					<div class="container-max-width">
 
 					
 					<!-- Versión escritorio -->
 					<div class="lottery-grid d-none d-md-block">
+						<h2 class="miloto-results-title mb-5">Contenidos promocionados</h2>
 						<div class="row row-cols-1 row-cols-md-3 g-4">
 						<!-- Lotería Cruz Roja -->
 						<div class="col">
@@ -392,10 +678,12 @@
 						</div>
 					</div>
 					</div>
-				</section>				
+			</section>		
+				
+				
 			
 			
-			<!-- Seccion grilla de noticias en dos columnas -->
+			<!-- Noticias gastrónomicas -->
 			<section class="main-section-content pb-3 bg-white mt-5">
 				<div class="container-max-width mt-5">
 					<div class="grid-two-section-60-40">
@@ -536,126 +824,6 @@
 				</div>
 			</section>
 
-			<!-- Seccion flayer y grilla multimedia y banner lateral -->
-			<section class="main-section-content bg-white">
-				<div class="container-max-width">
-					<div class="grid-two-section-60-40">
-						<div class="grid-articles-2 grid-multimedia">
-							<div class="d-flex justify-content-between align-items-center hide-800">
-								<h2 class="section-title m-0 p-0">MULTIMEDIA</h2>
-								<a href="#" class="btn-azul-blanco">Ver todo</a>
-							</div>
-							<div class="card-article-2 card-article-2-principal card-bottom-separator pt-2">
-								<img src="../assets/img/breaking-news-1.png" alt="Maduro y Petro" />
-								<div class="card-article-2-content">
-									<p class="card-article-2-tag">CINE</p>
-									<h2 class="card-article-2-title">
-										Reapareció María Corina Machado: "Estoy bien, estoy segura"
-									</h2>
-									<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
-									<p>
-										María Corina Machado reaparece en un video y dice que ya está libre. Leer más
-										<a href="#" class="card-article-2-leer-mas">Leer más</a>
-									</p>
-								</div>
-							</div>
-							<div class="grid-articles-2 card-bottom-separator">
-								<div class="card-article-2">
-									<img src="../assets/img/breaking-news-1.png" alt="Maduro y Petro" />
-									<div class="card-article-2-content">
-										<p class="card-article-2-tag">CINE</p>
-										<h2 class="card-article-2-title">
-											La hora en la que arranca el nuevo capítulo de "Dragon Ball Daima"
-										</h2>
-										<a href="#" class="card-article-2-leer-mas">Leer más</a>
-										<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
-									</div>
-								</div>
-								<div class="card-article-2">
-									<img src="../assets/img/breaking-news-1.png" alt="Maduro y Petro" />
-									<div class="card-article-2-content">
-										<p class="card-article-2-tag">CINE</p>
-										<h2 class="card-article-2-title">
-											La hora en la que arranca el nuevo capítulo de "Dragon Ball Daima"
-										</h2>
-										<a href="#" class="card-article-2-leer-mas">Leer más</a>
-										<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
-									</div>
-								</div>
-								<div class="card-article-2">
-									<img src="../assets/img/breaking-news-1.png" alt="Maduro y Petro" />
-									<div class="card-article-2-content">
-										<p class="card-article-2-tag">CINE</p>
-										<h2 class="card-article-2-title">
-											La hora en la que arranca el nuevo capítulo de "Dragon Ball Daima"
-										</h2>
-										<a href="#" class="card-article-2-leer-mas">Leer más</a>
-										<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
-									</div>
-								</div>
-								<div class="card-article-2">
-									<img src="../assets/img/breaking-news-1.png" alt="Maduro y Petro" />
-									<div class="card-article-2-content">
-										<p class="card-article-2-tag">CINE</p>
-										<h2 class="card-article-2-title">
-											La hora en la que arranca el nuevo capítulo de "Dragon Ball Daima"
-										</h2>
-										<a href="#" class="card-article-2-leer-mas">Leer más</a>
-										<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="flyer pb-3 row">
-							<div class="sidebar-ad col-10">
-								<img
-									src="../assets/img/breaking-news-banner.png"
-									alt="¿Cuánto tiempo toma tonificar el cuerpo con yoga de silla según mi edad?"
-									class="img-fluid img-yoga"
-								/>
-							</div>
-
-							<div class="col-2">
-								<div class="social-sidebar-bn">
-									<div class="social-icons-bn">
-										<a href="#" class="social-icon-link">
-											<div class="social-icon-bn shopping">
-												<i class="fas fa-shopping-cart"></i>
-											</div>
-										</a>
-										<a href="#" class="social-icon-link">
-											<div class="social-icon-bn whatsapp">
-												<i class="fab fa-whatsapp"></i>
-											</div>
-										</a>
-										<a href="#" class="social-icon-link">
-											<div class="social-icon-bn facebook">
-												<i class="fab fa-facebook-f"></i>
-											</div>
-										</a>
-										<a href="#" class="social-icon-link">
-											<div class="social-icon-bn youtube">
-												<i class="fab fa-youtube"></i>
-											</div>
-										</a>
-										<a href="#" class="social-icon-link">
-											<div class="social-icon-bn instagram">
-												<i class="fab fa-instagram"></i>
-											</div>
-										</a>
-										<a href="#" class="social-icon-link">
-											<div class="social-icon-bn twitter">
-												<i class="fab fa-twitter"></i>
-											</div>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-			</section>
 		</main>
 
 		<div id="main-footer"></div>
