@@ -47,3 +47,5 @@
     loadComponent('main-slider-estreno-mobile', '/cine/components/slider-estreno-mobile.html','/cine/static/slider-estreno.js');
     loadComponent('main-slider-detail', '/cine/components/slider-detail.html');
     loadComponent('main-slider-carrusel', '/cine/components/slider-carrusel.html', '/cine/static/slider-carrusel.js');
+
+    loadComponent('main-header-turismo', '/turismo/components/header-turismo.html','/static/menu-desplegable.js');
