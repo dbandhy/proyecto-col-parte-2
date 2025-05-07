@@ -120,71 +120,67 @@
 			</div>
 		</section>
 
+		<h1>Sitios Turisticos</h1>
 
-		<h1>dsfsadfas</h1>
-		
-		<section>
-			<div id="main-slider-detail"></div>
-		</section>
-		<div class="justify-content-center align-items-center hide-800 w-100 position-relative image-anuncio pb-4 pt-4">
-			<img src="../assets/img/banner-copa-america.png" alt="img" />
-		</div>
-		<section class="main-section-content section-recommended">
-			<div class="container-max-width">
-				<h2 class="section-title">NUESTROS RECOMENDADOS <span class="ms-2"><i
-							class="fa fa-star text-warning"></i></span></h2>
-				<div class="row row-cols-1 row-cols-md-4 g-4">
-					<div class="col">
-						<img class="image-recommended" src="../assets/img/movie-2.png" alt="img" />
-						<div class="card-body px-0">
-							<h5 class="fw-bold mt-3 mb-1">Right People, Wrong Place</h5>
-							<div class="d-flex gap-2 flex-wrap">
-								<span class="badge bg-light text-dark"><i class="fa fa-users me-1"></i> Terror</span>
-								<span class="badge bg-light text-dark"><i class="fa fa-calendar me-1"></i> 2022</span>
-								<span class="badge bg-light text-dark"><i class="fa fa-star me-1 text-warning"></i>
-									3.8</span>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<img class="image-recommended" src="../assets/img/movie-3.png" alt="img" />
-						<div class="card-body px-0">
-							<h5 class="fw-bold mt-3 mb-1">Venom: El Último Baile</h5>
-							<div class="d-flex gap-2 flex-wrap">
-								<span class="badge bg-light text-dark"><i class="fa fa-users me-1"></i> Terror</span>
-								<span class="badge bg-light text-dark"><i class="fa fa-calendar me-1"></i> 2022</span>
-								<span class="badge bg-light text-dark"><i class="fa fa-star me-1 text-warning"></i>
-									3.8</span>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<img class="image-recommended" src="../assets/img/movie-1.png" alt="img" />
-						<div class="card-body px-0">
-							<h5 class="fw-bold mt-3 mb-1">Right People, Wrong Place</h5>
-							<div class="d-flex gap-2 flex-wrap">
-								<span class="badge bg-light text-dark"><i class="fa fa-users me-1"></i> Terror</span>
-								<span class="badge bg-light text-dark"><i class="fa fa-calendar me-1"></i> 2022</span>
-								<span class="badge bg-light text-dark"><i class="fa fa-star me-1 text-warning"></i>
-									3.8</span>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<img class="image-recommended" src="../assets/img/movie-3.png" alt="img" />
-						<div class="card-body px-0">
-							<h5 class="fw-bold mt-3 mb-1">Right People, Wrong Place</h5>
-							<div class="d-flex gap-2 flex-wrap">
-								<span class="badge bg-light text-dark"><i class="fa fa-users me-1"></i> Terror</span>
-								<span class="badge bg-light text-dark"><i class="fa fa-calendar me-1"></i> 2022</span>
-								<span class="badge bg-light text-dark"><i class="fa fa-star me-1 text-warning"></i>
-									3.8</span>
-							</div>
-						</div>
-					</div>
-				</div>
+
+		<div class="d-flex info-colombia-cards">
+			<!-- Tarjeta 1 -->
+			<div class="card-info">
+				<img src="/assets/img/section-2-news-3.png" alt="Carlos Eugenio Restrepo">
+				<h5 class="fw-bold mt-3">CARLOS EUGENIO RESTREPO</h5>
+				<p class="author mb-1">Por: Juan Carlos García Sierra</p>
+				<p>Este jueves se disputó la fecha 5, cupos para las competencias onales.</p>
+				<a href="#">Leer más</a>
 			</div>
-		</section>
+
+			<!-- Tarjeta 2 -->
+			<div class="card-info desktop-only">
+				<img src="/assets/img/section-2-news-3.png" alt="Carlos Eugenio Restrepo">
+				<h5 class="fw-bold mt-3">CARLOS EUGENIO RESTREPO</h5>
+				<p class="author mb-1">Por: Juan Carlos García Sierra</p>
+				<p>Este jueves se disputó la fecha 5, cupos para las competencias onales.</p>
+				<a href="#">Leer más</a>
+			</div>
+
+			
+		</div>
+
+
+		<div class="d-flex justify-content-between align-items-center hide-800 w-100 position-relative ">
+			<h2 class="section-title  m-0 p-0">Embajadas y Consulados</h2>
+			<div class="group-filter">
+				<button id="btnCiudad" class="form-select mb-3 d-flex align-items-center justify-content-between" type="button" onclick="mostrarCiudades()" style="cursor:pointer;">
+					<span id="btnCiudadText">Elige el pais</span>
+				</button>
+				<div id="ciudades-listado" class="ciudades-modal" style="display:none;">
+					<h2 class="section-title text-center mb-3">ELIGE TU CIUDAD</h2>
+					<div class="ciudades-search-bar mb-3">
+						<div class="search-input-wrapper">
+							<span class="search-icon"><i class="fa fa-search"></i></span>
+							<input type="text" class="form-control search-input" placeholder="Buscar ciudad...">
+						</div>
+					</div>
+					<div class="ciudades-grid"><span><b>Aguachica</b> <span class="text-muted">(Cesar)</span></span><span><b>Apartadó</b> <span class="text-muted">(Antioquía)</span></span><span><b>Armenia</b> <span class="text-muted">(Quindío)</span></span><span><b>Barrancabermeja</b> <span class="text-muted">(Santander)</span></span><span><b>Barranquilla</b> <span class="text-muted">(Atlántico)</span></span><span><b>Bello</b> <span class="text-muted">(Antioquía)</span></span><span><b>Bogotá</b> <span class="text-muted">(D.C)</span></span><span><b>Bucaramanga</b> <span class="text-muted">(Santander)</span></span><span><b>Buenaventura</b> <span class="text-muted">(Valle)</span></span><span><b>Buga</b> <span class="text-muted">(Valle)</span></span><span><b>Cali</b> <span class="text-muted">(Valle)</span></span><span><b>Cartagenea</b> <span class="text-muted">(Valle)</span></span><span><b>Cartago</b> <span class="text-muted">(Valle)</span></span><span><b>Caucasia</b> <span class="text-muted">(Antioquía)</span></span><span><b>Chía</b> <span class="text-muted">(Cundinamarca)</span></span><span><b>Ciudad Bolívar</b> <span class="text-muted">(Cundinamarca)</span></span><span><b>Cúcuta</b> <span class="text-muted">(Norte De Santander)</span></span><span><b>Dosquebradas</b> <span class="text-muted">(Risaralda)</span></span><span><b>Duitama</b> <span class="text-muted">(Boyacá)</span></span><span><b>Envigado</b> <span class="text-muted">(Antioquía)</span></span><span><b>Facatativá</b> <span class="text-muted">(Cundinamarca)</span></span><span><b>Florencia</b> <span class="text-muted">(Caquetá)</span></span><span><b>Fusagasugá</b> <span class="text-muted">(Cundinamarca)</span></span><span><b>Giradot</b> <span class="text-muted">(Cundinamarca)</span></span><span><b>Ibagué</b> <span class="text-muted">(Tolima)</span></span><span><b>Ipiales</b> <span class="text-muted">(Nariño)</span></span><span><b>Itagüí</b> <span class="text-muted">(Antioquía)</span></span><span><b>La Ceja</b> <span class="text-muted">(Antioquía)</span></span><span><b>Llano Grande</b> <span class="text-muted">(Antioquía)</span></span><span><b>Madrid</b> <span class="text-muted">(Cundinamarca)</span></span><span><b>Manizales</b> <span class="text-muted">(Caldas)</span></span><span><b>Medellín</b> <span class="text-muted">(Antioquía)</span></span><span><b>Mocoa</b> <span class="text-muted">(Putumayo)</span></span><span><b>Montería</b> <span class="text-muted">(Córdoba)</span></span><span><b>Mosquera</b> <span class="text-muted">(Cundinamarca)</span></span><span><b>Neiva</b> <span class="text-muted">(Huila)</span></span><span><b>Palmira</b> <span class="text-muted">(Valle)</span></span><span><b>Pamplona</b> <span class="text-muted">(Norte De Santander)</span></span><span><b>Pasto</b> <span class="text-muted">(Nariño)</span></span><span><b>Pereira</b> <span class="text-muted">(Risaralda)</span></span><span><b>Piedecuesta</b> <span class="text-muted">(Santander)</span></span><span><b>Pitalito</b> <span class="text-muted">(Huila)</span></span><span><b>Popayán</b> <span class="text-muted">(Cauca)</span></span><span><b>Puerto Boyacá</b> <span class="text-muted">(Boyacá)</span></span><span><b>Quibdó</b> <span class="text-muted">(Choco)</span></span><span><b>Restrepo</b> <span class="text-muted">(Meta)</span></span><span><b>Riohacha</b> <span class="text-muted">(La Guajira)</span></span><span><b>Rionegro</b> <span class="text-muted">(Antioquía)</span></span><span><b>Sabaneta</b> <span class="text-muted">(Antioquía)</span></span><span><b>Santa Gil</b> <span class="text-muted">(Santander)</span></span><span><b>San José Del Guaviare</b> <span class="text-muted">(Guaviare)</span></span><span><b>Santa Marta</b> <span class="text-muted">(Magdalena)</span></span><span><b>Santo Tomás</b> <span class="text-muted">(Atlántico)</span></span><span><b>Sincelejo</b> <span class="text-muted">(Sucre)</span></span><span><b>Soacha</b> <span class="text-muted">(Cundinamarca)</span></span><span><b>Sogamoso</b> <span class="text-muted">(Boyacá)</span></span><span><b>Soledad</b> <span class="text-muted">(Atlántico)</span></span><span><b>Tutúá</b> <span class="text-muted">(Valle)</span></span><span><b>Tunja</b> <span class="text-muted">(Boyacá)</span></span><span><b>Tubarco</b> <span class="text-muted">(Bolíbar)</span></span><span><b>Urubá</b> <span class="text-muted">(Antioquía)</span></span><span><b>Valledupar</b> <span class="text-muted">(Cesar)</span></span><span><b>Villavicencio</b> <span class="text-muted">(Meta)</span></span><span><b>Yopal</b> <span class="text-muted">(Casanare)</span></span><span><b>Yumbo</b> <span class="text-muted">(Valle)</span></span><span><b>Zipaquirá</b> <span class="text-muted">(Cundinamarca)</span></span></div>
+				</div>
+
+				<button id="btnSala" class="form-select mb-3 d-flex align-items-center justify-content-between" type="button" onclick="mostrarSalas()" style="cursor:pointer;">
+					<span id="btnSalaText">Mision</span>
+				</button>
+
+				<button>
+
+					Buscar
+				</button>
+				
+			</div>
+		</div>
+
+		
+		<h1>dsfsadfas</h1>
+
+
+		
+		
 		<section class="main-section-content container-max-width slider-recomendados py-5">
 			<div class="d-flex justify-content-between align-items-center hide-800 w-100">
 				<h2 class="section-title m-0 p-0">Recomendados</h2>
