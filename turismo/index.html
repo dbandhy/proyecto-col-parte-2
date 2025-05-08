@@ -39,16 +39,16 @@
 	<!-- Header start-->
 	<div id="main-header-turismo"></div>
 	<!-- Header end-->
-	
+
 
 	<!-- Menu start-->
-	<div id="main-menu-despegable"turismo></div>
+	<div id="main-menu-despegable" turismo></div>
 	<!-- Menu end-->
 
 	<!-- Main Slider start-->
 	<div class="slider-container">
-        <img class="flyer" src="/turismo/img/img-slider.png" alt="flyer">
-    </div>
+		<img class="flyer" src="/turismo/img/img-slider.png" alt="flyer">
+	</div>
 	<!-- MainSlider end-->
 
 	<!-- social network side bar start -->
@@ -66,7 +66,7 @@
 
 
 	<main class="main-container">
-		
+
 		<!-- content 1  -->
 
 		<section class="main-section-content notice py-5 bg-white ">
@@ -82,56 +82,84 @@
 							<!-- aca va el slider
 							  -->
 
-							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel libero, ex dolor, maxime esse exercitationem autem neque tempora dolore saepe modi commodi. Enim odit exercitationem pariatur excepturi illo, debitis beatae!</p>
+							<div id="carouselExampleFade" class="carousel slide carousel-fade">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img src="./img/content 1 main img.png" class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="./img/content 1 main img.png" class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="./img/content 1 main img.png" class="d-block w-100" alt="...">
+									</div>
+								</div>
+								<button class="carousel-control-prev" type="button"
+									data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Previous</span>
+								</button>
+								<button class="carousel-control-next" type="button"
+									data-bs-target="#carouselExampleFade" data-bs-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Next</span>
+								</button>
+							</div>
+
+
+							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel libero, ex dolor, maxime
+								esse
+								exercitationem autem neque tempora dolore saepe modi commodi. Enim odit exercitationem
+								pariatur excepturi illo, debitis beatae!</p>
 						</div>
 					</div>
 					<div class="grid-two-section-60-40-rgt d-grid gap-4 ">
-						<div class="flyer pb-3 row">	
-				
+						<div class="flyer pb-3 row">
+
 							<div class="sidebar-ad col-10">
 								<img src="/assets/img/poster-vertical.png"
 									alt="¿Cuánto tiempo toma tonificar el cuerpo con yoga de silla según mi edad?"
 									class="img-fluid img-yoga" />
 							</div>
-							
+
 							<div class="col-2">
 								<div class="social-sidebar-bn">
 									<div class="social-icons-bn">
-										
+
 										<a href="#" class="social-icon-link">
 											<div class="social-icon-bn email">
 												<i class="fas fa-envelope"></i>
 											</div>
-										<a href="#" class="social-icon-link">
-											<div class="social-icon-bn shopping">
-												<i class="fas fa-shopping-cart"></i>
-											</div>
-										</a>
-										<a href="#" class="social-icon-link">
-											<div class="social-icon-bn whatsapp">
-												<i class="fab fa-whatsapp"></i>
-											</div>
-										</a>
-										<a href="#" class="social-icon-link">
-											<div class="social-icon-bn facebook">
-												<i class="fab fa-facebook-f"></i>
-											</div>
-										</a>
-										<a href="#" class="social-icon-link">
-											<div class="social-icon-bn youtube">
-												<i class="fab fa-youtube"></i>
-											</div>
-										</a>
-										<a href="#" class="social-icon-link">
-											<div class="social-icon-bn instagram">
-												<i class="fab fa-instagram"></i>
-											</div>
-										</a>
-										<a href="#" class="social-icon-link">
-											<div class="social-icon-bn twitter">
-												<i class="fab fa-twitter"></i>
-											</div>
-										</a>
+											<a href="#" class="social-icon-link">
+												<div class="social-icon-bn shopping">
+													<i class="fas fa-shopping-cart"></i>
+												</div>
+											</a>
+											<a href="#" class="social-icon-link">
+												<div class="social-icon-bn whatsapp">
+													<i class="fab fa-whatsapp"></i>
+												</div>
+											</a>
+											<a href="#" class="social-icon-link">
+												<div class="social-icon-bn facebook">
+													<i class="fab fa-facebook-f"></i>
+												</div>
+											</a>
+											<a href="#" class="social-icon-link">
+												<div class="social-icon-bn youtube">
+													<i class="fab fa-youtube"></i>
+												</div>
+											</a>
+											<a href="#" class="social-icon-link">
+												<div class="social-icon-bn instagram">
+													<i class="fab fa-instagram"></i>
+												</div>
+											</a>
+											<a href="#" class="social-icon-link">
+												<div class="social-icon-bn twitter">
+													<i class="fab fa-twitter"></i>
+												</div>
+											</a>
 									</div>
 								</div>
 							</div>
@@ -163,14 +191,15 @@
 				<a href="#">Leer más</a>
 			</div>
 
-			
+
 		</div>
 
 
 		<div class="d-flex justify-content-between align-items-center hide-800 w-100 position-relative ">
 			<h2 class="section-title  m-0 p-0">Embajadas y Consulados</h2>
 			<div class="group-filter">
-				<button id="btnCiudad" class="form-select mb-3 d-flex align-items-center justify-content-between" type="button" onclick="mostrarCiudades()" style="cursor:pointer;">
+				<button id="btnCiudad" class="form-select mb-3 d-flex align-items-center justify-content-between"
+					type="button" onclick="mostrarCiudades()" style="cursor:pointer;">
 					<span id="btnCiudadText">Elige el pais</span>
 				</button>
 				<div id="ciudades-listado" class="ciudades-modal" style="display:none;">
@@ -181,10 +210,77 @@
 							<input type="text" class="form-control search-input" placeholder="Buscar ciudad...">
 						</div>
 					</div>
-					<div class="ciudades-grid"><span><b>Aguachica</b> <span class="text-muted">(Cesar)</span></span><span><b>Apartadó</b> <span class="text-muted">(Antioquía)</span></span><span><b>Armenia</b> <span class="text-muted">(Quindío)</span></span><span><b>Barrancabermeja</b> <span class="text-muted">(Santander)</span></span><span><b>Barranquilla</b> <span class="text-muted">(Atlántico)</span></span><span><b>Bello</b> <span class="text-muted">(Antioquía)</span></span><span><b>Bogotá</b> <span class="text-muted">(D.C)</span></span><span><b>Bucaramanga</b> <span class="text-muted">(Santander)</span></span><span><b>Buenaventura</b> <span class="text-muted">(Valle)</span></span><span><b>Buga</b> <span class="text-muted">(Valle)</span></span><span><b>Cali</b> <span class="text-muted">(Valle)</span></span><span><b>Cartagenea</b> <span class="text-muted">(Valle)</span></span><span><b>Cartago</b> <span class="text-muted">(Valle)</span></span><span><b>Caucasia</b> <span class="text-muted">(Antioquía)</span></span><span><b>Chía</b> <span class="text-muted">(Cundinamarca)</span></span><span><b>Ciudad Bolívar</b> <span class="text-muted">(Cundinamarca)</span></span><span><b>Cúcuta</b> <span class="text-muted">(Norte De Santander)</span></span><span><b>Dosquebradas</b> <span class="text-muted">(Risaralda)</span></span><span><b>Duitama</b> <span class="text-muted">(Boyacá)</span></span><span><b>Envigado</b> <span class="text-muted">(Antioquía)</span></span><span><b>Facatativá</b> <span class="text-muted">(Cundinamarca)</span></span><span><b>Florencia</b> <span class="text-muted">(Caquetá)</span></span><span><b>Fusagasugá</b> <span class="text-muted">(Cundinamarca)</span></span><span><b>Giradot</b> <span class="text-muted">(Cundinamarca)</span></span><span><b>Ibagué</b> <span class="text-muted">(Tolima)</span></span><span><b>Ipiales</b> <span class="text-muted">(Nariño)</span></span><span><b>Itagüí</b> <span class="text-muted">(Antioquía)</span></span><span><b>La Ceja</b> <span class="text-muted">(Antioquía)</span></span><span><b>Llano Grande</b> <span class="text-muted">(Antioquía)</span></span><span><b>Madrid</b> <span class="text-muted">(Cundinamarca)</span></span><span><b>Manizales</b> <span class="text-muted">(Caldas)</span></span><span><b>Medellín</b> <span class="text-muted">(Antioquía)</span></span><span><b>Mocoa</b> <span class="text-muted">(Putumayo)</span></span><span><b>Montería</b> <span class="text-muted">(Córdoba)</span></span><span><b>Mosquera</b> <span class="text-muted">(Cundinamarca)</span></span><span><b>Neiva</b> <span class="text-muted">(Huila)</span></span><span><b>Palmira</b> <span class="text-muted">(Valle)</span></span><span><b>Pamplona</b> <span class="text-muted">(Norte De Santander)</span></span><span><b>Pasto</b> <span class="text-muted">(Nariño)</span></span><span><b>Pereira</b> <span class="text-muted">(Risaralda)</span></span><span><b>Piedecuesta</b> <span class="text-muted">(Santander)</span></span><span><b>Pitalito</b> <span class="text-muted">(Huila)</span></span><span><b>Popayán</b> <span class="text-muted">(Cauca)</span></span><span><b>Puerto Boyacá</b> <span class="text-muted">(Boyacá)</span></span><span><b>Quibdó</b> <span class="text-muted">(Choco)</span></span><span><b>Restrepo</b> <span class="text-muted">(Meta)</span></span><span><b>Riohacha</b> <span class="text-muted">(La Guajira)</span></span><span><b>Rionegro</b> <span class="text-muted">(Antioquía)</span></span><span><b>Sabaneta</b> <span class="text-muted">(Antioquía)</span></span><span><b>Santa Gil</b> <span class="text-muted">(Santander)</span></span><span><b>San José Del Guaviare</b> <span class="text-muted">(Guaviare)</span></span><span><b>Santa Marta</b> <span class="text-muted">(Magdalena)</span></span><span><b>Santo Tomás</b> <span class="text-muted">(Atlántico)</span></span><span><b>Sincelejo</b> <span class="text-muted">(Sucre)</span></span><span><b>Soacha</b> <span class="text-muted">(Cundinamarca)</span></span><span><b>Sogamoso</b> <span class="text-muted">(Boyacá)</span></span><span><b>Soledad</b> <span class="text-muted">(Atlántico)</span></span><span><b>Tutúá</b> <span class="text-muted">(Valle)</span></span><span><b>Tunja</b> <span class="text-muted">(Boyacá)</span></span><span><b>Tubarco</b> <span class="text-muted">(Bolíbar)</span></span><span><b>Urubá</b> <span class="text-muted">(Antioquía)</span></span><span><b>Valledupar</b> <span class="text-muted">(Cesar)</span></span><span><b>Villavicencio</b> <span class="text-muted">(Meta)</span></span><span><b>Yopal</b> <span class="text-muted">(Casanare)</span></span><span><b>Yumbo</b> <span class="text-muted">(Valle)</span></span><span><b>Zipaquirá</b> <span class="text-muted">(Cundinamarca)</span></span></div>
+					<div class="ciudades-grid"><span><b>Aguachica</b> <span
+								class="text-muted">(Cesar)</span></span><span><b>Apartadó</b> <span
+								class="text-muted">(Antioquía)</span></span><span><b>Armenia</b> <span
+								class="text-muted">(Quindío)</span></span><span><b>Barrancabermeja</b> <span
+								class="text-muted">(Santander)</span></span><span><b>Barranquilla</b> <span
+								class="text-muted">(Atlántico)</span></span><span><b>Bello</b> <span
+								class="text-muted">(Antioquía)</span></span><span><b>Bogotá</b> <span
+								class="text-muted">(D.C)</span></span><span><b>Bucaramanga</b> <span
+								class="text-muted">(Santander)</span></span><span><b>Buenaventura</b> <span
+								class="text-muted">(Valle)</span></span><span><b>Buga</b> <span
+								class="text-muted">(Valle)</span></span><span><b>Cali</b> <span
+								class="text-muted">(Valle)</span></span><span><b>Cartagenea</b> <span
+								class="text-muted">(Valle)</span></span><span><b>Cartago</b> <span
+								class="text-muted">(Valle)</span></span><span><b>Caucasia</b> <span
+								class="text-muted">(Antioquía)</span></span><span><b>Chía</b> <span
+								class="text-muted">(Cundinamarca)</span></span><span><b>Ciudad Bolívar</b> <span
+								class="text-muted">(Cundinamarca)</span></span><span><b>Cúcuta</b> <span
+								class="text-muted">(Norte De Santander)</span></span><span><b>Dosquebradas</b> <span
+								class="text-muted">(Risaralda)</span></span><span><b>Duitama</b> <span
+								class="text-muted">(Boyacá)</span></span><span><b>Envigado</b> <span
+								class="text-muted">(Antioquía)</span></span><span><b>Facatativá</b> <span
+								class="text-muted">(Cundinamarca)</span></span><span><b>Florencia</b> <span
+								class="text-muted">(Caquetá)</span></span><span><b>Fusagasugá</b> <span
+								class="text-muted">(Cundinamarca)</span></span><span><b>Giradot</b> <span
+								class="text-muted">(Cundinamarca)</span></span><span><b>Ibagué</b> <span
+								class="text-muted">(Tolima)</span></span><span><b>Ipiales</b> <span
+								class="text-muted">(Nariño)</span></span><span><b>Itagüí</b> <span
+								class="text-muted">(Antioquía)</span></span><span><b>La Ceja</b> <span
+								class="text-muted">(Antioquía)</span></span><span><b>Llano Grande</b> <span
+								class="text-muted">(Antioquía)</span></span><span><b>Madrid</b> <span
+								class="text-muted">(Cundinamarca)</span></span><span><b>Manizales</b> <span
+								class="text-muted">(Caldas)</span></span><span><b>Medellín</b> <span
+								class="text-muted">(Antioquía)</span></span><span><b>Mocoa</b> <span
+								class="text-muted">(Putumayo)</span></span><span><b>Montería</b> <span
+								class="text-muted">(Córdoba)</span></span><span><b>Mosquera</b> <span
+								class="text-muted">(Cundinamarca)</span></span><span><b>Neiva</b> <span
+								class="text-muted">(Huila)</span></span><span><b>Palmira</b> <span
+								class="text-muted">(Valle)</span></span><span><b>Pamplona</b> <span
+								class="text-muted">(Norte De Santander)</span></span><span><b>Pasto</b> <span
+								class="text-muted">(Nariño)</span></span><span><b>Pereira</b> <span
+								class="text-muted">(Risaralda)</span></span><span><b>Piedecuesta</b> <span
+								class="text-muted">(Santander)</span></span><span><b>Pitalito</b> <span
+								class="text-muted">(Huila)</span></span><span><b>Popayán</b> <span
+								class="text-muted">(Cauca)</span></span><span><b>Puerto Boyacá</b> <span
+								class="text-muted">(Boyacá)</span></span><span><b>Quibdó</b> <span
+								class="text-muted">(Choco)</span></span><span><b>Restrepo</b> <span
+								class="text-muted">(Meta)</span></span><span><b>Riohacha</b> <span
+								class="text-muted">(La Guajira)</span></span><span><b>Rionegro</b> <span
+								class="text-muted">(Antioquía)</span></span><span><b>Sabaneta</b> <span
+								class="text-muted">(Antioquía)</span></span><span><b>Santa Gil</b> <span
+								class="text-muted">(Santander)</span></span><span><b>San José Del Guaviare</b> <span
+								class="text-muted">(Guaviare)</span></span><span><b>Santa Marta</b> <span
+								class="text-muted">(Magdalena)</span></span><span><b>Santo Tomás</b> <span
+								class="text-muted">(Atlántico)</span></span><span><b>Sincelejo</b> <span
+								class="text-muted">(Sucre)</span></span><span><b>Soacha</b> <span
+								class="text-muted">(Cundinamarca)</span></span><span><b>Sogamoso</b> <span
+								class="text-muted">(Boyacá)</span></span><span><b>Soledad</b> <span
+								class="text-muted">(Atlántico)</span></span><span><b>Tutúá</b> <span
+								class="text-muted">(Valle)</span></span><span><b>Tunja</b> <span
+								class="text-muted">(Boyacá)</span></span><span><b>Tubarco</b> <span
+								class="text-muted">(Bolíbar)</span></span><span><b>Urubá</b> <span
+								class="text-muted">(Antioquía)</span></span><span><b>Valledupar</b> <span
+								class="text-muted">(Cesar)</span></span><span><b>Villavicencio</b> <span
+								class="text-muted">(Meta)</span></span><span><b>Yopal</b> <span
+								class="text-muted">(Casanare)</span></span><span><b>Yumbo</b> <span
+								class="text-muted">(Valle)</span></span><span><b>Zipaquirá</b> <span
+								class="text-muted">(Cundinamarca)</span></span></div>
 				</div>
 
-				<button id="btnSala" class="form-select mb-3 d-flex align-items-center justify-content-between" type="button" onclick="mostrarSalas()" style="cursor:pointer;">
+				<button id="btnSala" class="form-select mb-3 d-flex align-items-center justify-content-between"
+					type="button" onclick="mostrarSalas()" style="cursor:pointer;">
 					<span id="btnSalaText">Mision</span>
 				</button>
 
@@ -192,19 +288,20 @@
 
 					Buscar
 				</button>
-				
+
 			</div>
 		</div>
 
-		
+
 		<h1>dsfsadfas</h1>
 
 		<section class="d-flex justify-content-between align-items-center hide-800 w-100 position-relative ">
 			<h2 class="section-title  m-0 p-0">FERIAS Y FIESTAS</h2>
-			
+
 
 			<div class="group-filter">
-				<button id="btnCiudad" class="form-select mb-3 d-flex align-items-center justify-content-between" type="button" onclick="mostrarCiudades()" style="cursor:pointer;">
+				<button id="btnCiudad" class="form-select mb-3 d-flex align-items-center justify-content-between"
+					type="button" onclick="mostrarCiudades()" style="cursor:pointer;">
 					<span id="btnCiudadText">Elige el pais</span>
 				</button>
 				<div id="ciudades-listado" class="ciudades-modal" style="display:none;">
@@ -215,13 +312,79 @@
 							<input type="text" class="form-control search-input" placeholder="Buscar ciudad...">
 						</div>
 					</div>
-					<div class="ciudades-grid"><span><b>Aguachica</b> <span class="text-muted">(Cesar)</span></span><span><b>Apartadó</b> <span class="text-muted">(Antioquía)</span></span><span><b>Armenia</b> <span class="text-muted">(Quindío)</span></span><span><b>Barrancabermeja</b> <span class="text-muted">(Santander)</span></span><span><b>Barranquilla</b> <span class="text-muted">(Atlántico)</span></span><span><b>Bello</b> <span class="text-muted">(Antioquía)</span></span><span><b>Bogotá</b> <span class="text-muted">(D.C)</span></span><span><b>Bucaramanga</b> <span class="text-muted">(Santander)</span></span><span><b>Buenaventura</b> <span class="text-muted">(Valle)</span></span><span><b>Buga</b> <span class="text-muted">(Valle)</span></span><span><b>Cali</b> <span class="text-muted">(Valle)</span></span><span><b>Cartagenea</b> <span class="text-muted">(Valle)</span></span><span><b>Cartago</b> <span class="text-muted">(Valle)</span></span><span><b>Caucasia</b> <span class="text-muted">(Antioquía)</span></span><span><b>Chía</b> <span class="text-muted">(Cundinamarca)</span></span><span><b>Ciudad Bolívar</b> <span class="text-muted">(Cundinamarca)</span></span><span><b>Cúcuta</b> <span class="text-muted">(Norte De Santander)</span></span><span><b>Dosquebradas</b> <span class="text-muted">(Risaralda)</span></span><span><b>Duitama</b> <span class="text-muted">(Boyacá)</span></span><span><b>Envigado</b> <span class="text-muted">(Antioquía)</span></span><span><b>Facatativá</b> <span class="text-muted">(Cundinamarca)</span></span><span><b>Florencia</b> <span class="text-muted">(Caquetá)</span></span><span><b>Fusagasugá</b> <span class="text-muted">(Cundinamarca)</span></span><span><b>Giradot</b> <span class="text-muted">(Cundinamarca)</span></span><span><b>Ibagué</b> <span class="text-muted">(Tolima)</span></span><span><b>Ipiales</b> <span class="text-muted">(Nariño)</span></span><span><b>Itagüí</b> <span class="text-muted">(Antioquía)</span></span><span><b>La Ceja</b> <span class="text-muted">(Antioquía)</span></span><span><b>Llano Grande</b> <span class="text-muted">(Antioquía)</span></span><span><b>Madrid</b> <span class="text-muted">(Cundinamarca)</span></span><span><b>Manizales</b> <span class="text-muted">(Caldas)</span></span><span><b>Medellín</b> <span class="text-muted">(Antioquía)</span></span><span><b>Mocoa</b> <span class="text-muted">(Putumayo)</span></span><span><b>Montería</b> <span class="text-muted">(Córdoba)</span></span><span><b>Mosquera</b> <span class="text-muted">(Cundinamarca)</span></span><span><b>Neiva</b> <span class="text-muted">(Huila)</span></span><span><b>Palmira</b> <span class="text-muted">(Valle)</span></span><span><b>Pamplona</b> <span class="text-muted">(Norte De Santander)</span></span><span><b>Pasto</b> <span class="text-muted">(Nariño)</span></span><span><b>Pereira</b> <span class="text-muted">(Risaralda)</span></span><span><b>Piedecuesta</b> <span class="text-muted">(Santander)</span></span><span><b>Pitalito</b> <span class="text-muted">(Huila)</span></span><span><b>Popayán</b> <span class="text-muted">(Cauca)</span></span><span><b>Puerto Boyacá</b> <span class="text-muted">(Boyacá)</span></span><span><b>Quibdó</b> <span class="text-muted">(Choco)</span></span><span><b>Restrepo</b> <span class="text-muted">(Meta)</span></span><span><b>Riohacha</b> <span class="text-muted">(La Guajira)</span></span><span><b>Rionegro</b> <span class="text-muted">(Antioquía)</span></span><span><b>Sabaneta</b> <span class="text-muted">(Antioquía)</span></span><span><b>Santa Gil</b> <span class="text-muted">(Santander)</span></span><span><b>San José Del Guaviare</b> <span class="text-muted">(Guaviare)</span></span><span><b>Santa Marta</b> <span class="text-muted">(Magdalena)</span></span><span><b>Santo Tomás</b> <span class="text-muted">(Atlántico)</span></span><span><b>Sincelejo</b> <span class="text-muted">(Sucre)</span></span><span><b>Soacha</b> <span class="text-muted">(Cundinamarca)</span></span><span><b>Sogamoso</b> <span class="text-muted">(Boyacá)</span></span><span><b>Soledad</b> <span class="text-muted">(Atlántico)</span></span><span><b>Tutúá</b> <span class="text-muted">(Valle)</span></span><span><b>Tunja</b> <span class="text-muted">(Boyacá)</span></span><span><b>Tubarco</b> <span class="text-muted">(Bolíbar)</span></span><span><b>Urubá</b> <span class="text-muted">(Antioquía)</span></span><span><b>Valledupar</b> <span class="text-muted">(Cesar)</span></span><span><b>Villavicencio</b> <span class="text-muted">(Meta)</span></span><span><b>Yopal</b> <span class="text-muted">(Casanare)</span></span><span><b>Yumbo</b> <span class="text-muted">(Valle)</span></span><span><b>Zipaquirá</b> <span class="text-muted">(Cundinamarca)</span></span></div>
+					<div class="ciudades-grid"><span><b>Aguachica</b> <span
+								class="text-muted">(Cesar)</span></span><span><b>Apartadó</b> <span
+								class="text-muted">(Antioquía)</span></span><span><b>Armenia</b> <span
+								class="text-muted">(Quindío)</span></span><span><b>Barrancabermeja</b> <span
+								class="text-muted">(Santander)</span></span><span><b>Barranquilla</b> <span
+								class="text-muted">(Atlántico)</span></span><span><b>Bello</b> <span
+								class="text-muted">(Antioquía)</span></span><span><b>Bogotá</b> <span
+								class="text-muted">(D.C)</span></span><span><b>Bucaramanga</b> <span
+								class="text-muted">(Santander)</span></span><span><b>Buenaventura</b> <span
+								class="text-muted">(Valle)</span></span><span><b>Buga</b> <span
+								class="text-muted">(Valle)</span></span><span><b>Cali</b> <span
+								class="text-muted">(Valle)</span></span><span><b>Cartagenea</b> <span
+								class="text-muted">(Valle)</span></span><span><b>Cartago</b> <span
+								class="text-muted">(Valle)</span></span><span><b>Caucasia</b> <span
+								class="text-muted">(Antioquía)</span></span><span><b>Chía</b> <span
+								class="text-muted">(Cundinamarca)</span></span><span><b>Ciudad Bolívar</b> <span
+								class="text-muted">(Cundinamarca)</span></span><span><b>Cúcuta</b> <span
+								class="text-muted">(Norte De Santander)</span></span><span><b>Dosquebradas</b> <span
+								class="text-muted">(Risaralda)</span></span><span><b>Duitama</b> <span
+								class="text-muted">(Boyacá)</span></span><span><b>Envigado</b> <span
+								class="text-muted">(Antioquía)</span></span><span><b>Facatativá</b> <span
+								class="text-muted">(Cundinamarca)</span></span><span><b>Florencia</b> <span
+								class="text-muted">(Caquetá)</span></span><span><b>Fusagasugá</b> <span
+								class="text-muted">(Cundinamarca)</span></span><span><b>Giradot</b> <span
+								class="text-muted">(Cundinamarca)</span></span><span><b>Ibagué</b> <span
+								class="text-muted">(Tolima)</span></span><span><b>Ipiales</b> <span
+								class="text-muted">(Nariño)</span></span><span><b>Itagüí</b> <span
+								class="text-muted">(Antioquía)</span></span><span><b>La Ceja</b> <span
+								class="text-muted">(Antioquía)</span></span><span><b>Llano Grande</b> <span
+								class="text-muted">(Antioquía)</span></span><span><b>Madrid</b> <span
+								class="text-muted">(Cundinamarca)</span></span><span><b>Manizales</b> <span
+								class="text-muted">(Caldas)</span></span><span><b>Medellín</b> <span
+								class="text-muted">(Antioquía)</span></span><span><b>Mocoa</b> <span
+								class="text-muted">(Putumayo)</span></span><span><b>Montería</b> <span
+								class="text-muted">(Córdoba)</span></span><span><b>Mosquera</b> <span
+								class="text-muted">(Cundinamarca)</span></span><span><b>Neiva</b> <span
+								class="text-muted">(Huila)</span></span><span><b>Palmira</b> <span
+								class="text-muted">(Valle)</span></span><span><b>Pamplona</b> <span
+								class="text-muted">(Norte De Santander)</span></span><span><b>Pasto</b> <span
+								class="text-muted">(Nariño)</span></span><span><b>Pereira</b> <span
+								class="text-muted">(Risaralda)</span></span><span><b>Piedecuesta</b> <span
+								class="text-muted">(Santander)</span></span><span><b>Pitalito</b> <span
+								class="text-muted">(Huila)</span></span><span><b>Popayán</b> <span
+								class="text-muted">(Cauca)</span></span><span><b>Puerto Boyacá</b> <span
+								class="text-muted">(Boyacá)</span></span><span><b>Quibdó</b> <span
+								class="text-muted">(Choco)</span></span><span><b>Restrepo</b> <span
+								class="text-muted">(Meta)</span></span><span><b>Riohacha</b> <span
+								class="text-muted">(La Guajira)</span></span><span><b>Rionegro</b> <span
+								class="text-muted">(Antioquía)</span></span><span><b>Sabaneta</b> <span
+								class="text-muted">(Antioquía)</span></span><span><b>Santa Gil</b> <span
+								class="text-muted">(Santander)</span></span><span><b>San José Del Guaviare</b> <span
+								class="text-muted">(Guaviare)</span></span><span><b>Santa Marta</b> <span
+								class="text-muted">(Magdalena)</span></span><span><b>Santo Tomás</b> <span
+								class="text-muted">(Atlántico)</span></span><span><b>Sincelejo</b> <span
+								class="text-muted">(Sucre)</span></span><span><b>Soacha</b> <span
+								class="text-muted">(Cundinamarca)</span></span><span><b>Sogamoso</b> <span
+								class="text-muted">(Boyacá)</span></span><span><b>Soledad</b> <span
+								class="text-muted">(Atlántico)</span></span><span><b>Tutúá</b> <span
+								class="text-muted">(Valle)</span></span><span><b>Tunja</b> <span
+								class="text-muted">(Boyacá)</span></span><span><b>Tubarco</b> <span
+								class="text-muted">(Bolíbar)</span></span><span><b>Urubá</b> <span
+								class="text-muted">(Antioquía)</span></span><span><b>Valledupar</b> <span
+								class="text-muted">(Cesar)</span></span><span><b>Villavicencio</b> <span
+								class="text-muted">(Meta)</span></span><span><b>Yopal</b> <span
+								class="text-muted">(Casanare)</span></span><span><b>Yumbo</b> <span
+								class="text-muted">(Valle)</span></span><span><b>Zipaquirá</b> <span
+								class="text-muted">(Cundinamarca)</span></span></div>
 				</div>
 
 				<button>Ver todo</button>
 			</div>
-			
-			
+
+
 
 		</section>
 
@@ -261,8 +424,8 @@
 						<div class="col-md-3 col-lg-2-4">
 							<article class="festival-card">
 								<div class="festival-image">
-									<img src="/assets/img/feria-2.png"
-										alt="Festival de la Leyenda Vallenata" class="img-fluid rounded" />
+									<img src="/assets/img/feria-2.png" alt="Festival de la Leyenda Vallenata"
+										class="img-fluid rounded" />
 								</div>
 								<h4 class="festival-title">FESTIVAL DE LA LEYENDA VALLENATA</h4>
 								<p class="festival-author">Por: Juan Carlos García Sierra</p>
@@ -352,8 +515,8 @@
 		</section>
 
 
-		
-		
+
+
 		<section class="main-section-content container-max-width slider-recomendados py-5">
 			<div class="d-flex justify-content-between align-items-center hide-800 w-100">
 				<h2 class="section-title m-0 p-0">Recomendados</h2>
@@ -511,7 +674,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="../static/loadComponents.js"></script>
-	
+
 </body>
 
 </html>
