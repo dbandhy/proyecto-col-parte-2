@@ -35,15 +35,23 @@
 </head>
 
 <body class="body-container">
+
+	<!-- Header start-->
 	<div id="main-header-turismo"></div>
+	<!-- Header end-->
 	
 
+	<!-- Menu start-->
 	<div id="main-menu-despegable"turismo></div>
+	<!-- Menu end-->
 
-	<div class="flyer">
+	<!-- Main Slider start-->
+	<div class="slider-container">
         <img class="flyer" src="/turismo/img/img-slider.png" alt="flyer">
     </div>
+	<!-- MainSlider end-->
 
+	<!-- social network side bar start -->
 	<div class="mt-5 mb-5 social-bar">
 		<div class="share-count">3.1K<span class="share-count">compartidos</span></div>
 		<div class="container-social-icons">
@@ -53,10 +61,13 @@
 			<div class="social-icon email"><i class="fas fa-envelope"></i></div>
 		</div>
 	</div>
+	<!--  social network side bar end -->
+
+
 
 	<main class="main-container">
 		
-		<!-- Seccion contenedor de slider -->
+		<!-- content 1  -->
 
 		<section class="main-section-content notice py-5 bg-white ">
 			<div class="container-max-width">
@@ -65,22 +76,32 @@
 						<div class="grid-articles-2 grid-mas-noticias">
 							<!-- falta editar el slider -->
 							<div class="flyer">
-								<img class="flyer" src="/turismo/img/img-slider.png" alt="flyer">
+								<img class="flyer" src="/turismo/img/content 1 main img.png" alt="flyer">
 							</div>
-							<div id="main-slider-cine"></div>
+
+							<!-- aca va el slider
+							  -->
+
 							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel libero, ex dolor, maxime esse exercitationem autem neque tempora dolore saepe modi commodi. Enim odit exercitationem pariatur excepturi illo, debitis beatae!</p>
 						</div>
 					</div>
 					<div class="grid-two-section-60-40-rgt d-grid gap-4 ">
-						<div class="flyer pb-3 row">
+						<div class="flyer pb-3 row">	
+				
 							<div class="sidebar-ad col-10">
 								<img src="/assets/img/poster-vertical.png"
 									alt="¿Cuánto tiempo toma tonificar el cuerpo con yoga de silla según mi edad?"
 									class="img-fluid img-yoga" />
 							</div>
+							
 							<div class="col-2">
 								<div class="social-sidebar-bn">
 									<div class="social-icons-bn">
+										
+										<a href="#" class="social-icon-link">
+											<div class="social-icon-bn email">
+												<i class="fas fa-envelope"></i>
+											</div>
 										<a href="#" class="social-icon-link">
 											<div class="social-icon-bn shopping">
 												<i class="fas fa-shopping-cart"></i>
@@ -177,6 +198,158 @@
 
 		
 		<h1>dsfsadfas</h1>
+
+		<section class="d-flex justify-content-between align-items-center hide-800 w-100 position-relative ">
+			<h2 class="section-title  m-0 p-0">FERIAS Y FIESTAS</h2>
+			
+
+			<div class="group-filter">
+				<button id="btnCiudad" class="form-select mb-3 d-flex align-items-center justify-content-between" type="button" onclick="mostrarCiudades()" style="cursor:pointer;">
+					<span id="btnCiudadText">Elige el pais</span>
+				</button>
+				<div id="ciudades-listado" class="ciudades-modal" style="display:none;">
+					<h2 class="section-title text-center mb-3">ELIGE TU CIUDAD</h2>
+					<div class="ciudades-search-bar mb-3">
+						<div class="search-input-wrapper">
+							<span class="search-icon"><i class="fa fa-search"></i></span>
+							<input type="text" class="form-control search-input" placeholder="Buscar ciudad...">
+						</div>
+					</div>
+					<div class="ciudades-grid"><span><b>Aguachica</b> <span class="text-muted">(Cesar)</span></span><span><b>Apartadó</b> <span class="text-muted">(Antioquía)</span></span><span><b>Armenia</b> <span class="text-muted">(Quindío)</span></span><span><b>Barrancabermeja</b> <span class="text-muted">(Santander)</span></span><span><b>Barranquilla</b> <span class="text-muted">(Atlántico)</span></span><span><b>Bello</b> <span class="text-muted">(Antioquía)</span></span><span><b>Bogotá</b> <span class="text-muted">(D.C)</span></span><span><b>Bucaramanga</b> <span class="text-muted">(Santander)</span></span><span><b>Buenaventura</b> <span class="text-muted">(Valle)</span></span><span><b>Buga</b> <span class="text-muted">(Valle)</span></span><span><b>Cali</b> <span class="text-muted">(Valle)</span></span><span><b>Cartagenea</b> <span class="text-muted">(Valle)</span></span><span><b>Cartago</b> <span class="text-muted">(Valle)</span></span><span><b>Caucasia</b> <span class="text-muted">(Antioquía)</span></span><span><b>Chía</b> <span class="text-muted">(Cundinamarca)</span></span><span><b>Ciudad Bolívar</b> <span class="text-muted">(Cundinamarca)</span></span><span><b>Cúcuta</b> <span class="text-muted">(Norte De Santander)</span></span><span><b>Dosquebradas</b> <span class="text-muted">(Risaralda)</span></span><span><b>Duitama</b> <span class="text-muted">(Boyacá)</span></span><span><b>Envigado</b> <span class="text-muted">(Antioquía)</span></span><span><b>Facatativá</b> <span class="text-muted">(Cundinamarca)</span></span><span><b>Florencia</b> <span class="text-muted">(Caquetá)</span></span><span><b>Fusagasugá</b> <span class="text-muted">(Cundinamarca)</span></span><span><b>Giradot</b> <span class="text-muted">(Cundinamarca)</span></span><span><b>Ibagué</b> <span class="text-muted">(Tolima)</span></span><span><b>Ipiales</b> <span class="text-muted">(Nariño)</span></span><span><b>Itagüí</b> <span class="text-muted">(Antioquía)</span></span><span><b>La Ceja</b> <span class="text-muted">(Antioquía)</span></span><span><b>Llano Grande</b> <span class="text-muted">(Antioquía)</span></span><span><b>Madrid</b> <span class="text-muted">(Cundinamarca)</span></span><span><b>Manizales</b> <span class="text-muted">(Caldas)</span></span><span><b>Medellín</b> <span class="text-muted">(Antioquía)</span></span><span><b>Mocoa</b> <span class="text-muted">(Putumayo)</span></span><span><b>Montería</b> <span class="text-muted">(Córdoba)</span></span><span><b>Mosquera</b> <span class="text-muted">(Cundinamarca)</span></span><span><b>Neiva</b> <span class="text-muted">(Huila)</span></span><span><b>Palmira</b> <span class="text-muted">(Valle)</span></span><span><b>Pamplona</b> <span class="text-muted">(Norte De Santander)</span></span><span><b>Pasto</b> <span class="text-muted">(Nariño)</span></span><span><b>Pereira</b> <span class="text-muted">(Risaralda)</span></span><span><b>Piedecuesta</b> <span class="text-muted">(Santander)</span></span><span><b>Pitalito</b> <span class="text-muted">(Huila)</span></span><span><b>Popayán</b> <span class="text-muted">(Cauca)</span></span><span><b>Puerto Boyacá</b> <span class="text-muted">(Boyacá)</span></span><span><b>Quibdó</b> <span class="text-muted">(Choco)</span></span><span><b>Restrepo</b> <span class="text-muted">(Meta)</span></span><span><b>Riohacha</b> <span class="text-muted">(La Guajira)</span></span><span><b>Rionegro</b> <span class="text-muted">(Antioquía)</span></span><span><b>Sabaneta</b> <span class="text-muted">(Antioquía)</span></span><span><b>Santa Gil</b> <span class="text-muted">(Santander)</span></span><span><b>San José Del Guaviare</b> <span class="text-muted">(Guaviare)</span></span><span><b>Santa Marta</b> <span class="text-muted">(Magdalena)</span></span><span><b>Santo Tomás</b> <span class="text-muted">(Atlántico)</span></span><span><b>Sincelejo</b> <span class="text-muted">(Sucre)</span></span><span><b>Soacha</b> <span class="text-muted">(Cundinamarca)</span></span><span><b>Sogamoso</b> <span class="text-muted">(Boyacá)</span></span><span><b>Soledad</b> <span class="text-muted">(Atlántico)</span></span><span><b>Tutúá</b> <span class="text-muted">(Valle)</span></span><span><b>Tunja</b> <span class="text-muted">(Boyacá)</span></span><span><b>Tubarco</b> <span class="text-muted">(Bolíbar)</span></span><span><b>Urubá</b> <span class="text-muted">(Antioquía)</span></span><span><b>Valledupar</b> <span class="text-muted">(Cesar)</span></span><span><b>Villavicencio</b> <span class="text-muted">(Meta)</span></span><span><b>Yopal</b> <span class="text-muted">(Casanare)</span></span><span><b>Yumbo</b> <span class="text-muted">(Valle)</span></span><span><b>Zipaquirá</b> <span class="text-muted">(Cundinamarca)</span></span></div>
+				</div>
+
+				<button>Ver todo</button>
+			</div>
+			
+			
+
+		</section>
+
+		<!-- Sección de Ferias y Fiestas (Optimizada para SEO) -->
+		<section class="ferias-fiestas-section py-4 ">
+			<div class="container">
+				<div class="ferias-header d-flex justify-content-between align-items-center mb-4">
+					<h2 class="ferias-title">FERIAS Y FIESTAS</h2>
+					<div class="ferias-nav d-none d-md-flex">
+						<a href="#" class="btn-nav active btn-azul-blanco">Sitios Turísticos</a>
+						<a href="#" class="btn-nav">Guía Del Viajero</a>
+					</div>
+					<!-- Botones de navegación para móvil -->
+					<div class="ferias-nav-mobile d-flex d-md-none">
+						<a href="#" class="btn-nav-mobile active btn-azul-blanco">Sitios Turísticos</a>
+						<a href="#" class="btn-nav-mobile">Guía Del Viajero</a>
+					</div>
+				</div>
+
+				<!-- Carrusel de Ferias (Versión Desktop) -->
+				<div class="ferias-carousel d-none d-md-block position-relative">
+					<div class="row">
+						<!-- Festival 1 -->
+						<div class="col-md-3 col-lg-2-4">
+							<article class="festival-card">
+								<div class="festival-image">
+									<img src="/assets/img/feria-3.png" alt="Carnaval de Barranquilla"
+										class="img-fluid rounded" />
+								</div>
+								<h4 class="festival-title">CARNAVAL DE BARRANQUILLA</h4>
+								<p class="festival-author">Por: Juan Carlos García Sierra</p>
+								<p class="festival-date">Del 14 al 20 Febrero</p>
+							</article>
+						</div>
+
+						<!-- Festival 2 -->
+						<div class="col-md-3 col-lg-2-4">
+							<article class="festival-card">
+								<div class="festival-image">
+									<img src="/assets/img/feria-2.png"
+										alt="Festival de la Leyenda Vallenata" class="img-fluid rounded" />
+								</div>
+								<h4 class="festival-title">FESTIVAL DE LA LEYENDA VALLENATA</h4>
+								<p class="festival-author">Por: Juan Carlos García Sierra</p>
+								<p class="festival-date">Del 14 al 20 Febrero</p>
+							</article>
+						</div>
+
+						<!-- Festival 3 -->
+						<div class="col-md-3 col-lg-2-4">
+							<article class="festival-card">
+								<div class="festival-image">
+									<img src="/assets/img/feria-2.png" alt="Festival de Teatro de Manizales"
+										class="img-fluid rounded" />
+								</div>
+								<h4 class="festival-title">FESTIVAL DE TEATRO DE MANIZALES</h4>
+								<p class="festival-author">Por: Juan Carlos García Sierra</p>
+								<p class="festival-date">Del 14 al 20 Febrero</p>
+							</article>
+						</div>
+
+						<!-- Festival 4 -->
+						<div class="col-md-3 col-lg-2-4">
+							<article class="festival-card">
+								<div class="festival-image">
+									<img src="/assets/img/feria-1.png" alt="Carnaval de Barranquilla"
+										class="img-fluid rounded" />
+								</div>
+								<h4 class="festival-title">CARNAVAL DE BARRANQUILLA</h4>
+								<p class="festival-author">Por: Juan Carlos García Sierra</p>
+								<p class="festival-date">Del 14 al 20 Febrero</p>
+							</article>
+						</div>
+
+						<!-- Festival 5 -->
+						<div class="col-md-3 col-lg-2-4 d-lg-block d-none">
+							<article class="festival-card">
+								<div class="festival-image">
+									<img src="/assets/img/feria-3.png" alt="Festival de Teatro de Manizales"
+										class="img-fluid rounded" />
+								</div>
+								<h4 class="festival-title">FESTIVAL DE TEATRO DE MANIZALES</h4>
+								<p class="festival-author">Por: Juan Carlos García Sierra</p>
+								<p class="festival-date">Del 14 al 20 Febrero</p>
+							</article>
+						</div>
+					</div>
+
+					<!-- Botones de navegación del carrusel -->
+					<button class="carousel-control prev" aria-label="Anterior">
+						<i class="fas fa-chevron-left" aria-hidden="true"></i>
+					</button>
+					<button class="carousel-control next" aria-label="Siguiente">
+						<i class="fas fa-chevron-right" aria-hidden="true"></i>
+					</button>
+				</div>
+
+				<!-- Lista de Ferias (Versión Mobile) -->
+				<div class="ferias-mobile d-block d-md-none">
+					<!-- Festival 1 -->
+					<article class="festival-card-mobile mb-4">
+						<div class="festival-image-mobile">
+							<img src="/assets/img/feria-3.png" alt="Carnaval de Barranquilla"
+								class="img-fluid rounded" />
+						</div>
+						<h4 class="festival-title-mobile">CARNAVAL DE BARRANQUILLA</h4>
+					</article>
+
+					<!-- Festival 2 -->
+					<article class="festival-card-mobile mb-4">
+						<div class="festival-image-mobile">
+							<img src="/assets/img/feria-1.png" alt="Festival de la Leyenda Vallenata"
+								class="img-fluid rounded" />
+						</div>
+						<h4 class="festival-title-mobile">FESTIVAL DE LA LEYENDA VALLENATA</h4>
+					</article>
+
+					<!-- Festival 3 -->
+					<article class="festival-card-mobile mb-4">
+						<div class="festival-image-mobile">
+							<img src="/assets/img/feria-2.png" alt="Festival de Teatro de Manizales"
+								class="img-fluid rounded" />
+						</div>
+						<h4 class="festival-title-mobile">FESTIVAL DE TEATRO DE MANIZALES</h4>
+					</article>
+				</div>
+			</div>
+		</section>
 
 
 		
@@ -329,10 +502,16 @@
 			</div>
 		</section>
 	</main>
+
+
+
+
+
 	<div id="main-footer"></div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="../static/loadComponents.js"></script>
+	
 </body>
 
 </html>
