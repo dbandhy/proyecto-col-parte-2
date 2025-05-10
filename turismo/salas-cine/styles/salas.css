@@ -11,8 +11,8 @@
 }
 
 .cine-horarios-list {
-    flex: 2;
-    width: 100%;
+   
+    width: 60%;
 }
 
 .cine-horarios-sidebar {
@@ -97,10 +97,10 @@
 
 .cine-title {
     font-size: clamp(1.125rem, 0.957rem + 0.673vw, 1.563rem);
-    font-weight: 900;
-    width: 300px;
+    font-weight: 700;
+    width: 60vw;
     color: #1a3876;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
 }
 
 .group-title{

@@ -68,13 +68,13 @@ const ciudades = [
 ];
 
 function renderCiudades() {
-    const grid = document.querySelector('.ciudades-grid');
-    if (!grid) return;
-    grid.innerHTML = ciudades.map(c =>
+    const grid = document.querySelector( '.ciudades-grid' );
+    if ( !grid ) return;
+    grid.innerHTML = ciudades.map( c =>
         `<span><b>${c.nombre}</b> <span class="text-muted">(${c.departamento})</span></span>`
-    ).join('');
+    ).join( '' );
 }
-document.addEventListener('DOMContentLoaded', renderCiudades);
+document.addEventListener( 'DOMContentLoaded', renderCiudades );
 
 const salas = [
     "Royal Films",
@@ -87,13 +87,13 @@ const salas = [
 ];
 
 function renderSalas() {
-    const salaGrid = document.querySelector("#salas-listado .sala-grid");
-    if (!salaGrid) return;
+    const salaGrid = document.querySelector( "#salas-listado .sala-grid" );
+    if ( !salaGrid ) return;
     salaGrid.innerHTML = salas
-        .map(sala => `<span><b>${sala}</b></span>`)
-        .join("");
+        .map( sala => `<span><b>${sala}</b></span>` )
+        .join( "" );
 }
-document.addEventListener("DOMContentLoaded", renderSalas);
+document.addEventListener( "DOMContentLoaded", renderSalas );
 
 
 const peliculas = [
@@ -233,9 +233,16 @@ const peliculas = [
 ];
 
 function renderPeliculas() {
-    const cartelera = document.querySelector(".section-cartelera-derecha");
-    if (!cartelera) return;
-    cartelera.innerHTML = peliculas.map((pelicula, index) => `
+    const cartelera = document.querySelector( ".section-cartelera-derecha" );
+    if ( !cartelera ) return;
+
+    // const titulo = document.createElement( "h1" );
+    // titulo.textContent = "Hola";
+    // cartelera.appendChild( titulo );
+
+    cartelera.innerHTML +=
+
+        peliculas.map( ( pelicula, index ) => `
       <div class="container-max-width movie-detail-container">
           <div class="movie-poster-container">
               ${pelicula.estreno ? '<div class="estreno-badge">Estreno</div>' : ''}
@@ -262,43 +269,43 @@ function renderPeliculas() {
           </div>
       </div>
         ${index === 2 || index === 5 ?
-            '<div class="justify-content-center align-items-center hide-800 w-100 position-relative image-anuncio">' +
-            '<img src="/assets/img/banner-copa-america.png" alt="img" />' +
-            '</div>' : ''}
-    `).join("");
+                '<div class="justify-content-center align-items-center hide-800 w-100 position-relative image-anuncio">' +
+                '<img src="/assets/img/banner-copa-america.png" alt="img" />' +
+                '</div>' : ''}
+    `).join( "" );
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener( "DOMContentLoaded", () => {
     renderSalas();
     renderPeliculas();
-});
+} );
 
 
 
 function llenarSelectoresModal() {
-    const selectCiudad = document.getElementById('selectCiudad');
-    if (selectCiudad) {
+    const selectCiudad = document.getElementById( 'selectCiudad' );
+    if ( selectCiudad ) {
         selectCiudad.innerHTML = '<option value="">Ciudad</option>' +
-            ciudades.map(c => `<option value="${c.nombre}">${c.nombre} (${c.departamento})</option>`).join('');
+            ciudades.map( c => `<option value="${c.nombre}">${c.nombre} (${c.departamento})</option>` ).join( '' );
     }
 
-    const selectSala = document.getElementById('selectSala');
-    if (selectSala) {
+    const selectSala = document.getElementById( 'selectSala' );
+    if ( selectSala ) {
         selectSala.innerHTML = '<option value="">Salas</option>' +
-            salas.map(s => `<option value="${s}">${s}</option>`).join('');
+            salas.map( s => `<option value="${s}">${s}</option>` ).join( '' );
     }
 }
 
 function modalFiltrosListeners() {
-    const btnAbrir = document.getElementById('btnAbrirFiltros');
-    const modal = document.getElementById('filtrosModal');
-    if (btnAbrir && modal) {
+    const btnAbrir = document.getElementById( 'btnAbrirFiltros' );
+    const modal = document.getElementById( 'filtrosModal' );
+    if ( btnAbrir && modal ) {
         btnAbrir.onclick = () => { modal.style.display = 'flex'; };
-        modal.onclick = e => { if (e.target === modal) modal.style.display = 'none'; };
+        modal.onclick = e => { if ( e.target === modal ) modal.style.display = 'none'; };
     }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener( 'DOMContentLoaded', function () {
     llenarSelectoresModal();
     modalFiltrosListeners();
-});
+} );
