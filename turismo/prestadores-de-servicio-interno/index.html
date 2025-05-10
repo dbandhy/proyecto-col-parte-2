@@ -66,9 +66,52 @@
                         </span>
 
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magnam, dignissimos quas libero
-                        nihil sapiente enim voluptas? Minus ipsam quos autem excepturi laudantium cum, quidem facilis,
-                        nemo iste consequatur officia?</p>
+                    <p class="mb-4">Seleccione los establecimientos de su interés</p>
+
+                    <div class="container py-4" style="background-color: #f4f9ff;">
+                        <form>
+                            <div class="row g-3">
+                                <!-- Categoría -->
+                                <div class="col-md-6">
+                                    <label for="categoria" class="form-label">Categoría (*)</label>
+                                    <select id="categoria" class="form-select rounded-pill fw-bold text-primary">
+                                        <option selected>Agencia De Viajes</option>
+                                        <!-- Agrega más opciones si deseas -->
+                                    </select>
+                                </div>
+
+                                <!-- Sub Categoría -->
+                                <div class="col-md-6">
+                                    <label for="subcategoria" class="form-label">Sub Categoría (*)</label>
+                                    <select id="subcategoria" class="form-select rounded-pill fw-bold text-primary">
+                                        <option selected>Todas</option>
+                                        <!-- Agrega más opciones si deseas -->
+                                    </select>
+                                </div>
+
+                                <!-- Ciudad -->
+                                <div class="col-md-6">
+                                    <label for="ciudad" class="form-label">Ciudad, Municipio O Departamento</label>
+                                    <select id="ciudad" class="form-select rounded-pill fw-bold text-primary">
+                                        <option selected>Ingresar Datos</option>
+                                        <!-- Agrega más opciones si deseas -->
+                                    </select>
+                                </div>
+
+                                <!-- Nombre -->
+                                <div class="col-md-6">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="text" id="nombre" class="form-control rounded-pill">
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="d-flex justify-content-end mt-4">
+                        <button type="submit" class="btn btn-primary px-4 rounded-pill">Buscar</button>
+                    </div>
+
+
                 </div>
             </div>
 
