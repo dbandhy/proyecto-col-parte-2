@@ -36,7 +36,13 @@
 </head>
 
 <body class="body-container">
-    <div id="main-header-cine"></div>
+    <!-- Header start-->
+    <div id="main-header-turismo"></div>
+    <!-- Header end-->
+
+
+
+
     <div id="main-menu-despegable"></div>
 
     <main class="main-container">
@@ -47,7 +53,8 @@
                 <div class="d-flex flex-column gap-3 hide-800 w-100 position-relative ">
                     <div class="title">
                         <h2 class="section-title m-0 p-0">CARTELERA CINE</h2>
-                        <button id="btnAbrirFiltros" class="btn btn-outline-primary align-items-center gap-2 px-4 py-2 rounded-pill btn-filtros">
+                        <button id="btnAbrirFiltros"
+                            class="btn btn-outline-primary align-items-center gap-2 px-4 py-2 rounded-pill btn-filtros">
                             <i class="fa fa-sliders"></i>
                             <span>Filtros</span>
                         </button>
@@ -60,14 +67,15 @@
                                     <div class="modal-body d-flex flex-column gap-3">
                                         <select id="selectCiudad" class="form-select mb-2 filtros-select"></select>
                                         <select id="selectSala" class="form-select mb-4 filtros-select"></select>
-                                        <button id="btnConsultar" class="btn btn-primary rounded-pill w-100 btn-consultar">Consultar</button>
+                                        <button id="btnConsultar"
+                                            class="btn btn-primary rounded-pill w-100 btn-consultar">Consultar</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="group-filter">                       
+
+                    <div class="group-filter">
                         <button id="btnCiudad"
                             class="form-select mb-3 d-flex align-items-center justify-content-between" type="button"
                             onclick="mostrarCiudades()" style="cursor:pointer;">
