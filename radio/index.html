@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Cine</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="./styles/radio.css" />
+	<link rel="stylesheet" href="../styles/style.css" />
+	<!-- Estilos componentes -->
+	<link rel="stylesheet" href="../styles/footer.css" />
+	<link rel="stylesheet" href="./styles/header_radio.css" />
+	<link rel="stylesheet" href="./styles/slider_radio.css" />
+	<link rel="stylesheet" href="./styles/slider_estreno.css" />
+	<link rel="stylesheet" href="./styles/slider_detail.css" />
+	<link rel="stylesheet" href="/styles/menu-desplegable.css" />
+
+
+	<!-- JavaScript-->
+
+	<script src="./static/slider-estreno.js"></script>
+	<script src="./static/slider-radio.js"></script>
+	<script src="./static/slider-cartelera.js"></script>
+	<script src="./static/slider-detail.js"></script>
+	<script src="./static/index.js"></script>
+
+</head>
+
+<body class="body-container">
+	<div id="main-header-cine"></div>
+	<div id="main-menu-despegable"></div>
+
+	<main class="main-container">
+		<!-- Categorías de emisoras -->
+		<section class="main-section-content container-max-width radio-emisoras py-4">
+    <div class="d-flex justify-content-between align-items-center w-100 mb-4">
+        <h2 class="section-title m-0 p-0">CATEGORÍAS DE EMISORAS</h2>
+        <div class="search-bar-radio">
+            <input type="text" placeholder="Buscar...">
+            <button type="button" class="fa fa-search" aria-label="Buscar"></button>
+        </div>
+    </div>
+    
+    <div class="radio-emisoras-slider position-relative">
+        <!-- Flechas solo visibles en escritorio -->
+        <button class="slider-arrow slider-arrow-left hide-800" aria-label="Anterior">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        
+        <div class="radio-emisoras-cards">
+            <!-- Tarjeta de Emisora -->
+            <div class="radio-emisora-card">
+                <div class="radio-card-content">
+                    <!-- Contenido para escritorio -->
+                    <div class="radio-desktop-view">
+                        <div class="radio-card-left">
+                            <div class="radio-logo">
+                                <img src="../assets/icons/channel-4.png" alt="Aires Colombia">
+                            </div>
+                            <div class="radio-info-desktop">
+                                <div class="radio-name-container">
+                                    <h3 class="radio-name">Aires Colombia</h3>
+                                    <p class="radio-location">Bogotá (D.C) - Colombia</p>
+                                </div>
+                                <div class="radio-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="rating-info">Media: 3.2 Votos: 8</span>
+                                </div>
+                                <div class="radio-actions">
+                                    <button class="btn-play-live">
+                                        <i class="fas fa-play"></i> Escuchar En Vivo
+                                    </button>
+                                    <button class="btn-volume">
+                                        <i class="fas fa-volume-up"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="radio-card-right">
+                            <div class="radio-share-desktop">
+                                <p class="share-text">Comparte</p>
+                                <div class="social-icons">
+                                    <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="social-icon tiktok"><i class="fab fa-tiktok"></i></a>
+                                    <a href="#" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="#" class="social-icon twitter"><i class="fab fa-x-twitter"></i></a>
+                                </div>
+                            </div>
+                            
+                            <div class="radio-description">
+                                <p class="description-title">Aires de Colombia emisora de música tropical</p>
+                                <p class="description-text">para disfrutar en familia.</p>
+                            </div>
+                            
+                            <div class="radio-buttons">
+                                <a href="#" class="btn-programacion">
+                                    <i class="far fa-calendar-alt"></i> Toda La Programación
+                                </a>
+                                <a href="#" class="btn-me-gusta">
+                                    <i class="far fa-heart"></i> Me gusta
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contenido para móvil -->
+                    <div class="radio-mobile-view">
+                        <div class="radio-logo-mobile">
+                            <img src="../assets/icons/channel-4.png" alt="Aires Colombia">
+                        </div>
+                        
+                        <div class="radio-info-mobile">
+                            <h3 class="radio-name">Aires Colombia</h3>
+                            <p class="radio-location">Bogotá (D.C) - Colombia</p>
+                            
+                            <div class="radio-rating-mobile">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            
+                            <button class="btn-play-live-mobile">
+                                <i class="fas fa-play"></i> Escuchar En Vivo
+                            </button>
+                            
+                            <a href="#" class="btn-programacion-mobile">
+                                <i class="far fa-calendar-alt"></i> Toda La Programación
+                            </a>
+                            
+                            <div class="radio-hours-mobile">
+                                <i class="far fa-clock"></i> 24H
+                            </div>
+                            
+                            <div class="radio-description-mobile">
+                                <p class="description-title-mobile">Aires de Colombia</p>
+                                <p class="description-subtitle-mobile">Emisora de música tropical</p>
+                                <p class="description-text-mobile">para disfrutar en familia.</p>
+                            </div>
+                            
+                            <div class="radio-mobile-buttons">
+                                <a href="#" class="btn-me-gusta-mobile">
+                                    <i class="far fa-heart"></i> Me gusta
+                                </a>
+                                <a href="#" class="btn-compartir-mobile">
+                                    <i class="fas fa-share-alt"></i> Comparte
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Puedes duplicar la tarjeta para mostrar más emisoras -->
+        </div>
+        
+        <button class="slider-arrow slider-arrow-right hide-800" aria-label="Siguiente">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+		</section>
+
+		<!-- Sección de Géneros Musicales -->
+		<section class="musica-radio-section py-4 ">
+						<div class="container">
+							<!-- Sección de Géneros Musicales -->
+							<div class="generos-section mb-4">
+								<h3 style="color: #104596;">GÉNEROS</h3>
+
+								<!-- Versión Desktop (Carrusel) -->
+								<div class="generos-carousel d-none d-md-block">
+									<div class="row">
+										<div class="col-12">
+											<div class="generos-slider">
+												<!-- Género 1 -->
+												<div class="genero-item">
+													<div class="genero-icon">
+														<i class="fas fa-music fa-2x"></i>
+													</div>
+													<h3 class="genero-name">ROCK</h3>
+												</div>
+
+												<!-- Género 2 -->
+												<div class="genero-item">
+													<div class="genero-icon">
+														<i class="fas fa-guitar fa-2x"></i>
+													</div>
+													<h3 class="genero-name fa-2x">SALSA</h3>
+												</div>
+
+												<!-- Género 3 -->
+												<div class="genero-item">
+													<div class="genero-icon">
+														<i class="fas fa-headphones fa-2x"></i>
+													</div>
+													<h3 class="genero-name">REGGAETON</h3>
+												</div>
+
+												<!-- Género 4 -->
+												<div class="genero-item">
+													<div class="genero-icon">
+														<i class="fas fa-drum fa-2x"></i>
+													</div>
+													<h3 class="genero-name">VALLENATO</h3>
+												</div>
+
+												<!-- Género 5 -->
+												<div class="genero-item">
+													<div class="genero-icon">
+														<i class="fas fa-guitar fa-2x"></i>
+													</div>
+													<h3 class="genero-name">ROMÁNTICA</h3>
+												</div>
+
+												<!-- Género 6 -->
+												<div class="genero-item">
+													<div class="genero-icon">
+														<i class="fas fa-microphone fa-2x"></i>
+													</div>
+													<h3 class="genero-name">TROPICAL</h3>
+												</div>
+
+												<!-- Género 7 -->
+												<div class="genero-item">
+													<div class="genero-icon">
+														<i class="fas fa-guitar fa-2x"></i>
+													</div>
+													<h3 class="genero-name">HIP HOP</h3>
+												</div>
+
+												<!-- Género 8 -->
+												<div class="genero-item">
+													<div class="genero-icon">
+														<i class="fas fa-microphone fa-2x"></i>
+													</div>
+													<h3 class="genero-name">CLÁSICA</h3>
+												</div>
+
+												<div class="genero-item">
+													<div class="genero-icon">
+														<i class="fas fa-microphone fa-2x"></i>
+													</div>
+													<h3 class="genero-name">CLÁSICA</h3>
+												</div>
+
+												<div class="genero-item">
+													<div class="genero-icon">
+														<i class="fas fa-microphone fa-2x"></i>
+													</div>
+													<h3 class="genero-name">CLÁSICA</h3>
+												</div>
+
+												<div class="genero-item">
+													<div class="genero-icon">
+														<i class="fas fa-microphone fa-2x"></i>
+													</div>
+													<h3 class="genero-name">CLÁSICA</h3>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- Botones de navegación del carrusel -->
+									<button class="carousel-control prev" aria-label="Anterior">
+										<i class="fas fa-chevron-left" aria-hidden="true"></i>
+									</button>
+									<button class="carousel-control next" aria-label="Siguiente">
+										<i class="fas fa-chevron-right" aria-hidden="true"></i>
+									</button>
+								</div>
+
+								<!-- Versión Mobile (Grid) -->
+								<div class="generos-grid d-block d-md-none">
+									<div class="row g-2">
+										<!-- Género 1 -->
+										<div class="col-4 d-flex justify-content-center">
+											<div class="genero-item">
+												<div class="genero-icon">
+													<i class="fas fa-headphones fa-2x"></i>
+												</div>
+												<h3 class="genero-name">ROCK</h3>
+											</div>
+										</div>
+
+										<!-- Género 2 -->
+										<div class="col-4 d-flex justify-content-center">
+											<div class="genero-item">
+												<div class="genero-icon">
+													<i class="fas fa-drum fa-2x"></i>
+												</div>
+												<h3 class="genero-name">SALSA</h3>
+											</div>
+										</div>
+
+										<!-- Género 3 -->
+										<div class="col-4 d-flex justify-content-center">
+											<div class="genero-item">
+												<div class="genero-icon">
+													<i class="fas fa-headphones fa-2x"></i>
+												</div>
+												<h3 class="genero-name">REGGAETON</h3>
+											</div>
+										</div>
+
+										<!-- Género 4 -->
+										<div class="col-4 d-flex justify-content-center">
+											<div class="genero-item">
+												<div class="genero-icon">
+													<i class="fas fa-drum fa-2x"></i>
+												</div>
+												<h3 class="genero-name">VALLENATO</h3>
+											</div>
+										</div>
+
+										<!-- Género 5 -->
+										<div class="col-4 d-flex justify-content-center">
+											<div class="genero-item">
+												<div class="genero-icon">
+													<i class="fas fa-guitar fa-2x"></i>
+												</div>
+												<h3 class="genero-name">ROMÁNTICA</h3>
+											</div>
+										</div>
+
+										<!-- Género 6 -->
+										<div class="col-4 d-flex justify-content-center">
+											<div class="genero-item">
+												<div class="genero-icon">
+													<i class="fas fa-drum fa-2x"></i>
+												</div>
+												<h3 class="genero-name">TROPICAL</h3>
+											</div>
+										</div>
+
+										<!-- Género 7 -->
+										<div class="col-4 d-flex justify-content-center">
+											<div class="genero-item">
+												<div class="genero-icon">
+													<i class="fas fa-headphones fa-2x"></i>
+												</div>
+												<h3 class="genero-name">HIP HOP</h3>
+											</div>
+										</div>
+
+										<!-- Género 8 -->
+										<div class="col-4 d-flex justify-content-center">
+											<div class="genero-item">
+												<div class="genero-icon">
+													<i class="fas fa-guitar fa-2x"></i>
+												</div>
+												<h3 class="genero-name">CLÁSICA</h3>
+											</div>
+										</div>
+
+										<!-- Botón Ver Más -->
+										<div class="col-4 d-flex justify-content-center">
+											<div class="genero-item ver-mas">
+												<div class="genero-icon">
+													<i class="fas fa-plus fa-2x" aria-hidden="true"></i>
+												</div>
+												<h3 class="genero-name">MÁS</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							
+						</div>
+		</section>
+
+		<!-- Sección combinada de Emisoras y Banner lateral -->
+		<section class="main-section-content container-max-width py-4">
+			<div class="grid-two-section-60-40">
+				<!-- Columna izquierda: Emisoras -->
+				<div class="grid-two-section-60-40-lft">
+					<div class="emisoras-section">
+						<div class="d-flex justify-content-between align-items-center mb-3">
+							<h2 class="section-title m-0 p-0">EMISORAS EN VIVO</h2>
+							<div class="emisoras-filters hide-800">
+								<button class="filter-btn me-2">
+									Por Región <i class="fas fa-chevron-down ms-2"></i>
+								</button>
+								<button class="filter-btn">
+									Por Temas <i class="fas fa-chevron-down ms-2"></i>
+								</button>
+							</div>
+						</div>
+						
+						<!-- Versión Desktop (Grid) -->
+						<div class="emisoras-grid d-none d-md-grid">
+							<!-- Fila 1 -->
+							<div class="emisora-item">
+								<div class="emisora-logo">
+									<img src="../assets/icons/channel-4.png" alt="Corazón Popular">
+								</div>
+								<h3 class="emisora-name">Corazón Popular</h3>
+							</div>
+							
+							<div class="emisora-item">
+								<div class="emisora-logo">
+									<img src="../assets/icons/channel-4.png" alt="Melodía Stereo">
+								</div>
+								<h3 class="emisora-name">Melodía Stereo</h3>
+							</div>
+							
+							<div class="emisora-item">
+								<div class="emisora-logo">
+									<img src="../assets/icons/channel-2.png" alt="Radio Web Colombia Tv">
+								</div>
+								<h3 class="emisora-name">Radio Web Colombia Tv</h3>
+							</div>
+
+							<div class="emisora-item">
+								<div class="emisora-logo">
+									<img src="../assets/icons/channel-1.png" alt="Radio Web Colombia Tv">
+								</div>
+								<h3 class="emisora-name">Radio Web Colombia Tv</h3>
+							</div>
+							
+							<div class="emisora-item">
+								<div class="emisora-logo">
+									<img src="../assets/icons/channel-1.png" alt="Radio Web Colombia Tv">
+								</div>
+								<h3 class="emisora-name">Radio Web Colombia Tv</h3>
+							</div>
+
+							<div class="emisora-item">
+								<div class="emisora-logo">
+									<img src="../assets/icons/channel-1.png" alt="Radio Web Colombia Tv">
+								</div>
+								<h3 class="emisora-name">Radio Web Colombia Tv</h3>
+							</div>
+
+							<div class="emisora-item">
+								<div class="emisora-logo">
+									<img src="../assets/icons/channel-1.png" alt="Radio Web Colombia Tv">
+								</div>
+								<h3 class="emisora-name">Radio Web Colombia Tv</h3>
+							</div>
+
+							<div class="emisora-item">
+								<div class="emisora-logo">
+									<img src="../assets/icons/channel-1.png" alt="Radio Web Colombia Tv">
+								</div>
+								<h3 class="emisora-name">Radio Web Colombia Tv</h3>
+							</div>
+
+							<div class="emisora-item">
+								<div class="emisora-logo">
+									<img src="../assets/icons/channel-1.png" alt="Radio Web Colombia Tv">
+								</div>
+								<h3 class="emisora-name">Radio Web Colombia Tv</h3>
+							</div>
+
+							<div class="emisora-item">
+								<div class="emisora-logo">
+									<img src="../assets/icons/channel-1.png" alt="Radio Web Colombia Tv">
+								</div>
+								<h3 class="emisora-name">Radio Web Colombia Tv</h3>
+							</div>
+
+							<div class="emisora-item">
+								<div class="emisora-logo">
+									<img src="../assets/icons/channel-1.png" alt="Radio Web Colombia Tv">
+								</div>
+								<h3 class="emisora-name">Radio Web Colombia Tv</h3>
+							</div>
+
+							<div class="emisora-item">
+								<div class="emisora-logo">
+									<img src="../assets/icons/channel-1.png" alt="Radio Web Colombia Tv">
+								</div>
+								<h3 class="emisora-name">Radio Web Colombia Tv</h3>
+							</div>
+
+							<div class="emisora-item">
+								<div class="emisora-logo">
+									<img src="../assets/icons/channel-1.png" alt="Radio Web Colombia Tv">
+								</div>
+								<h3 class="emisora-name">Radio Web Colombia Tv</h3>
+							</div>
+
+							<div class="emisora-item">
+								<div class="emisora-logo">
+									<img src="../assets/icons/channel-4.png" alt="Radio Paisa">
+								</div>
+								<h3 class="emisora-name">Radio Paisa</h3>
+							</div>
+							
+							<div class="emisora-item">
+								<div class="emisora-logo">
+									<img src="../assets/icons/channel-4.png" alt="La Voz De Los Pastos">
+								</div>
+								<h3 class="emisora-name">La Voz De Los Pastos</h3>
+							</div>
+							
+							<!-- Fila 2 -->
+							<div class="emisora-item">
+								<div class="emisora-logo">
+									<img src="../assets/icons/channel-4.png" alt="Tiempo De Boleros">
+								</div>
+								<h3 class="emisora-name">Tiempo De Boleros</h3>
+							</div>
+							
+							<div class="emisora-item">
+								<div class="emisora-logo">
+									<img src="../assets/icons/channel-4.png" alt="La Pachanguera">
+								</div>
+								<h3 class="emisora-name">La Pachanguera</h3>
+							</div>
+							
+							<div class="emisora-item">
+								<div class="emisora-logo">
+									<img src="../assets/icons/channel-4.png" alt="Melodía Stereo">
+								</div>
+								<h3 class="emisora-name">Melodía Stereo</h3>
+							</div>
+							
+							<div class="emisora-item">
+								<div class="emisora-logo">
+									<img src="../assets/icons/channel-4.png" alt="Corazón Popular">
+								</div>
+								<h3 class="emisora-name">Corazón Popular</h3>
+							</div>
+							
+							<div class="emisora-item">
+								<div class="emisora-logo">
+									<img src="../assets/icons/channel-4.png" alt="Melodía Stereo">
+								</div>
+								<h3 class="emisora-name">Melodía Stereo</h3>
+							</div>
+							
+							<!-- Puedes agregar más filas según sea necesario -->
+						</div>
+						
+						<!-- Versión Mobile (Grid) -->
+						<div class="emisoras-grid-mobile d-grid d-md-none">
+							<!-- Emisora 1 -->
+							<div class="emisora-item">
+								<div class="emisora-logo">
+									<img src="../assets/icons/channel-4.png" alt="Corazón Popular">
+								</div>
+								<h3 class="emisora-name">Corazón Popular</h3>
+							</div>
+							
+							<div class="emisora-item">
+								<div class="emisora-logo">
+									<img src="../assets/icons/channel-4.png" alt="Melodía Stereo">
+								</div>
+								<h3 class="emisora-name">Melodía Stereo</h3>
+							</div>
+							
+							<div class="emisora-item">
+								<div class="emisora-logo">
+									<img src="../assets/icons/channel-4.png" alt="Radio Web Colombia Tv">
+								</div>
+								<h3 class="emisora-name">Radio Web Colombia Tv</h3>
+							</div>
+							
+							<!-- Puedes agregar más emisoras según sea necesario -->
+							
+							<!-- Botón Ver Más (Solo Mobile) -->
+							<div class="text-center mt-3 grid-column-full">
+								<a href="#" class="btn-azul-blanco w-100">Ver más</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Columna derecha: Banner lateral  -->
+				<div class="grid-two-section-60-40-rgt d-grid gap-4">
+					<!-- Banner Publicitario -->
+						<div class="col-lg-12 tv-banner d-sm-none d-lg-block" style="height: 250px;">
+							<img src="/assets/img/banner-tv.png" alt="Publicidad" />
+						</div>
+					<div class="flyer pb-3 row">
+						<div class="sidebar-ad col-10">
+							<img src="/assets/img/poster-vertical.png"
+								alt="¿Cuánto tiempo toma tonificar el cuerpo con yoga de silla según mi edad?"
+								class="img-fluid img-yoga" />
+						</div>
+						<div class="col-2">
+							<div class="social-sidebar-bn">
+								<div class="social-icons-bn">
+									<a href="#" class="social-icon-link">
+										<div class="social-icon-bn shopping">
+											<i class="fas fa-shopping-cart"></i>
+										</div>
+									</a>
+									<a href="#" class="social-icon-link">
+										<div class="social-icon-bn whatsapp">
+											<i class="fab fa-whatsapp"></i>
+										</div>
+									</a>
+									<a href="#" class="social-icon-link">
+										<div class="social-icon-bn facebook">
+											<i class="fab fa-facebook-f"></i>
+										</div>
+									</a>
+									<a href="#" class="social-icon-link">
+										<div class="social-icon-bn youtube">
+											<i class="fab fa-youtube"></i>
+										</div>
+									</a>
+									<a href="#" class="social-icon-link">
+										<div class="social-icon-bn instagram">
+											<i class="fab fa-instagram"></i>
+										</div>
+									</a>
+									<a href="#" class="social-icon-link">
+										<div class="social-icon-bn twitter">
+											<i class="fab fa-twitter"></i>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Banner Publicitario -->
+						<div class="col-lg-12 tv-banner d-sm-none d-lg-block" style="height: 150px;">
+							<img src="/assets/img/banner-tv.png" alt="Publicidad" />
+						</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="justify-content-center align-items-center hide-800 w-100 position-relative image-anuncio pb-4 pt-4">
+			<img src="../assets/img/banner-copa-america.png" alt="img" />
+		</div>
+				
+		<!-- Seccion flayer y grilla noticias -->
+        <section class="main-section-content py-5 bg-white">
+            <div class="container-max-width">
+
+                <div class="grid-two-section-60-40">
+                    <!-- Seccion izquierdo -->
+                    <div class="grid-two-section-60-40-lft">
+                        <div class="grid-articles-2 grid-mas-noticias">
+                            <div class="d-flex justify-content-between align-items-center hide-800 w-100">
+                                <h2 class="section-title m-0 p-0">NOTICIAS DE MÚSICA</h2>
+                                <a href="#" class="btn-azul-blanco">Ver todo</a>
+                            </div>
+                            <div class="card-article-2 card-article-2-variant-column card-bottom-separator pt-2">
+                                <img src="/assets/img/breaking-news-10.png"
+                                    alt="Donald Trump reconoció a Edmundo González" />
+                                <div class="card-article-2-content">
+                                    <p class="card-article-2-tag">CINE</p>
+                                    <h2 class="card-article-2-title">Donald Trump reconoció a Edmundo González</h2>
+                                    <a href="#" class="card-article-2-leer-mas">Leer más</a>
+                                    <p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+                                </div>
+                            </div>
+                            <div class="card-article-2 card-article-2-variant-column card-bottom-separator pt-2">
+                                <img src="/assets/img/breaking-news-7.png"
+                                    alt="Costa Rica hizo oficial su apoyo a Edmundo González" />
+                                <div class="card-article-2-content">
+                                    <p class="card-article-2-tag">CINE</p>
+                                    <h2 class="card-article-2-title">
+                                        Costa Rica hizo oficial su apoyo a Edmundo González
+                                    </h2>
+                                    <a href="#" class="card-article-2-leer-mas">Leer más</a>
+                                    <p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+                                </div>
+                            </div>
+                            <div class="grid-articles-2">
+                                <div class="card-article-2 card-bottom-separator">
+                                    <img src="/assets/img/breaking-news-6.png" alt="Maduro y Petro" />
+                                    <div class="card-article-2-content">
+                                        <p class="card-article-2-tag">CINE</p>
+                                        <h2 class="card-article-2-title">
+                                            Venezuela tiene carteles de se busca con la cara expresidentes
+                                        </h2>
+                                        <a href="#" class="card-article-2-leer-mas">Leer más</a>
+                                        <p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+                                    </div>
+                                </div>
+                                <div class="card-article-2 card-bottom-separator">
+                                    <img src="/assets/img/breaking-news-5.png" alt="Maduro y Petro" />
+                                    <div class="card-article-2-content">
+                                        <p class="card-article-2-tag">CINE</p>
+                                        <h2 class="card-article-2-title">
+                                            ¡Qué alivio! Colombianos en EE.UU pueden recibir apoyo por discapacidad
+                                        </h2>
+                                        <a href="#" class="card-article-2-leer-mas">Leer más</a>
+                                        <p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+                                    </div>
+                                </div>
+                                <div class="card-article-2 card-bottom-separator">
+                                    <img src="/assets/img/breaking-news-13.png" alt="Maduro y Petro" />
+                                    <div class="card-article-2-content">
+                                        <p class="card-article-2-tag">CINE</p>
+                                        <h2 class="card-article-2-title">
+                                            <i class="fas fa-circle text-warning me-1"></i>
+                                            La hora en la que arranca el nuevo capítulo de "Dragon Ball Daima"
+                                        </h2>
+                                        <a href="#" class="card-article-2-leer-mas">Leer más</a>
+                                        <p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+                                    </div>
+                                </div>
+                                <div class="card-article-2 card-bottom-separator">
+                                    <img src="/assets/img/breaking-news-12.png" alt="Maduro y Petro" />
+                                    <div class="card-article-2-content">
+                                        <p class="card-article-2-tag">CINE</p>
+                                        <h2 class="card-article-2-title">
+                                            <i class="fas fa-circle text-warning me-1"></i>
+                                            La hora en la que arranca el nuevo capítulo de "Dragon Ball Daima"
+                                        </h2>
+                                        <a href="#" class="card-article-2-leer-mas">Leer más</a>
+                                        <p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Seccion derecho -->
+                    <div class="grid-two-section-60-40-right d-grid gap-4">
+                        <div class="grid-articles-2 grid-lo-ultimo-colombia">
+                            <div class="d-flex justify-content-center align-items-center hide-800">
+                                <h2 class="section-title m-0 p-0">Lo último en Colombia</h2>
+                            </div>
+                            <div class="card-article-2 card-article-2-principal card-bottom-separator pt-2">
+                                <img src="/assets/img/breaking-news-14.png" alt="Maduro y Petro" />
+                                <div class="card-article-2-content">
+                                    <h2 class="card-article-2-title">
+                                        Cotización del dólar en Colombia: este es su precio hoy, 10 de enero
+                                    </h2>
+                                    <p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+                                    <p>
+                                        María Corina Machado reaparece en un video y dice que ya está libre. Leer más
+                                        <a href="#" class="card-article-2-leer-mas">Leer más</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="grid-articles-2">
+                                <div class="card-article-2 card-bottom-separator">
+                                    <img src="/assets/img/breaking-news-5.png" alt="Maduro y Petro" />
+                                    <div class="card-article-2-content">
+                                        <h2 class="card-article-2-title">
+                                            Costa Rica hizo oficial su apoyo a Edmundo González
+                                        </h2>
+                                        <a href="#" class="card-article-2-leer-mas">Leer más</a>
+                                        <p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+                                    </div>
+                                </div>
+                                <div class="card-article-2 card-bottom-separator">
+                                    <img src="/assets/img/breaking-news-5.png" alt="Maduro y Petro" />
+                                    <div class="card-article-2-content">
+                                        <h2 class="card-article-2-title">
+                                            Costa Rica hizo oficial su apoyo a Edmundo González
+                                        </h2>
+                                        <a href="#" class="card-article-2-leer-mas">Leer más</a>
+                                        <p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+                                    </div>
+                                </div>
+                                <div class="card-article-2">
+                                    <img src="/assets/img/breaking-news-5.png" alt="Maduro y Petro" />
+                                    <div class="card-article-2-content">
+                                        <h2 class="card-article-2-title">
+                                            Costa Rica hizo oficial su apoyo a Edmundo González
+                                        </h2>
+                                        <a href="#" class="card-article-2-leer-mas">Leer más</a>
+                                        <p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+	</main>
+	<div id="main-footer"></div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="../static/loadComponents.js"></script>
+</body>
+
+</html>
