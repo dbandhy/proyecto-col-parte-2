@@ -1,0 +1,774 @@
+.cine-horarios-section {
+    background: #fff;
+    padding: 32px 0 0 0;
+}
+
+.cine-horarios-grid {
+    display: flex;
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cine-horarios-list {
+    flex: 2;
+}
+
+.cine-horarios-title {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 24px;
+}
+
+.cine-horario-cine {
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 16px;
+    color: #191C36;
+}
+
+.cine-horario-cine:last-child {
+    border-bottom: none;
+}
+
+.cine-horario-nombre {
+    font-weight: 700;
+    font-size: 18px;
+    color: #191C36;
+    text-decoration: underline;
+    margin-bottom: 0;
+}
+
+.cine-horario-direccion {
+    color: #444;
+    font-size: 14px;
+    margin-bottom: 0px;
+
+}
+
+.cine-horario-icon {
+    color: #1a3876;
+    margin-right: 0px;
+
+}
+
+.cine-horario-formatos {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 0px;
+    flex-wrap: wrap;
+}
+
+.cine-horario-formato {
+    background: #eaf2ff;
+    color: #1a3876;
+    border-radius: 6px;
+    padding: 2px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    border: none;
+}
+
+.cine-horario-horas {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.cine-horario-hora {
+    background: #fff;
+    color: #1a3876;
+    border: 2px solid #1a3876;
+    border-radius: 6px;
+    padding: 2px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.cine-horario-hora:hover {
+    background: #eaf2ff;
+}
+
+.cine-horarios-sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.cine-horarios-consulta {
+    background: #f4f8ff;
+    border-radius: 18px;
+    padding: 24px 20px;
+    width: 100%;
+    max-width: 340px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+}
+
+.cine-horarios-consulta h3 {
+    color: #1a3876;
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.cine-horarios-select {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #dbeafe;
+    font-size: 1rem;
+    background: #fff;
+}
+
+.cine-horarios-btn {
+    width: 100%;
+    background: #1a3876;
+    color: #fff;
+    border: none;
+    border-radius: 22px;
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-top: 8px;
+    transition: background 0.2s;
+}
+
+.cine-horarios-btn:hover {
+    background: #274bb6;
+}
+
+@media (max-width: 800px) {
+    .cine-horarios-grid {
+        flex-direction: column-reverse;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .cine-horarios-banner {
+        max-width: 220px;
+    }
+}
+
+.trailer-btn {
+    display: flex;
+    flex-direction: row;
+    width: 112px;
+    height: 30px;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    background-color: #104596;
+    color: white;
+    border-radius: 50px;
+    padding: 0;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.grid-two-section-60-40-right {
+    display: flex !important;
+}
+
+.noticias-relacionadas-sidebar {
+    display: none;
+}
+
+@media (min-width: 900px) {
+    .grid-two-section-60-40-right {
+        display: none;
+    }
+
+    .noticias-relacionadas-sidebar {
+        display: block;
+    }
+}
+
+
+.trailer-btn:hover {
+    background-color: #0b5ed7;
+    transform: translateY(-2px);
+    color: white;
+}
+
+.trailer-btn i {
+    font-size: 1.1rem;
+}
+
+.container-top {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-image: url('/assets/img/breaking-news-1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.detalle-pelicula-container {
+    background: #f4f8ff;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: flex-start;
+    margin-bottom: 32px;
+    margin-top: 24px;
+}
+
+.detalle-pelicula-poster {
+    width: 260px;
+    min-width: 180px;
+    border-radius: 22px;
+    box-shadow: 0 4px 16px #0002;
+    position: relative;
+}
+
+.detalle-pelicula-estreno {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #e53e3e;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 18px 18px 0 0;
+    padding: 8px 16px;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.detalle-pelicula-btn-trailer {
+    height: 30px;
+    width: 120px;
+    transform: translateX(-50%);
+    background: #1a3876;
+    color: #fff;
+    border-radius: 22px;
+    padding: 6px 18px;
+    font-weight: 700;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    z-index: 2;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.detalle-pelicula-btn-trailer:hover {
+    background: #274bb6;
+}
+
+.detalle-pelicula-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.detalle-pelicula-titulo {
+    font-size: clamp(1.125rem, 0.957rem + 0.673vw, 1.563rem);
+    font-weight: 900;
+    margin: 0;
+    color: #191C36;
+}
+
+.detalle-pelicula-titulo-en {
+    font-size: clamp(0.938rem, 0.865rem + 0.288vw, 1.125rem);
+    color: #191C36;    
+    margin: 0;
+    font-style: italic;
+}
+
+.detalle-pelicula-tags {
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.detalle-pelicula-tag {
+    background: #FFFFFF;
+    color:#104596;
+    border-radius: 18px;
+    padding: 4px 16px;
+    font-size: clamp(0.625rem, 0.577rem + 0.192vw, 0.75rem);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.detalle-pelicula-label {
+    display: flex;
+    justify-content: start;
+    font-weight: 700;
+    color: #1a3876;
+    margin-right: 6px;
+}
+
+.detalle-compartir{
+    display: flex;
+    justify-content: start;
+    font-weight: 700;
+    color: #1a3876;
+    margin-right: 6px;
+    width: 100%;
+}
+
+.detalle-pelicula-director,
+.detalle-pelicula-actores {
+    display: flex;
+    color: #191C36;
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+    gap: 4px;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.detalle-pelicula-actores span, .detalle-pelicula-director span {
+    color: #191C36;
+    font-weight: 700;
+    text-align: start;
+}
+
+.detalle-pelicula-actores p, .detalle-pelicula-director p{
+    color: #1a3876;
+    font-weight: 700;
+    text-align: start;
+}
+
+.detalle-pelicula-social {
+    display: flex;
+    gap: 18px;
+    width: 100%;
+    justify-content: start;
+    margin-top: 14px;
+}
+
+.detalle-pelicula-social a {
+    font-size: 1.7rem;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    color: #1a3876;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid #dbeafe;
+    transition: background 0.2s, color 0.2s;
+}
+
+.detalle-pelicula-social a:hover {
+    background: #eaf2ff;
+    color: #274bb6;
+}
+
+.detalle-pelicula-titulo-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+
+@media (max-width: 900px) {
+    .cine-horarios-grid
+    .detalle-pelicula-titulo-container{
+        align-items: center;
+    }
+
+    .detalle-pelicula-tags{
+        justify-content: center;
+        border-top: 1px solid #104596;
+        border-bottom: 1px solid #104596;
+    }
+    
+    .cine-horarios-title{
+        display: none;
+    }
+    .detalle-pelicula-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .detalle-pelicula-poster {
+        width: 180px;
+    }
+
+    .detalle-pelicula-info {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* Radio estilos */
+/* Estilos para la sección de géneros */
+.cine-horarios-section {
+    padding: 20px 0;
+}
+
+.container-max-width {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.cine-horarios-grid {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 30px;
+}
+
+.section-title {
+    color: #104596;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.generos-header {
+    margin-bottom: 20px;
+}
+
+/* Estilos para la barra de búsqueda */
+.search-container, .search-container-mobile {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+}
+
+.generos-search {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #104596;
+}
+
+.filter-btn {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 8px 15px;
+    color: #104596;
+    font-size: 0.9rem;
+}
+
+/* Estilos para la sección "ME GUSTA" */
+.me-gusta-section {
+    margin-bottom: 15px;
+}
+
+.me-gusta-title {
+    color: #104596;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Estilos para las tarjetas de géneros */
+.generos-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.genero-card {
+    background-color: #f8faff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.genero-card-content {
+    display: flex;
+    padding: 20px;
+    position: relative;
+}
+
+.genero-icon {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+.genero-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.genero-info {
+    flex: 1;
+}
+
+.genero-title {
+    color: #104596;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+
+.genero-description {
+    color: #666;
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.genero-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn-elegir, .btn-me-gusta {
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.btn-elegir {
+    background-color: #ff4b4b;
+    color: white;
+    border: none;
+}
+
+.btn-me-gusta {
+    background-color: white;
+    color: #104596;
+    border: 1px solid #104596;
+}
+
+.genero-social {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+}
+
+.social-icon.facebook { background-color: #1877f2; }
+.social-icon.instagram { background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d); }
+.social-icon.whatsapp { background-color: #25d366; }
+.social-icon.twitter { background-color: #1da1f2; }
+.social-icon.youtube { background-color: #ff0000; }
+
+/* Estilos para móvil */
+.genero-mobile-actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.btn-heart-mobile {
+    background: none;
+    border: none;
+    color: #104596;
+    font-size: 1.2rem;
+}
+
+.genero-mobile-buttons {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+.btn-elegir-mobile, .btn-compartir-mobile {
+    flex: 1;
+    padding: 8px 0;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.btn-elegir-mobile {
+    background-color: #ff4b4b;
+    color: white;
+    border: none;
+}
+
+.btn-compartir-mobile {
+    background-color: white;
+    color: #104596;
+    border: 1px solid #104596;
+}
+
+/* Estilos para la barra lateral */
+.cine-horarios-sidebar {
+    width: 100%;
+}
+
+.cine-horarios-consulta {
+    background-color: #f8faff;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.cine-horarios-consulta h3 {
+    color: #104596;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.cine-horarios-select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23104596' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+}
+
+.cine-horarios-btn {
+    width: 100%;
+    background-color: #104596;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Estilos para el flyer y redes sociales */
+.flyer {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.sidebar-ad {
+    flex: 1;
+}
+
+.img-yoga {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.social-sidebar-bn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons-bn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-icon-bn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.social-icon-bn.shopping { background-color: #104596; }
+.social-icon-bn.whatsapp { background-color: #25d366; }
+.social-icon-bn.facebook { background-color: #1877f2; }
+.social-icon-bn.youtube { background-color: #ff0000; }
+.social-icon-bn.instagram { background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d); }
+.social-icon-bn.twitter { background-color: #1da1f2; }
+
+/* Media queries para responsividad */
+@media screen and (max-width: 767px) {
+    .cine-horarios-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .generos-cards-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .genero-card {
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+    
+    .genero-card-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px 10px 10px;
+    }
+    
+    .genero-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .genero-title {
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+    }
+}

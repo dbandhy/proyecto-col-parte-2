@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Género</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/radio.css" />
+    <link rel="stylesheet" href="../../styles/style.css" />
+    <!-- Estilos componentes -->
+    <link rel="stylesheet" href="../../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/header_radio.css" />
+    <link rel="stylesheet" href="../styles/slider_radio.css" />
+    <link rel="stylesheet" href="../styles/slider_estreno.css" />
+    <link rel="stylesheet" href="../styles/slider_detail.css" />
+    <link rel="stylesheet" href="./styles/horario.css" />
+    <link rel="stylesheet" href="/styles/menu-desplegable.css" />
+
+
+    <!-- JavaScript-->
+    <script src="./static/index.js"></script>
+
+
+</head>
+
+<body class="body-container">
+    <div id="main-header-cine"></div>
+    <div id="main-menu-despegable"></div>
+
+
+    <main class="main-container">
+    
+       <!-- Seccion grilla de géneros musicales -->
+        <section class="cine-horarios-section">
+            <div class="cine-horarios-grid container-max-width">
+
+                <div class="cine-horarios-list generos-list">
+                    <div class="generos-header d-flex justify-content-between align-items-center mb-4">
+                        <h2 class="section-title">GÉNEROS</h2>
+                        <div class="d-flex align-items-center">
+                            <div class="search-container me-3 d-none d-md-block">
+                                <input type="text" placeholder="¿Qué género buscas?" class="generos-search">
+                                <i class="fas fa-search search-icon"></i>
+                            </div>
+                            <button class="filter-btn d-md-none">
+                                <i class="fas fa-filter"></i> Filtros
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Barra de búsqueda móvil -->
+                    <div class="search-container-mobile d-block d-md-none mb-3">
+                        <input type="text" placeholder="¿Qué género deseas escuchar?" class="generos-search">
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+                    
+                    <!-- Sección "ME GUSTA" solo para móvil -->
+                    <div class="me-gusta-section d-block d-md-none mb-3">
+                        <h3 class="me-gusta-title">ME GUSTA</h3>
+                    </div>
+                    
+                    <!-- Contenedor de tarjetas de géneros -->
+                    <div class="generos-cards-container">
+                        <!-- Tarjeta 1 -->
+                        <div class="genero-card">
+                            <div class="genero-card-content">
+                                <div class="genero-icon">
+                                    <img src="../../assets/icons/channel-1.png" alt="Clásica">
+                                </div>
+                                <div class="genero-info">
+                                    <h3 class="genero-title">Clásica - Boleros - Jazz - Blues - Tango</h3>
+                                    <p class="genero-description d-none d-md-block">Estos géneros se encuentran agrupados ya que se emitirán emisoras todas estos géneros según su programación</p>
+                                </div>
+                                <div class="genero-actions d-none d-md-flex">
+                                    <button class="btn-elegir">
+                                        <i class="fas fa-headphones"></i> Elegir
+                                    </button>
+                                    <button class="btn-me-gusta">
+                                        <i class="far fa-heart"></i> Me gusta
+                                    </button>
+                                </div>
+                                <!-- <div class="genero-social d-none d-md-flex">
+                                    <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+                                </div> -->
+                                <!-- Botones para móvil -->
+                                <div class="genero-mobile-actions d-flex d-md-none">
+                                    <button class="btn-heart-mobile">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Botones inferiores para móvil -->
+                            <div class="genero-mobile-buttons d-flex d-md-none container">
+                                <button class="btn-elegir-mobile">
+                                    <i class="fas fa-headphones"></i> Elegir
+                                </button>
+                                <button class="btn-compartir-mobile">
+                                    <i class="fas fa-share-alt"></i> Compartir
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Tarjeta 2 -->
+                        <div class="genero-card">
+                            <div class="genero-card-content">
+                                <div class="genero-icon">
+                                    <img src="../../assets/icons/channel-1.png" alt="Electrónica">
+                                </div>
+                                <div class="genero-info">
+                                    <h3 class="genero-title">Electrónica - Hip Hop - Reggaeton</h3>
+                                    <p class="genero-description d-none d-md-block">Estos géneros se encuentran agrupados ya que se emitirán emisoras todas estos géneros según su programación</p>
+                                </div>
+                                <div class="genero-actions d-none d-md-flex">
+                                    <button class="btn-elegir">
+                                        <i class="fas fa-headphones"></i> Elegir
+                                    </button>
+                                    <button class="btn-me-gusta">
+                                        <i class="far fa-heart"></i> Me gusta
+                                    </button>
+                                </div>
+                                <!-- <div class="genero-social d-none d-md-flex">
+                                    <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+                                </div> -->
+                                <!-- Botones para móvil -->
+                                <div class="genero-mobile-actions d-flex d-md-none">
+                                    <button class="btn-heart-mobile">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Botones inferiores para móvil -->
+                            <div class="genero-mobile-buttons d-flex d-md-none container">
+                                <button class="btn-elegir-mobile">
+                                    <i class="fas fa-headphones"></i> Elegir
+                                </button>
+                                <button class="btn-compartir-mobile">
+                                    <i class="fas fa-share-alt"></i> Compartir
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Tarjeta 3 -->
+                        <div class="genero-card">
+                            <div class="genero-card-content">
+                                <div class="genero-icon">
+                                    <img src="../../assets/icons/channel-1.png" alt="Rock">
+                                </div>
+                                <div class="genero-info">
+                                    <h3 class="genero-title">Rock - Pop - Anglo - Dance - Disco</h3>
+                                    <p class="genero-description d-none d-md-block">Estos géneros se encuentran agrupados ya que se emitirán emisoras todas estos géneros según su programación</p>
+                                </div>
+                                <div class="genero-actions d-none d-md-flex">
+                                    <button class="btn-elegir">
+                                        <i class="fas fa-headphones"></i> Elegir
+                                    </button>
+                                    <button class="btn-me-gusta">
+                                        <i class="far fa-heart"></i> Me gusta
+                                    </button>
+                                </div>
+                                <!-- <div class="genero-social d-none d-md-flex">
+                                    <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+                                </div> -->
+                                <!-- Botones para móvil -->
+                                <div class="genero-mobile-actions d-flex d-md-none">
+                                    <button class="btn-heart-mobile">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Botones inferiores para móvil -->
+                            <div class="genero-mobile-buttons d-flex d-md-none container">
+                                <button class="btn-elegir-mobile">
+                                    <i class="fas fa-headphones"></i> Elegir
+                                </button>
+                                <button class="btn-compartir-mobile">
+                                    <i class="fas fa-share-alt"></i> Compartir
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Tarjeta 4 -->
+                        <div class="genero-card">
+                            <div class="genero-card-content">
+                                <div class="genero-icon">
+                                    <img src="../../assets/icons/channel-1.png" alt="Popular">
+                                </div>
+                                <div class="genero-info">
+                                    <h3 class="genero-title">Popular - Ranchera - Llanera</h3>
+                                    <p class="genero-description d-none d-md-block">Estos géneros se encuentran agrupados ya que se emitirán emisoras todas estos géneros según su programación</p>
+                                </div>
+                                <div class="genero-actions d-none d-md-flex">
+                                    <button class="btn-elegir">
+                                        <i class="fas fa-headphones"></i> Elegir
+                                    </button>
+                                    <button class="btn-me-gusta">
+                                        <i class="far fa-heart"></i> Me gusta
+                                    </button>
+                                </div>
+                                <!-- <div class="genero-social d-none d-md-flex">
+                                    <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+                                </div> -->
+                                <!-- Botones para móvil -->
+                                <div class="genero-mobile-actions d-flex d-md-none">
+                                    <button class="btn-heart-mobile">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Botones inferiores para móvil -->
+                            <div class="genero-mobile-buttons d-flex d-md-none container">
+                                <button class="btn-elegir-mobile">
+                                    <i class="fas fa-headphones"></i> Elegir
+                                </button>
+                                <button class="btn-compartir-mobile">
+                                    <i class="fas fa-share-alt"></i> Compartir
+                                </button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Columna derecha: Sidebar -->
+                <div class="cine-horarios-sidebar">
+                    <div class="cine-horarios-consulta">
+                        <h3>Consulta más horarios</h3>
+                        <select id="ciudad" class="cine-horarios-select">
+                            <option>Bogotá</option>
+                            <option>Medellín</option>
+                            <option>Cali</option>
+                        </select>
+                        <select id="sala" class="cine-horarios-select">
+                            <option>Elige tu sala favorita</option>
+                            <option>Altavista - Royal Films</option>
+                            <option>Andino - Cine Colombia</option>
+                        </select>
+                        <select id="fecha" class="cine-horarios-select">
+                            <option>Hoy 30 Enero</option>
+                            <option>Mañana 31 Enero</option>
+                        </select>
+                        <button class="cine-horarios-btn">Consultar</button>
+                    </div>
+                    <div class="grid-two-section-60-40-rgt d-grid gap-4 ">
+                        <div class="flyer pb-3 row">
+                            <div class="sidebar-ad col-10">
+                                <img src="/assets/img/poster-vertical.png"
+                                    alt="¿Cuánto tiempo toma tonificar el cuerpo con yoga de silla según mi edad?"
+                                    class="img-fluid img-yoga" />
+                            </div>
+                            <div class="col-2">
+                                <div class="social-sidebar-bn">
+                                    <div class="social-icons-bn">
+                                        <a href="#" class="social-icon-link">
+                                            <div class="social-icon-bn shopping">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="social-icon-link">
+                                            <div class="social-icon-bn whatsapp">
+                                                <i class="fab fa-whatsapp"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="social-icon-link">
+                                            <div class="social-icon-bn facebook">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="social-icon-link">
+                                            <div class="social-icon-bn youtube">
+                                                <i class="fab fa-youtube"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="social-icon-link">
+                                            <div class="social-icon-bn instagram">
+                                                <i class="fab fa-instagram"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="social-icon-link">
+                                            <div class="social-icon-bn twitter">
+                                                <i class="fab fa-twitter"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ...dentro de <div class="cine-horarios-sidebar">, después del flyer/social... -->
+                    <div class="noticias-relacionadas-sidebar mt-4 p-4" style="background:#f4f8ff; border-radius:22px;">
+                        <h2 class="fw-bold text-center mb-4" style="color:#1a3876;">Noticias relacionadas</h2>
+                        <div class="noticia-principal mb-3">
+                            <img src="/assets/img/breaking-news-1.png" alt="Noticia principal"
+                                style="width:100%; border-radius:8px;">
+                            <div class="mt-2">
+                                <p class="fw-bold mb-1" style="font-size:1.1rem;">Cotización del dólar en Colombia: este
+                                    es su precio hoy, 10 de enero</p>
+                                <p class="mb-0" style="font-size:0.95rem;">Por: <b>Juan Carlos García Sierra</b></p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="noticia-secundaria d-flex mb-3">
+                            <img src="/assets/img/breaking-news-10.png" alt="Noticia secundaria"
+                                style="width:90px; height:60px; object-fit:cover; border-radius:6px;">
+                            <div class="ms-3">
+                                <p class="fw-bold mb-1" style="font-size:1rem;">Costa Rica hizo oficial su apoyo a
+                                    Edmundo González</p>
+                                <a href="#" class="fw-bold" style="color:#1a3876;">Leer más</a>
+                                <p class="mb-0" style="font-size:0.95rem;">Por: <b>Juan Carlos García Sierra</b></p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="noticia-secundaria d-flex mb-3">
+                            <img src="/assets/img/breaking-news-1.png" alt="Noticia secundaria"
+                                style="width:90px; height:60px; object-fit:cover; border-radius:6px;">
+                            <div class="ms-3">
+                                <p class="fw-bold mb-1" style="font-size:1rem;">Costa Rica hizo oficial su apoyo a
+                                    Edmundo González</p>
+                                <a href="#" class="fw-bold" style="color:#1a3876;">Leer más</a>
+                                <p class="mb-0" style="font-size:0.95rem;">Por: <b>Juan Carlos García Sierra</b></p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="noticia-secundaria d-flex mb-3">
+                            <img src="/assets/img/breaking-news-1.png" alt="Noticia secundaria"
+                                style="width:90px; height:60px; object-fit:cover; border-radius:6px;">
+                            <div class="ms-3">
+                                <p class="fw-bold mb-1" style="font-size:1rem;">Costa Rica hizo oficial su apoyo a
+                                    Edmundo González</p>
+                                <a href="#" class="fw-bold" style="color:#1a3876;">Leer más</a>
+                                <p class="mb-0" style="font-size:0.95rem;">Por: <b>Juan Carlos García Sierra</b></p>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary w-100 mt-3"
+                            style="border-radius:22px; background:#1a3876; border:none;">Ver más</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Seccion flayer y grilla noticias -->
+        <section class="main-section-content py-5 bg-white">
+            <div class="container-max-width">
+                <div class="grid-two-section-60-40">
+                    <!-- Seccion izquierdo -->
+                    <div class="grid-two-section-60-40-lft">
+
+                        <div class="grid-articles-2 grid-mas-noticias">
+                            <div class="d-flex justify-content-between align-items-center hide-800 w-100">
+                                <h2 class="section-title m-0 p-0">NOTICIAS RELACIONADAS</h2>
+                                <a href="#" class="btn-azul-blanco">Ver todo</a>
+                            </div>
+                            <div class="card-article-2 card-article-2-variant-column card-bottom-separator pt-2">
+                                <img src="/assets/img/breaking-news-10.png"
+                                    alt="Donald Trump reconoció a Edmundo González" />
+                                <div class="card-article-2-content">
+                                    <p class="card-article-2-tag">CINE</p>
+                                    <h2 class="card-article-2-title">Donald Trump reconoció a Edmundo González</h2>
+                                    <a href="#" class="card-article-2-leer-mas">Leer más</a>
+                                    <p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+                                </div>
+                            </div>
+                            <div class="card-article-2 card-article-2-variant-column card-bottom-separator pt-2">
+                                <img src="/assets/img/breaking-news-7.png"
+                                    alt="Costa Rica hizo oficial su apoyo a Edmundo González" />
+                                <div class="card-article-2-content">
+                                    <p class="card-article-2-tag">CINE</p>
+                                    <h2 class="card-article-2-title">
+                                        Costa Rica hizo oficial su apoyo a Edmundo González
+                                    </h2>
+                                    <a href="#" class="card-article-2-leer-mas">Leer más</a>
+                                    <p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+                                </div>
+                            </div>
+                            <div class="grid-articles-2">
+                                <div class="card-article-2 card-bottom-separator">
+                                    <img src="/assets/img/breaking-news-6.png" alt="Maduro y Petro" />
+                                    <div class="card-article-2-content">
+                                        <p class="card-article-2-tag">CINE</p>
+                                        <h2 class="card-article-2-title">
+                                            Venezuela tiene carteles de se busca con la cara expresidentes
+                                        </h2>
+                                        <a href="#" class="card-article-2-leer-mas">Leer más</a>
+                                        <p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+                                    </div>
+                                </div>
+                                <div class="card-article-2 card-bottom-separator">
+                                    <img src="/assets/img/breaking-news-5.png" alt="Maduro y Petro" />
+                                    <div class="card-article-2-content">
+                                        <p class="card-article-2-tag">CINE</p>
+                                        <h2 class="card-article-2-title">
+                                            ¡Qué alivio! Colombianos en EE.UU pueden recibir apoyo por discapacidad
+                                        </h2>
+                                        <a href="#" class="card-article-2-leer-mas">Leer más</a>
+                                        <p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+                                    </div>
+                                </div>
+                                <div class="card-article-2 card-bottom-separator">
+                                    <img src="/assets/img/breaking-news-13.png" alt="Maduro y Petro" />
+                                    <div class="card-article-2-content">
+                                        <p class="card-article-2-tag">CINE</p>
+                                        <h2 class="card-article-2-title">
+                                            <i class="fas fa-circle text-warning me-1"></i>
+                                            La hora en la que arranca el nuevo capítulo de "Dragon Ball Daima"
+                                        </h2>
+                                        <a href="#" class="card-article-2-leer-mas">Leer más</a>
+                                        <p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+                                    </div>
+                                </div>
+                                <div class="card-article-2 card-bottom-separator">
+                                    <img src="/assets/img/breaking-news-12.png" alt="Maduro y Petro" />
+                                    <div class="card-article-2-content">
+                                        <p class="card-article-2-tag">CINE</p>
+                                        <h2 class="card-article-2-title">
+                                            <i class="fas fa-circle text-warning me-1"></i>
+                                            La hora en la que arranca el nuevo capítulo de "Dragon Ball Daima"
+                                        </h2>
+                                        <a href="#" class="card-article-2-leer-mas">Leer más</a>
+                                        <p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Seccion derecho -->
+                    <div class="grid-two-section-60-40-right d-grid gap-4">
+                        <div class="grid-articles-2 grid-lo-ultimo-colombia">
+                            <div class="d-flex justify-content-center align-items-center hide-800">
+                                <h2 class="section-title m-0 p-0">Lo último en Colombia</h2>
+                            </div>
+                            <div class="card-article-2 card-article-2-principal card-bottom-separator pt-2">
+                                <img src="/assets/img/breaking-news-14.png" alt="Maduro y Petro" />
+                                <div class="card-article-2-content">
+                                    <h2 class="card-article-2-title">
+                                        Cotización del dólar en Colombia: este es su precio hoy, 10 de enero
+                                    </h2>
+                                    <p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+                                    <p>
+                                        María Corina Machado reaparece en un video y dice que ya está libre. Leer más
+                                        <a href="#" class="card-article-2-leer-mas">Leer más</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="grid-articles-2">
+                                <div class="card-article-2 card-bottom-separator">
+                                    <img src="/assets/img/breaking-news-5.png" alt="Maduro y Petro" />
+                                    <div class="card-article-2-content">
+                                        <h2 class="card-article-2-title">
+                                            Costa Rica hizo oficial su apoyo a Edmundo González
+                                        </h2>
+                                        <a href="#" class="card-article-2-leer-mas">Leer más</a>
+                                        <p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+                                    </div>
+                                </div>
+                                <div class="card-article-2 card-bottom-separator">
+                                    <img src="/assets/img/breaking-news-5.png" alt="Maduro y Petro" />
+                                    <div class="card-article-2-content">
+                                        <h2 class="card-article-2-title">
+                                            Costa Rica hizo oficial su apoyo a Edmundo González
+                                        </h2>
+                                        <a href="#" class="card-article-2-leer-mas">Leer más</a>
+                                        <p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+                                    </div>
+                                </div>
+                                <div class="card-article-2">
+                                    <img src="/assets/img/breaking-news-5.png" alt="Maduro y Petro" />
+                                    <div class="card-article-2-content">
+                                        <h2 class="card-article-2-title">
+                                            Costa Rica hizo oficial su apoyo a Edmundo González
+                                        </h2>
+                                        <a href="#" class="card-article-2-leer-mas">Leer más</a>
+                                        <p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="main-footer"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../static/loadComponents.js"></script>
+</body>
+
+</html>
