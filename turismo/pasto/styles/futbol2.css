@@ -134,11 +134,15 @@
   /* display: grid; */
   max-width: var(--max-width-content);
   /* grid-template-columns: 6fr 4fr; */
-  grid-template-rows: auto;
-  grid-template-areas: "section-news-1 teams" "section-news-1 liga-colombiana" "section-news-1 liga-colombiana" "partidos-colombianos publicity-one" "articulos-relacionados articulos-relacionados" "more-news colombia-news" "more-news colombia-news" "results-live banner-one" "results-live ligue" "results-live partido-live" "section-more-news-two banner-two" "section-more-news-two banner-two" "related-articles-two related-articles-two" "section-more-news-three banner-three" "section-more-news-fourth section-more-news-fourth" "section-last-news section-last-news" "multimedia das";
+  
+  
+  grid-template-areas: "section-news-1 teams" "section-news-1 liga-colombiana" "section-news-1 liga-colombiana" "partidos-colombianos publicity-one" ;
   column-gap: 33px;
   row-gap: 37px;
   margin: 0 auto;
+
+  
+
   /* SECCIONES DE NOTICIAS */
   /* ---------------------- */
 }
