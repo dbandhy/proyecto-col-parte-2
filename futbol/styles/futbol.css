@@ -1,0 +1,1213 @@
+:root {
+  --max-width-content: 1200px;
+}
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.body-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-auto-rows: auto;
+}
+
+.section-main {
+  background-color: #F3F8FF;
+  padding: 36px 0 50px 0;
+  width: 100%;
+}
+.section-main .content {
+  display: flex;
+  flex-direction: column;
+  max-width: var(--max-width-content);
+  gap: 30px;
+  margin: 0 auto;
+}
+.section-main .content .updates {
+  display: flex;
+  gap: 13px;
+  flex-direction: column;
+}
+.section-main .content .updates > .title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.section-main .content .updates > .title span {
+  font-size: 9px;
+  font-weight: 400;
+}
+.section-main .content .updates .list-cards {
+  display: flex;
+  width: 100%;
+  gap: 14px;
+}
+.section-main .content .updates .list-cards .publicity-1 {
+  display: none;
+}
+.section-main .content .matches-television {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 34px;
+}
+.section-main .content .matches-television > .title {
+  grid-column: span 5;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+}
+.section-main .content .matches-television .date {
+  grid-column: span 3;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  margin-right: 20px;
+  display: grid;
+  grid-template-columns: 35px auto 35px;
+  column-gap: 20px;
+}
+.section-main .content .matches-television .date .btn-icon {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #104596;
+  border-radius: 50%;
+}
+.section-main .content .matches-television .date .btn-icon i {
+  color: white;
+}
+.section-main .content .matches-television .date .dates-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+  background-color: white;
+  border-radius: 10px;
+}
+.section-main .content .matches-television .date .dates-content .date-item {
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  color: rgba(25, 28, 54, 0.5);
+  text-align: center;
+}
+.section-main .content .matches-television .date .dates-content .date-item:hover {
+  color: #104596;
+}
+.section-main .content .matches-television .date .dates-content .separator {
+  width: 1px;
+  height: 100%;
+  background-color: #104596;
+}
+.section-main .content .matches-television .options {
+  grid-column: span 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.section-main .content .matches-television .options > div {
+  flex: 1;
+}
+.section-main .content .matches-television .partidos {
+  grid-column: span 5;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 45px;
+}
+
+.section-secondary {
+  background-color: white;
+  padding: 20px 0 35px 0;
+  width: 100%;
+}
+.section-secondary .content {
+  display: grid;
+  max-width: var(--max-width-content);
+  grid-template-columns: 6fr 4fr;
+  grid-template-rows: auto;
+  grid-template-areas: "section-news-1 teams" "section-news-1 liga-colombiana" "section-news-1 liga-colombiana" "partidos-colombianos publicity-one" "articulos-relacionados articulos-relacionados" "more-news colombia-news" "more-news colombia-news" "results-live banner-one" "results-live ligue" "results-live partido-live" "section-more-news-two banner-two" "section-more-news-two banner-two" "related-articles-two related-articles-two" "section-more-news-three banner-three" "section-more-news-fourth section-more-news-fourth" "section-last-news section-last-news" "multimedia das";
+  column-gap: 33px;
+  row-gap: 37px;
+  margin: 0 auto;
+  /* SECCIONES DE NOTICIAS */
+  /* ---------------------- */
+}
+.section-secondary .content .teams-list {
+  grid-area: teams;
+  display: grid;
+  grid-template-columns: repeat(6, 60px);
+  width: 100%;
+  row-gap: 10px;
+  column-gap: 10px;
+  align-self: flex-start;
+  justify-self: flex-start;
+}
+.section-secondary .content .teams-list img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.section-secondary .content .partidos-colombianos {
+  grid-area: partidos-colombianos;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 9px 22px 16px 26px;
+  background-color: #F3F8FF;
+  gap: 10px;
+}
+.section-secondary .content .partidos-colombianos .title {
+  font-size: 20px;
+}
+.section-secondary .content .partidos-colombianos > .tornaments {
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+}
+.section-secondary .content .partidos-colombianos > .tornaments .sections {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section-secondary .content .partidos-colombianos > .tornaments .sections .groups {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: white;
+}
+.section-secondary .content .partidos-colombianos .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-secondary .content .liga-colombiana {
+  grid-area: liga-colombiana;
+  display: flex;
+  flex-direction: column;
+  background-color: #F3F8FF;
+  padding: 20px 50px;
+  border-radius: 20px;
+  gap: 10px;
+}
+.section-secondary .content .liga-colombiana .title {
+  font-weight: 700;
+  font-size: 20px;
+  color: #104596;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.section-secondary .content .liga-colombiana .tabs {
+  display: flex;
+  border-radius: 20px;
+  background-color: white;
+  width: 100%;
+}
+.section-secondary .content .liga-colombiana .tabs .tab {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  color: #191C36;
+  font-weight: 400;
+  border-radius: 20px;
+  padding: 6px 14px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.section-secondary .content .liga-colombiana .tabs .tab.active {
+  font-weight: 700;
+  color: white;
+  background-color: #104596;
+}
+.section-secondary .content .liga-colombiana .tornament {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.section-secondary .content .liga-colombiana .tornament .title {
+  font-weight: 700;
+  font-size: 14px;
+  color: #191C36;
+}
+.section-secondary .content .liga-colombiana .tornament .sections {
+  display: flex;
+  flex-direction: column;
+}
+.section-secondary .content .liga-colombiana .tornament .sections .section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.section-secondary .content .liga-colombiana .tornament .sections .section .content {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.section-secondary .content .liga-colombiana .tornament .sections .section .content .rounds {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.section-secondary .content .liga-colombiana .tornament .sections .section .content .rounds .round {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.section-secondary .content .liga-colombiana .tornament .sections .section .content .rounds .round .header {
+  padding: 8px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #104596;
+}
+.section-secondary .content .liga-colombiana .tornament .sections .section .content .rounds .round .header span {
+  font-size: 14px;
+}
+.section-secondary .content .liga-colombiana .tornament .sections .section .content .rounds .round .groups {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.section-secondary .content .liga-colombiana .tornament .sections .section .content .rounds .round .groups .group {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #104596;
+}
+.section-secondary .content .liga-colombiana .tornament .sections .section .content .rounds .round .groups .group .results {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.section-secondary .content .liga-colombiana .tornament .sections .section .content .rounds .round .groups .group .results .result {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.section-secondary .content .liga-colombiana .tornament .sections .section .content .rounds .round .groups .group .results .result .team {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.section-secondary .content .liga-colombiana .tornament .sections .section .content .rounds .round .groups .group .results .result .team img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.section-secondary .content .liga-colombiana .tornament .sections .section .content .rounds .round .groups .group .results .result .team span {
+  font-size: 12px;
+}
+.section-secondary .content .liga-colombiana .tornament .sections .section .content .rounds .round .groups .group .results .result .score {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.section-secondary .content .liga-colombiana .tornament .sections .section .content .rounds .round .groups .group .results .result .score span {
+  font-size: 15px;
+}
+.section-secondary .content .liga-colombiana .tornament .sections .section .content .rounds .round .groups .group .times {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+.section-secondary .content .liga-colombiana .tornament .sections .section .content .rounds .round .groups .group .times > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.section-secondary .content .liga-colombiana .tornament .sections .section .content .rounds .round .groups .group .times > div:first-child i {
+  color: #104596;
+}
+.section-secondary .content .liga-colombiana .tornament .sections .section .content .rounds .round .groups .group .times > div:first-child span {
+  font-size: 14px;
+}
+.section-secondary .content .liga-colombiana .tornament .sections .section .content .rounds .round .groups .group .times > .button {
+  width: 100%;
+}
+.section-secondary .content .liga-colombiana .tornament .sections .section .content .rounds .round .groups .group:last-child {
+  padding-bottom: 0;
+  border: none;
+}
+.section-secondary .content .liga-colombiana .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-secondary .content .image-publicity-one {
+  grid-area: image-publicity-one;
+  display: none;
+  justify-content: center;
+}
+.section-secondary .content .image-publicity-one img {
+  width: max-content;
+  height: max-content;
+}
+.section-secondary .content .image-publicity-two {
+  grid-area: image-publicity-two;
+  display: none;
+  justify-content: center;
+}
+.section-secondary .content .image-publicity-two img {
+  width: max-content;
+  height: max-content;
+}
+.section-secondary .content .articulos-relacionados {
+  grid-area: articulos-relacionados;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.section-secondary .content .articulos-relacionados .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-secondary .content .articulos-relacionados .header span {
+  font-size: 25px;
+}
+.section-secondary .content .articulos-relacionados .articles {
+  display: flex;
+  gap: 32px;
+  width: 100%;
+}
+.section-secondary .content .articulos-relacionados .articles .title {
+  font-size: 14px !important;
+}
+.section-secondary .content .multimedia-section {
+  grid-area: multimedia;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.section-secondary .content .multimedia-section .videos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: 16px;
+}
+.section-secondary .content .publicity {
+  grid-area: publicity-one;
+  display: flex;
+  justify-content: center;
+}
+.section-secondary .content .publicity img {
+  width: max-content;
+  height: max-content;
+}
+.section-secondary .content .results-live {
+  grid-area: results-live;
+}
+.section-secondary .content .section-news-1 {
+  grid-area: section-news-1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 22px;
+  row-gap: 22px;
+  grid-template-areas: "title title title" "news-one news-one news-one" "news-two news-two news-two" "news-three news-fourth news-fourth" "news-three news-five news-five" "news-three news-six news-six";
+}
+.section-secondary .content .section-news-1 > .title {
+  grid-area: title;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.section-secondary .content .section-news-1 .newsOne {
+  grid-area: news-one;
+}
+.section-secondary .content .section-news-1 .newsTwo {
+  grid-area: news-two;
+}
+.section-secondary .content .section-news-1 .newsThree {
+  grid-area: news-three;
+}
+.section-secondary .content .section-news-1 .newsFourth {
+  grid-area: news-fourth;
+}
+.section-secondary .content .section-news-1 .newsFive {
+  grid-area: news-five;
+}
+.section-secondary .content .section-news-1 .newsSix {
+  grid-area: news-six;
+}
+.section-secondary .content .section-news-1 .options {
+  display: none;
+}
+.section-secondary .content .section-more-news-one {
+  grid-area: more-news;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 22px;
+  row-gap: 22px;
+  width: 100%;
+  grid-template-areas: "title title title" "news-one news-one news-one" "news-two news-two news-two" "news-three news-fourth news-fourth" "news-three news-five news-five" "news-three news-six news-six";
+}
+.section-secondary .content .section-more-news-one > .title {
+  grid-area: title;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.section-secondary .content .section-more-news-one > .title span {
+  font-size: 25px;
+}
+.section-secondary .content .section-more-news-one .newsOne {
+  grid-area: news-one;
+}
+.section-secondary .content .section-more-news-one .newsTwo {
+  grid-area: news-two;
+}
+.section-secondary .content .section-more-news-one .newsThree {
+  grid-area: news-three;
+}
+.section-secondary .content .section-more-news-one .newsFourth {
+  grid-area: news-fourth;
+}
+.section-secondary .content .section-more-news-one .newsFive {
+  grid-area: news-five;
+}
+.section-secondary .content .section-more-news-one .newsSix {
+  grid-area: news-six;
+}
+.section-secondary .content .section-more-news-two {
+  grid-area: section-more-news-two;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, max-content);
+  row-gap: 22px;
+  width: 100%;
+  grid-template-areas: "title" "news-one" "news-two" "news-three" "news-fourth";
+}
+.section-secondary .content .section-more-news-two > .title {
+  grid-area: title;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.section-secondary .content .section-more-news-two > .title span {
+  font-size: 25px;
+}
+.section-secondary .content .section-more-news-two .news-one {
+  grid-area: news-one;
+}
+.section-secondary .content .section-more-news-two .news-two {
+  grid-area: news-two;
+}
+.section-secondary .content .section-more-news-two .news-three {
+  grid-area: news-three;
+}
+.section-secondary .content .section-more-news-two .news-fourth {
+  grid-area: news-fourth;
+}
+.section-secondary .content .section-more-news-two .news-five {
+  grid-area: news-five;
+  display: none;
+}
+.section-secondary .content .section-more-news-two .options {
+  grid-area: options;
+  display: none;
+}
+.section-secondary .content .section-more-news-three {
+  grid-area: section-more-news-three;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.section-secondary .content .section-more-news-three > .title {
+  grid-area: title;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.section-secondary .content .section-more-news-three > .title span {
+  font-size: 25px;
+}
+.section-secondary .content .section-more-news-three .news {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, max-content);
+  column-gap: 22px;
+  row-gap: 22px;
+  grid-template-areas: "news-1 news-1 news-1" "news-2 news-2 news-2" "news-3 news-4 news-4" "news-3 news-5 news-5" "news-3 news-6 news-6";
+}
+.section-secondary .content .section-more-news-three .news .news-1 {
+  grid-area: news-1;
+}
+.section-secondary .content .section-more-news-three .news .news-2 {
+  grid-area: news-2;
+}
+.section-secondary .content .section-more-news-three .news .news-3 {
+  grid-area: news-3;
+}
+.section-secondary .content .section-more-news-three .news .news-4 {
+  grid-area: news-4;
+}
+.section-secondary .content .section-more-news-three .news .news-5 {
+  grid-area: news-5;
+}
+.section-secondary .content .section-more-news-three .news .news-6 {
+  grid-area: news-6;
+}
+.section-secondary .content .section-more-news-three .options {
+  display: none;
+}
+.section-secondary .content .section-more-news-fourth {
+  grid-area: section-more-news-fourth;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.section-secondary .content .section-more-news-fourth .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-secondary .content .section-more-news-fourth .title span {
+  font-size: 25px;
+}
+.section-secondary .content .section-more-news-fourth > .news {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: max-content;
+  row-gap: 24px;
+  width: 100%;
+  grid-template-areas: "news-1" "news-2" "news-3";
+}
+.section-secondary .content .section-more-news-fourth > .news .news-1 {
+  grid-area: news-1;
+}
+.section-secondary .content .section-more-news-fourth > .news .news-2 {
+  grid-area: news-2;
+}
+.section-secondary .content .section-more-news-fourth > .news .news-3 {
+  grid-area: news-3;
+}
+.section-secondary .content .section-more-news-fourth > .news .news-4 {
+  grid-area: news-4;
+  display: none;
+}
+.section-secondary .content .section-more-news-fourth > .news .news-5 {
+  grid-area: news-5;
+  display: none;
+}
+.section-secondary .content .section-more-news-fourth > .news .news-6 {
+  grid-area: news-6;
+  display: none;
+}
+.section-secondary .content .section-more-news-fourth > .news .news-7 {
+  grid-area: news-7;
+  display: none;
+}
+.section-secondary .content .section-more-news-fourth > .news .news-8 {
+  grid-area: news-8;
+  display: none;
+}
+.section-secondary .content .section-more-news-fourth > .news .news-9 {
+  grid-area: news-9;
+  display: none;
+}
+.section-secondary .content .section-more-news-fourth > .news .news-10 {
+  grid-area: news-10;
+  display: none;
+}
+.section-secondary .content .section-more-news-fourth > .news .news-11 {
+  grid-area: news-11;
+  display: none;
+}
+.section-secondary .content .section-more-news-fourth > .news .news-12 {
+  grid-area: news-12;
+  display: none;
+}
+.section-secondary .content .section-more-news-fourth .options {
+  display: none;
+}
+.section-secondary .content .section-last-news {
+  grid-area: section-last-news;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.section-secondary .content .section-last-news .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-secondary .content .section-last-news .title span {
+  font-size: 25px;
+}
+.section-secondary .content .section-last-news > .news {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 30px;
+  grid-template-areas: "news-1 news-2 news-3 news-4 news-5";
+}
+.section-secondary .content .section-last-news > .news .news-1 {
+  grid-area: news-1;
+}
+.section-secondary .content .section-last-news > .news .news-2 {
+  grid-area: news-2;
+}
+.section-secondary .content .section-last-news > .news .news-3 {
+  grid-area: news-3;
+}
+.section-secondary .content .section-last-news > .news .news-4 {
+  grid-area: news-4;
+}
+.section-secondary .content .section-last-news > .news .news-5 {
+  grid-area: news-5;
+}
+.section-secondary .content .section-last-news > .news .news-6 {
+  grid-area: news-6;
+  display: none;
+}
+.section-secondary .content .section-last-news > .news .news-7 {
+  grid-area: news-7;
+  display: none;
+}
+.section-secondary .content .section-last-news > .news .news-8 {
+  grid-area: news-8;
+  display: none;
+}
+.section-secondary .content .section-last-news > .news .news-9 {
+  grid-area: news-9;
+  display: none;
+}
+.section-secondary .content .section-last-news > .news .news-10 {
+  grid-area: news-10;
+  display: none;
+}
+.section-secondary .content .section-last-news > .news .news-11 {
+  grid-area: news-11;
+  display: none;
+}
+.section-secondary .content .section-last-news > .news .news-12 {
+  grid-area: news-12;
+  display: none;
+}
+.section-secondary .content .section-last-news .options {
+  display: none;
+}
+.section-secondary .content .colombia-news {
+  grid-area: colombia-news;
+}
+.section-secondary .content .section-related-articles-two {
+  grid-area: related-articles-two;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section-secondary .content .section-related-articles-two .title {
+  grid-column: span 6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-secondary .content .section-related-articles-two .title span {
+  font-size: 25px;
+}
+.section-secondary .content .section-related-articles-two .articles {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 38px;
+}
+.section-secondary .content .section-related-articles-two .articles .title {
+  font-size: 14px !important;
+}
+.section-secondary .content .banner-three {
+  grid-area: banner-three;
+  display: flex;
+  gap: 60px;
+  width: 100%;
+}
+.section-secondary .content .section-ligue {
+  grid-area: ligue;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #F3F8FF;
+  padding: 22px 13px 30px 30px;
+  border-radius: 20px;
+}
+.section-secondary .content .section-ligue > .title {
+  display: flex;
+  justify-content: center;
+}
+.section-secondary .content .section-ligue > .title span {
+  font-size: 18px;
+}
+.section-secondary .content .section-ligue .ligues {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-right: 16px;
+  overflow: auto;
+}
+.section-secondary .content .section-ligue .ligues .ligue {
+  display: flex;
+  gap: 25px;
+  background-color: white;
+  border-radius: 40px;
+  align-items: center;
+  padding: 9px 37px;
+}
+.section-secondary .content .section-ligue .ligues .ligue img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.section-secondary .content .section-ligue .ligues .ligue span {
+  font-size: 16px;
+}
+.section-secondary .content .section-partido-live {
+  grid-area: partido-live;
+}
+.section-secondary .content .section-banner-one {
+  grid-area: banner-one;
+  display: flex;
+  gap: 60px;
+  width: 100%;
+}
+
+.score {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content 1fr max-content;
+  column-gap: 10px;
+  grid-template-areas: "hour country-1 results country-2 options" "hour details-1 results details-2 options";
+  row-gap: 20px;
+}
+.score .hour {
+  grid-area: hour;
+  padding-right: 20px;
+}
+.score .country-1 {
+  grid-area: country-1;
+  display: flex;
+  justify-content: flex-end;
+}
+.score .country-2 {
+  grid-area: country-2;
+}
+.score .country-1 img, .score .country-2 img {
+  width: 25px;
+  height: 25px;
+}
+.score .separator-1 {
+  grid-area: separator-1;
+}
+.score .separator-2 {
+  grid-area: separator-2;
+}
+.score .results {
+  grid-area: results;
+  display: flex;
+  justify-content: center;
+}
+.score .details-1 {
+  grid-area: details-1;
+  justify-content: flex-end;
+}
+.score .details-1 .detail {
+  justify-content: flex-end;
+}
+.score .details-2 {
+  grid-area: details-2;
+}
+.score .options {
+  grid-area: options;
+}
+.score .details-1, .score .details-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.score .details-1 .detail, .score .details-2 .detail {
+  display: flex;
+  gap: 10px;
+}
+.score .details-1 .detail img, .score .details-2 .detail img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.score .country-1, .score .country-2 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.score .country-1 img, .score .country-2 img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+/* COMPONENTS */
+@media (max-width: 768px) {
+  .section-main {
+    padding-top: 12px;
+  }
+  .section-main .content .updates {
+    display: flex;
+    gap: 13px;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .section-main .content .updates .list-cards {
+    flex-direction: column;
+  }
+  .section-main .content .updates .list-cards .body .title {
+    font-size: 22px;
+  }
+  .section-main .content .updates .list-cards .publicity-1 {
+    display: flex;
+    justify-content: center;
+  }
+  .section-main .content .updates .list-cards .publicity-1 img {
+    width: max-content;
+    height: max-content;
+  }
+  .section-main .content .matches-television {
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .section-main .content .matches-television > .title {
+    font-size: 18px;
+  }
+  .section-main .content .matches-television .date {
+    grid-column: span 12 !important;
+    margin-right: 0 !important;
+    column-gap: 10px;
+    padding: 0;
+    background-color: transparent;
+    align-items: center;
+  }
+  .section-main .content .matches-television .date .dates-content {
+    background-color: white;
+    padding: 20px 30px;
+  }
+  .section-main .content .matches-television .date .dates-content .date-item {
+    font-size: 10px !important;
+  }
+  .section-main .content .matches-television .options {
+    grid-column: span 12 !important;
+    display: flex;
+    flex-direction: column;
+  }
+  .section-main .content .matches-television .options > div {
+    width: 100%;
+  }
+  .section-main .content .matches-television .partidos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13px;
+  }
+  .section-main .content .matches-television .partidos match-preview-component:nth-child(n+3) {
+    display: none;
+  }
+  .section-main .content .publicity {
+    display: none !important;
+  }
+  .section-secondary {
+    padding: 30px 0 30px 0;
+  }
+  .section-secondary .content {
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 50px;
+    row-gap: 50px;
+    grid-template-areas: "publicity-one" "section-news-1" "liga-colombiana" "image-publicity-one" "teams" "partidos-colombianos" "more-news" "colombia-news" "section-more-news-two" "results-live" "section-more-news-three" "section-more-news-fourth" "image-publicity-two" "section-last-news" "ligue" "partido-live" "multimedia";
+  }
+  .section-secondary .content .section-news-1 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: max-content;
+    grid-template-areas: "title" "news-one" "news-two" "news-three" "news-fourth" "news-five" "news-six";
+  }
+  .section-secondary .content .section-news-1 .title {
+    justify-content: center;
+  }
+  .section-secondary .content .section-news-1 .title > .button {
+    display: none !important;
+  }
+  .section-secondary .content .section-news-1 .title span {
+    font-size: 18px;
+  }
+  .section-secondary .content .section-news-1 .options {
+    display: flex !important;
+    justify-content: center;
+  }
+  .section-secondary .content .partidos-colombianos {
+    border-radius: 0;
+  }
+  .section-secondary .content .multimedia-section {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .section-secondary .content .liga-colombiana {
+    padding: 23px 35px;
+    border-radius: 0;
+  }
+  .section-secondary .content .section-ligue {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .section-secondary .content .teams-list {
+    grid-template-columns: repeat(5, 1fr);
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+  .section-secondary .content .section-more-news-one {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: max-content;
+    grid-template-areas: "title title" "news-one news-one" "news-two news-three" "news-fourth news-five" "options options";
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .section-secondary .content .section-more-news-one > .title {
+    justify-content: center;
+  }
+  .section-secondary .content .section-more-news-one > .title span {
+    font-size: 18px;
+  }
+  .section-secondary .content .section-more-news-one > .title .button {
+    display: none !important;
+  }
+  .section-secondary .content .section-more-news-one .newsSix {
+    display: none !important;
+  }
+  .section-secondary .content .section-more-news-one .options {
+    grid-area: options;
+    display: flex !important;
+    justify-content: center;
+  }
+  .section-secondary .content .section-more-news-two {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: max-content;
+    column-gap: 12px;
+    grid-template-areas: "title title" "news-one news-one" "news-two news-three" "news-fourth news-five" "options options";
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .section-secondary .content .section-more-news-two > .title {
+    justify-content: center;
+  }
+  .section-secondary .content .section-more-news-two > .title span {
+    font-size: 18px;
+  }
+  .section-secondary .content .section-more-news-two > .title .button {
+    display: none !important;
+  }
+  .section-secondary .content .section-more-news-two .news-five {
+    display: flex !important;
+  }
+  .section-secondary .content .section-more-news-two .options {
+    display: flex !important;
+    justify-content: center;
+  }
+  .section-secondary .content .section-more-news-three {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .section-secondary .content .section-more-news-three .title {
+    justify-content: center;
+  }
+  .section-secondary .content .section-more-news-three .title span {
+    font-size: 18px;
+  }
+  .section-secondary .content .section-more-news-three .title .button {
+    display: none !important;
+  }
+  .section-secondary .content .section-more-news-three .news {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: max-content;
+    grid-template-areas: "news-1 news-1" "news-2 news-3" "news-4 news-5";
+  }
+  .section-secondary .content .section-more-news-three .news .news-6 {
+    display: none;
+  }
+  .section-secondary .content .section-more-news-three .options {
+    display: flex !important;
+    justify-content: center;
+  }
+  .section-secondary .content .section-more-news-fourth > .title {
+    justify-content: center;
+  }
+  .section-secondary .content .section-more-news-fourth > .title span {
+    font-size: 18px;
+  }
+  .section-secondary .content .section-more-news-fourth > .title .button {
+    display: none !important;
+  }
+  .section-secondary .content .section-more-news-fourth > .news {
+    grid-template-areas: "news-1" "news-2" "news-3" "news-4" "news-5" "news-6" "news-7" "news-8" "news-9" "news-10" "news-11" "news-12";
+  }
+  .section-secondary .content .section-more-news-fourth > .news .news-4 {
+    display: flex !important;
+  }
+  .section-secondary .content .section-more-news-fourth > .news .news-5 {
+    display: flex !important;
+  }
+  .section-secondary .content .section-more-news-fourth > .news .news-6 {
+    display: flex !important;
+  }
+  .section-secondary .content .section-more-news-fourth > .news .news-7 {
+    display: flex !important;
+  }
+  .section-secondary .content .section-more-news-fourth > .news .news-8 {
+    display: flex !important;
+  }
+  .section-secondary .content .section-more-news-fourth > .news .news-9 {
+    display: flex !important;
+  }
+  .section-secondary .content .section-more-news-fourth > .news .news-10 {
+    display: flex !important;
+  }
+  .section-secondary .content .section-more-news-fourth > .news .news-12 {
+    display: flex !important;
+  }
+  .section-secondary .content .section-more-news-fourth .options {
+    display: flex !important;
+    justify-content: center;
+  }
+  .section-secondary .content .section-last-news {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .section-secondary .content .section-last-news .title {
+    justify-content: center;
+  }
+  .section-secondary .content .section-last-news .title span {
+    font-size: 18px;
+  }
+  .section-secondary .content .section-last-news .title .button {
+    display: none !important;
+  }
+  .section-secondary .content .section-last-news > .news {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: max-content;
+    row-gap: 20px;
+    grid-template-areas: "news-2 news-2" "news-3 news-3" "news-4 news-4" "news-5 news-6" "news-7 news-8" "news-9 news-10" "news-11 news-12";
+  }
+  .section-secondary .content .section-last-news > .news .news-1 {
+    display: none !important;
+  }
+  .section-secondary .content .section-last-news > .news .news-6 {
+    display: flex !important;
+  }
+  .section-secondary .content .section-last-news > .news .news-7 {
+    display: flex !important;
+  }
+  .section-secondary .content .section-last-news > .news .news-8 {
+    display: flex !important;
+  }
+  .section-secondary .content .section-last-news > .news .news-9 {
+    display: flex !important;
+  }
+  .section-secondary .content .section-last-news > .news .news-10 {
+    display: flex !important;
+  }
+  .section-secondary .content .section-last-news > .news .news-11 {
+    display: flex !important;
+  }
+  .section-secondary .content .section-last-news > .news .news-12 {
+    display: flex !important;
+  }
+  .section-secondary .content .section-last-news .options {
+    display: flex !important;
+    justify-content: center;
+  }
+  .section-secondary .content .section-banner-one {
+    display: none !important;
+  }
+  .section-secondary .content .section-banner-two {
+    display: none !important;
+  }
+  .section-secondary .content .colombia-news {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .section-secondary .content .banner-three {
+    display: none !important;
+  }
+  .section-secondary .content .image-publicity-one {
+    display: flex !important;
+  }
+  .section-secondary .content .image-publicity-two {
+    display: flex !important;
+  }
+  .section-secondary .content .section-related-articles-two {
+    display: none;
+  }
+  .section-secondary .content .articulos-relacionados {
+    display: none;
+  }
+  .score {
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-areas: "country-1 hour country-2" "country-1 results country-2" "country-1 options country-2" "details-1 nothing details-2";
+  }
+  .score .separator-2 {
+    display: none;
+  }
+  .score .country-1, .score .country-2 {
+    align-self: center;
+    flex-direction: row-reverse;
+  }
+  .score .hour {
+    justify-self: center;
+    padding: 0;
+  }
+  .score .details-1 img, .score .details-2 img {
+    width: 15px;
+    height: 15px;
+  }
+}
+/***** GENERICS *****/
+.small-circle-red {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #FF3842;
+}
+
+/* FUTURE COMPONENTS */
+.date-content {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  align-items: center;
+}
+.date-content div:first-child {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #FF3842;
+}
+.date-content span {
+  font-size: 9px;
+  font-weight: 400;
+}
