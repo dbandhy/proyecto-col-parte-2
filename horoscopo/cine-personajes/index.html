@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personajes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/cine.css" />
+    <link rel="stylesheet" href="../../styles/style.css" />
+    <!-- Estilos componentes -->
+    <link rel="stylesheet" href="../../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/header_cine.css" />
+    <link rel="stylesheet" href="../styles/slider_cine.css" />
+    <link rel="stylesheet" href="../styles/slider_estreno.css" />
+    <link rel="stylesheet" href="../styles/slider_detail.css" />
+    <link rel="stylesheet" href="./styles/personajes.css" />
+    <link rel="stylesheet" href="/styles/menu-desplegable.css" />
+
+
+    <!-- JavaScript-->
+    <script src="./static/index.js"></script>
+
+
+</head>
+
+<body class="body-container">
+    <div id="main-header-cine"></div>
+	<div id="main-menu-despegable"></div>
+
+    <main class="main-container">
+
+        <section class="main-section-content py-5 bg-white">
+            <div class="d-flex flex-column gap-4 container-max-width">
+                <div class="d-flex flex-column gap-3 hide-800 w-100 position-relative">
+                    <div class="title">
+                        <h2 class="section-title m-0 p-0">PERSONAS <span class="subtitle">(Actores, Actrices, Directores)</span></h2>
+                    </div>
+                </div>
+
+                <div class="grid-two-section-60-40">
+                    <div class="section-cartelera-derecha gap-5">
+                    </div>
+                    <div class="grid-two-section-60-40-rgt d-grid gap-4">
+                        <div class="flyer pb-3 row">
+                            <div class="sidebar-ad col-10">
+                                <img src="/assets/img/poster-vertical.png"
+                                    alt="¿Cuánto tiempo toma tonificar el cuerpo con yoga de silla según mi edad?"
+                                    class="img-fluid img-yoga" />
+                            </div>
+                            <div class="col-2">
+                                <div class="social-sidebar-bn">
+                                    <div class="social-icons-bn">
+                                        <a href="#" class="social-icon-link">
+                                            <div class="social-icon-bn shopping">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="social-icon-link">
+                                            <div class="social-icon-bn whatsapp">
+                                                <i class="fab fa-whatsapp"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="social-icon-link">
+                                            <div class="social-icon-bn facebook">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="social-icon-link">
+                                            <div class="social-icon-bn youtube">
+                                                <i class="fab fa-youtube"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="social-icon-link">
+                                            <div class="social-icon-bn instagram">
+                                                <i class="fab fa-instagram"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="social-icon-link">
+                                            <div class="social-icon-bn twitter">
+                                                <i class="fab fa-twitter"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-section-content align-items-start container-max-width slider-cartelera">
+            <h2 class="section-title m-0 p-0">RECOMENDADOS</h2>
+            <div id="main-slider-cartelera"></div>
+        </section>
+
+        <!-- Seccion grilla mas peliculas mobile -->
+        <section class="main-section-content container-max-width slider-estreno ">
+            <div class="d-flex justify-content-between align-items-center hide-800 w-100">
+                <h2 class="section-title m-0 p-0">Recomendados</h2>
+            </div>
+            <div id="main-slider-estreno"></div>
+
+        </section>
+
+        <!-- Seccion flayer y grilla noticias -->
+        <section class="main-section-content py-5 bg-white">
+            <div class="container-max-width">
+
+                <div class="grid-two-section-60-40">
+                    <!-- Seccion izquierdo -->
+                    <div class="grid-two-section-60-40-lft">
+                        <div class="grid-articles-2 grid-mas-noticias">
+                            <div class="d-flex justify-content-between align-items-center hide-800 w-100">
+                                <h2 class="section-title m-0 p-0">NOTICIAS RELACIONADAS</h2>
+                                <a href="#" class="btn-azul-blanco">Ver todo</a>
+                            </div>
+                            <div class="card-article-2 card-article-2-variant-column card-bottom-separator pt-2">
+                                <img src="/assets/img/breaking-news-10.png"
+                                    alt="Donald Trump reconoció a Edmundo González" />
+                                <div class="card-article-2-content">
+                                    <p class="card-article-2-tag">CINE</p>
+                                    <h2 class="card-article-2-title">Donald Trump reconoció a Edmundo González</h2>
+                                    <a href="#" class="card-article-2-leer-mas">Leer más</a>
+                                    <p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+                                </div>
+                            </div>
+                            <div class="card-article-2 card-article-2-variant-column card-bottom-separator pt-2">
+                                <img src="/assets/img/breaking-news-7.png"
+                                    alt="Costa Rica hizo oficial su apoyo a Edmundo González" />
+                                <div class="card-article-2-content">
+                                    <p class="card-article-2-tag">CINE</p>
+                                    <h2 class="card-article-2-title">
+                                        Costa Rica hizo oficial su apoyo a Edmundo González
+                                    </h2>
+                                    <a href="#" class="card-article-2-leer-mas">Leer más</a>
+                                    <p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+                                </div>
+                            </div>
+                            <div class="grid-articles-2">
+                                <div class="card-article-2 card-bottom-separator">
+                                    <img src="/assets/img/breaking-news-6.png" alt="Maduro y Petro" />
+                                    <div class="card-article-2-content">
+                                        <p class="card-article-2-tag">CINE</p>
+                                        <h2 class="card-article-2-title">
+                                            Venezuela tiene carteles de se busca con la cara expresidentes
+                                        </h2>
+                                        <a href="#" class="card-article-2-leer-mas">Leer más</a>
+                                        <p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+                                    </div>
+                                </div>
+                                <div class="card-article-2 card-bottom-separator">
+                                    <img src="/assets/img/breaking-news-5.png" alt="Maduro y Petro" />
+                                    <div class="card-article-2-content">
+                                        <p class="card-article-2-tag">CINE</p>
+                                        <h2 class="card-article-2-title">
+                                            ¡Qué alivio! Colombianos en EE.UU pueden recibir apoyo por discapacidad
+                                        </h2>
+                                        <a href="#" class="card-article-2-leer-mas">Leer más</a>
+                                        <p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+                                    </div>
+                                </div>
+                                <div class="card-article-2 card-bottom-separator">
+                                    <img src="/assets/img/breaking-news-13.png" alt="Maduro y Petro" />
+                                    <div class="card-article-2-content">
+                                        <p class="card-article-2-tag">CINE</p>
+                                        <h2 class="card-article-2-title">
+                                            <i class="fas fa-circle text-warning me-1"></i>
+                                            La hora en la que arranca el nuevo capítulo de "Dragon Ball Daima"
+                                        </h2>
+                                        <a href="#" class="card-article-2-leer-mas">Leer más</a>
+                                        <p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+                                    </div>
+                                </div>
+                                <div class="card-article-2 card-bottom-separator">
+                                    <img src="/assets/img/breaking-news-12.png" alt="Maduro y Petro" />
+                                    <div class="card-article-2-content">
+                                        <p class="card-article-2-tag">CINE</p>
+                                        <h2 class="card-article-2-title">
+                                            <i class="fas fa-circle text-warning me-1"></i>
+                                            La hora en la que arranca el nuevo capítulo de "Dragon Ball Daima"
+                                        </h2>
+                                        <a href="#" class="card-article-2-leer-mas">Leer más</a>
+                                        <p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Seccion derecho -->
+                    <div class="grid-two-section-60-40-right d-grid gap-4">
+                        <div class="grid-articles-2 grid-lo-ultimo-colombia">
+                            <div class="d-flex justify-content-center align-items-center hide-800">
+                                <h2 class="section-title m-0 p-0">Lo último en Colombia</h2>
+                            </div>
+                            <div class="card-article-2 card-article-2-principal card-bottom-separator pt-2">
+                                <img src="/assets/img/breaking-news-14.png" alt="Maduro y Petro" />
+                                <div class="card-article-2-content">
+                                    <h2 class="card-article-2-title">
+                                        Cotización del dólar en Colombia: este es su precio hoy, 10 de enero
+                                    </h2>
+                                    <p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+                                    <p>
+                                        María Corina Machado reaparece en un video y dice que ya está libre. Leer más
+                                        <a href="#" class="card-article-2-leer-mas">Leer más</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="grid-articles-2">
+                                <div class="card-article-2 card-bottom-separator">
+                                    <img src="/assets/img/breaking-news-5.png" alt="Maduro y Petro" />
+                                    <div class="card-article-2-content">
+                                        <h2 class="card-article-2-title">
+                                            Costa Rica hizo oficial su apoyo a Edmundo González
+                                        </h2>
+                                        <a href="#" class="card-article-2-leer-mas">Leer más</a>
+                                        <p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+                                    </div>
+                                </div>
+                                <div class="card-article-2 card-bottom-separator">
+                                    <img src="/assets/img/breaking-news-5.png" alt="Maduro y Petro" />
+                                    <div class="card-article-2-content">
+                                        <h2 class="card-article-2-title">
+                                            Costa Rica hizo oficial su apoyo a Edmundo González
+                                        </h2>
+                                        <a href="#" class="card-article-2-leer-mas">Leer más</a>
+                                        <p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+                                    </div>
+                                </div>
+                                <div class="card-article-2">
+                                    <img src="/assets/img/breaking-news-5.png" alt="Maduro y Petro" />
+                                    <div class="card-article-2-content">
+                                        <h2 class="card-article-2-title">
+                                            Costa Rica hizo oficial su apoyo a Edmundo González
+                                        </h2>
+                                        <a href="#" class="card-article-2-leer-mas">Leer más</a>
+                                        <p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <div id="main-footer"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../static/loadComponents.js"></script>
+</body>
+
+</html>

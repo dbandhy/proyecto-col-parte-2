@@ -1,0 +1,683 @@
+@charset "UTF-8";
+:root {
+  --max-width-content: 1200px;
+  
+}
+
+.body-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #f3f8ff;
+
+ 
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-auto-rows: auto;
+}
+
+.section-multimedia {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.section-multimedia .videos {
+  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 16px;
+}
+
+/* NUEVOS ESTILOS */
+.content {
+  grid-column: 2/12;
+  display: flex;
+  flex-direction: column;
+  padding: 17px 0 24px 0;
+  gap: 10px;
+}
+.content .news-content {
+  
+  grid-template-columns: repeat(3, 1fr);
+  height: max-content;
+  column-gap: 13px;
+  row-gap: 10px;
+  grid-template-areas: "newsOne newsTwo videoSection" "newsOne newsThree videoSection";
+}
+.content .news-content > div {
+  width: 100%;
+}
+.content .news-content .newsOne {
+  grid-area: newsOne;
+}
+.content .news-content .bannerOne {
+  grid-area: bannerOne;
+  display: none;
+}
+.content .news-content .newsTwo {
+  grid-area: newsTwo;
+}
+.content .news-content .newsThree {
+  grid-area: newsThree;
+}
+.content .news-content .videoSection {
+  grid-area: videoSection;
+}
+
+.section-secondary-news {
+  grid-column: 2/12;
+  padding: 30px 0 30px 0;
+}
+.section-secondary-news .news-advanced {
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  column-gap: 55px;
+  row-gap: 25px;
+  grid-template-areas: "header header" "news bannerOne" "moreNews colombiaNews" "moreNews indicators" "publicity publicity" "multimedia paperwork";
+}
+.section-secondary-news .news-advanced .header {
+  grid-area: header;
+}
+.section-secondary-news .news-advanced .grid-secondary-news {
+  grid-area: news;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, max-content);
+  column-gap: 24px;
+  row-gap: 22px;
+}
+.section-secondary-news .news-advanced .grid-secondary-news .news-one {
+  grid-column: 1/3;
+  grid-row: 1/4;
+}
+.section-secondary-news .news-advanced .grid-secondary-news .news-two {
+  grid-column: 3/7;
+  grid-row: 1/2;
+}
+.section-secondary-news .news-advanced .grid-secondary-news .news-three {
+  grid-column: 3/7;
+  grid-row: 2/3;
+}
+.section-secondary-news .news-advanced .grid-secondary-news .news-fourth {
+  grid-column: 3/7;
+  grid-row: 3/4;
+}
+.section-secondary-news .news-advanced .grid-secondary-news .news-five {
+  display: none;
+}
+.section-secondary-news .news-advanced .grid-secondary-news .button-view-more {
+  display: none;
+}
+.section-secondary-news .news-advanced .bannerOne {
+  display: flex;
+  gap: 60px;
+  grid-area: bannerOne;
+  width: 100%;
+}
+.section-secondary-news .news-advanced .moreNews {
+  grid-area: moreNews;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.section-secondary-news .news-advanced .moreNews > .title {
+  grid-area: title;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.section-secondary-news .news-advanced .moreNews > .title span {
+  font-size: 25px;
+}
+.section-secondary-news .news-advanced .moreNews .news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section-secondary-news .news-advanced .indicators {
+  grid-area: indicators;
+}
+.section-secondary-news .news-advanced .publicity {
+  grid-area: publicity;
+}
+.section-secondary-news .news-advanced .multimedia {
+  grid-area: multimedia;
+}
+.section-secondary-news .news-advanced .paperwork {
+  grid-area: paperwork;
+  width: 100%;
+}
+.section-secondary-news .news-advanced .image-link-one {
+  grid-area: image-link-one;
+  display: none;
+}
+.section-secondary-news .news-advanced .image-link-two {
+  grid-area: image-link-two;
+  display: none;
+}
+
+/* FUTURE COMPONENTS */
+.colombiaNews {
+  grid-area: colombiaNews;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(191, 191, 191, 0.1);
+  padding: 19px 25px 25px 25px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  gap: 10px;
+}
+.colombiaNews > span {
+  display: block;
+  width: 100%;
+  font-size: 25px;
+}
+.colombiaNews > .news {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.colombiaNews > .news .new {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #104596;
+}
+.colombiaNews > .news .new:last-child {
+  border-bottom: none;
+}
+
+.date-content {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  align-items: center;
+}
+.date-content div:first-child {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #FF3842;
+}
+.date-content span {
+  font-size: 9px;
+  font-weight: 400;
+}
+
+.card-main-news {
+  display: flex;
+  padding: 23px;
+  background-color: white;
+  flex-direction: column;
+  gap: 5px;
+}
+.card-main-news.inverse {
+  flex-direction: column-reverse;
+  padding-top: 15px;
+}
+.card-main-news img, .card-main-news iframe {
+  width: 100%;
+}
+.card-main-news .body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card-main-news .body .title {
+  width: 100%;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #191C36;
+}
+.card-main-news .body .title span {
+  font-size: 15px;
+}
+.card-main-news .body .news span:first-child {
+  font-size: 25px;
+}
+.card-main-news .body .news span:last-child {
+  font-size: 12px;
+  cursor: pointer;
+}
+.card-main-news .body .author {
+  display: flex;
+  gap: 5px;
+}
+
+@media (max-width: 768px) {
+  .content .news-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "newsOne" "bannerOne" "newsTwo" "videoSection" "bannerTwo";
+  }
+  .content .bannerOne {
+    display: flex !important;
+    justify-content: center;
+  }
+  .content .newsThree {
+    display: none !important;
+  }
+  .content .bannerTwo {
+    display: flex !important;
+    justify-content: center;
+  }
+  .section-secondary-news .news-advanced {
+    grid-template-columns: 1fr;
+    grid-template-areas: "image-link-one" "news" "paperwork" "image-link-two" "indicators" "moreNews" "colombiaNews" "multimedia";
+    background-color: white;
+  }
+  .section-secondary-news .news-advanced .image-link-one, .section-secondary-news .news-advanced .image-link-two {
+    display: flex !important;
+    justify-content: center;
+  }
+  .section-secondary-news .news-advanced .grid-secondary-news {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, max-content);
+  }
+  .section-secondary-news .news-advanced .grid-secondary-news .news-one {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .section-secondary-news .news-advanced .grid-secondary-news .news-two {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .section-secondary-news .news-advanced .grid-secondary-news .news-three {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .section-secondary-news .news-advanced .grid-secondary-news .news-fourth {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .section-secondary-news .news-advanced .grid-secondary-news .news-five {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    display: flex !important;
+  }
+  .section-secondary-news .news-advanced .grid-secondary-news .button-view-more {
+    display: flex !important;
+    margin-top: 10px;
+    grid-column: 1/3;
+  }
+  .section-secondary-news .news-advanced .grid-secondary-news .button-view-more > .button {
+    width: 100%;
+  }
+  .section-secondary-news .news-advanced .bannerOne {
+    display: none !important;
+  }
+  .section-secondary-news .news-advanced .moreNews {
+    width: 100%;
+  }
+  .section-secondary-news .news-advanced .moreNews .title {
+    justify-content: center;
+  }
+  .section-secondary-news .news-advanced .moreNews .title span {
+    font-size: 18px;
+  }
+  .section-secondary-news .news-advanced .moreNews .title > .button {
+    display: none;
+  }
+  .section-secondary-news .news-advanced .colombiaNews > span {
+    font-size: 18px;
+  }
+  .section-secondary-news .news-advanced .publicity {
+    display: none;
+  }
+}
+/*---------------------------------------*/
+/* Contenedor central con un tamaño maximo */
+.container-max-width {
+  max-width: var(--max-width-content);
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .container-max-width {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  .container-max-width-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+/* Grilla de articulos tipo 1 y diseño de articulo tipo 1 */
+.grid-articles-1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.card-article-1 {
+  padding: 1rem;
+  background: #ffffff;
+}
+
+.card-article-1 img,
+.card-article-1 iframe {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.card-article-1-tag {
+  color: #444;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-article-1-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.card-article-1-autor {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.card-article-1-doble-fila {
+  grid-row: span 2;
+}
+
+/* Grilla de division de contenido en 2 columnas 60% y 40% */
+.grid-two-section-60-40 {
+  display: grid;
+  grid-template-columns: 6fr 3.5fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+@media screen and (max-width: 800px) {
+  .grid-two-section-60-40 {
+    grid-template-columns: 1fr;
+  }
+}
+/* Grilla de articulos tipo 2 y diseño de articulo tipo 2 */
+.grid-articles-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.card-article-2 {
+  padding: 15px 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0rem 1.5rem;
+}
+
+.card-article-2-principal {
+  grid-template-columns: 1fr !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .card-article-2 {
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .card-article-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.card-article-2-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card-article-2-content > * {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.card-article-2 img,
+.card-article-2 iframe {
+  width: 100%;
+  height: 100%;
+  max-height: 270px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.card-article-2-tag {
+  font-family: Verdana;
+  font-weight: 400;
+  color: #104596;
+  font-size: 0.85rem;
+}
+
+.card-article-2-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.card-article-2-autor {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.card-article-2-doble-fila {
+  grid-row: span 2;
+}
+
+/* Card tipo 3 */
+.card-article-2-variant-column {
+  grid-template-columns: 2fr 1fr;
+}
+
+@media screen and (max-width: 800px) {
+  .card-article-2-variant-column {
+    grid-template-columns: 1fr;
+  }
+}
+.card-article-2-variant-column img,
+.card-article-2-variant-column iframe {
+  width: 100%;
+  height: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .card-article-2-variant-column img,
+  .card-article-2-variant-column iframe {
+    max-height: 200px;
+  }
+}
+/* Card separador usando ::before */
+.card-bottom-separator {
+  position: relative;
+}
+
+.card-bottom-separator::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 0px;
+  bottom: 0;
+  border-bottom: 1px solid #104596;
+}
+
+/* Contenedor de flayer con social media */
+/* Estilos para la barra lateral de redes sociales */
+.social-sidebar-bn {
+  position: sticky;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-icons-bn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-icon-bn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.social-icon-bn:hover {
+  transform: scale(1.1);
+}
+
+.social-icon-bn.shopping {
+  background-color: #0a3b7d;
+}
+
+.social-icon-bn.whatsapp {
+  background-color: #25d366;
+}
+
+.social-icon-bn.facebook {
+  background-color: #1877f2;
+}
+
+.social-icon-bn.youtube {
+  background-color: #ff0000;
+}
+
+.social-icon-bn.instagram {
+  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.social-icon-bn.twitter {
+  background-color: #1da1f2;
+}
+
+.social-icon-bn-link {
+  text-decoration: none;
+}
+
+/* Contenedor de tramitologia */
+.grid-tramitologia {
+  padding: 20px;
+  background: #f3f8ff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-tramite-item {
+  border-radius: 20px;
+  /* background-color: #ffffff; */
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 30px;
+  padding: 10px 10%;
+  width: 100%;
+  height: 80px;
+  align-items: center;
+}
+
+.card-tramite-item h3 {
+  font-family: Verdana;
+  font-weight: 700;
+  font-size: 14px;
+  color: #104596;
+  line-height: normal;
+}
+
+.grid-lo-ultimo-colombia {
+  padding: 20px;
+  background: rgba(191, 191, 191, 0.1019607843);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-indicador-economico {
+  width: 100%;
+  border-radius: 20px;
+  background: #104596;
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+  padding: 20px 12%;
+  box-sizing: border-box;
+}
+
+.card-indicador-economico-title {
+  font-family: Verdana;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: normal;
+  text-align: center;
+  font-size: 25px;
+  text-align: center;
+  max-width: 300px;
+  margin: auto;
+}
+
+.card-indicador-economicos-label,
+.card-indicador-economico-value,
+.card-indicador-economicos-date {
+  font-family: Verdana;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  line-height: normal;
+}
+
+.card-indicador-economicos-date {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.card-indicador-economico-value {
+  font-size: 16px;
+}
+
+.grid-noticias-principales {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .grid-noticias-principales {
+    grid-template-columns: 1fr;
+  }
+}
+.img-yoga {
+  width: 100%;
+  height: 100%;
+  max-height: 580px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
