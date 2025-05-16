@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horoscope Website</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center">
+                        <button class="btn border-0 me-3" aria-label="Toggle menu">
+                            <i class="bi bi-list fs-4" style="color: #191C36;"></i>
+                        </button>
+                        <nav class="d-none d-md-flex">
+                            <a href="#" class="text-decoration-none fw-bold me-3" style="color: #191C36;">Partidos
+                                Hoy</a>
+                            <a href="#" class="text-decoration-none fw-bold me-3" style="color: #191C36;">Cartelera</a>
+                            <a href="#" class="text-decoration-none fw-bold" style="color: #191C36;">Colombianos en
+                                USA</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/logo.png" alt="Logo" class="img-fluid" style="max-height: 106px;">
+                </div>
+                <div class="col-md-4 d-flex justify-content-end align-items-center">
+                    <div class="d-none d-md-flex align-items-center me-3">
+                        <i class="bi bi-facebook me-2"></i>
+                        <i class="bi bi-instagram me-2"></i>
+                        <i class="bi bi-twitter me-2"></i>
+                        <i class="bi bi-youtube me-2"></i>
+                    </div>
+                    <a href="#" class="btn rounded-pill text-white fw-bold px-3 py-1"
+                        style="background-color: #FF3641;">
+                        Especial
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sub Navigation -->
+    <nav class="py-2">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <div class="rounded-pill py-1 px-4 me-4" style="background-color: #F3F8FF;">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-list me-2" style="color: #191C36;"></i>
+                        <span class="fw-bold text-uppercase" style="color: #191C36;">Noticias</span>
+                    </div>
+                </div>
+                <div class="d-none d-lg-flex">
+                    <a href="#" class="text-decoration-none text-uppercase me-4" style="color: #191C36;">Horóscopo</a>
+                    <a href="#" class="text-decoration-none text-uppercase me-4" style="color: #191C36;">Horóscopo
+                        diario</a>
+                    <a href="#" class="text-decoration-none text-uppercase me-4" style="color: #191C36;">signos</a>
+                    <a href="#" class="text-decoration-none text-uppercase me-4" style="color: #191C36;">conoce los
+                        signos</a>
+                    <a href="#" class="text-decoration-none text-uppercase" style="color: #191C36;">Como conquistar cada
+                        signo</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="container-fluid p-0">
+        <img src="images/banner.jpg" alt="Banner" class="w-100" style="height: 250px; object-fit: cover;">
+    </div>
+
+    <!-- Featured Content -->
+    <div class="position-relative">
+        <img src="images/featured.jpg" alt="Featured" class="w-100" style="height: 294px; object-fit: cover;">
+        <div class="position-absolute top-0 start-0 h-100"
+            style="background: linear-gradient(270deg, rgba(1,10,75,0.00) 9.14%, rgba(20,18,74,0.90) 53.92%); width: 70%;">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-md-7">
+                        <h1 class="fs-4 fw-bold text-white mb-2">Horóscopo de hoy, 17 de marzo: predicciones para
+                            iniciar la semana</h1>
+                        <p class="text-white small">Josie Diez Canseco comparte sus más recientes predicciones para cada
+                            signo del zodiaco, en su horóscopo de hoy, 17 de marzo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container py-5">
+        <div class="row">
+            <!-- Horoscope Content -->
+            <div class="col-lg-8">
+                <article>
+                    <h2 class="fs-3 fw-bold mb-4" style="color: #191C36;">Horóscopo de hoy, 17 de marzo: predicciones
+                        para iniciar la semana</h2>
+
+                    <p class="text-secondary mb-3">
+                        El horóscopo de hoy, 17 de marzo, nos trae importantes predicciones para todos los signos del
+                        zodiaco.
+                        Josie Diez Canseco, reconocida astróloga, comparte sus más recientes análisis astrales para
+                        ayudarte
+                        a iniciar la semana con la mejor energía.
+                    </p>
+
+                    <p class="text-secondary mb-3">
+                        Los astros se alinean de manera especial este lunes, trayendo consigo oportunidades y desafíos
+                        para cada signo. Es importante prestar atención a las señales que el universo nos envía y
+                        aprovechar al máximo las energías positivas que nos rodean.
+                    </p>
+
+                    <h3 class="fs-4 fw-bold mt-4 mb-3" style="color: #191C36;">Aries (21 de marzo - 19 de abril)</h3>
+                    <p class="text-secondary mb-3">
+                        Hoy es un día para tomar decisiones importantes en el ámbito laboral. La energía de Marte,
+                        tu planeta regente, te impulsa a ser más audaz y determinado. En el amor, es momento de
+                        sincerarte con tu pareja sobre tus sentimientos más profundos.
+                    </p>
+
+                    <h3 class="fs-4 fw-bold mt-4 mb-3" style="color: #191C36;">Tauro (20 de abril - 20 de mayo)</h3>
+                    <p class="text-secondary mb-3">
+                        Venus te sonríe hoy, trayendo armonía a tus relaciones personales. Es un buen momento para
+                        resolver conflictos pendientes y fortalecer lazos afectivos. En lo financiero, se presentan
+                        oportunidades de crecimiento que debes analizar con calma.
+                    </p>
+
+                    <h3 class="fs-4 fw-bold mt-4 mb-3" style="color: #191C36;">Géminis (21 de mayo - 20 de junio)</h3>
+                    <p class="text-secondary mb-3">
+                        Mercurio, tu planeta regente, potencia hoy tu capacidad de comunicación. Aprovecha para
+                        expresar ideas y proyectos que has estado guardando. En el amor, la sinceridad será tu
+                        mejor aliada para fortalecer la relación con tu pareja.
+                    </p>
+
+                    <div class="card my-4 p-3" style="background-color: #F3F8FF;">
+                        <h4 class="fs-5 fw-bold mb-2" style="color: #191C36;">Consejo del día</h4>
+                        <p class="text-secondary mb-0">
+                            Recuerda que las predicciones astrológicas son una guía, pero tú eres quien tiene el poder
+                            de tomar las decisiones que definirán tu camino. Confía en tu intuición y sabiduría
+                            interior.
+                        </p>
+                    </div>
+
+                    <p class="text-secondary mb-3">
+                        Para conocer más sobre las predicciones de tu signo y cómo aprovechar al máximo las energías
+                        cósmicas de este día, consulta nuestro horóscopo completo y descubre qué te deparan los astros
+                        en este inicio de semana.
+                    </p>
+                </article>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <!-- Horoscope Form -->
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h2 class="fs-4 fw-bold mb-3" style="color: #191C36;">Get Your Daily Horoscope</h2>
+
+                        <form>
+                            <div class="mb-3">
+                                <label for="sign" class="form-label" style="color: #191C36;">Select your zodiac
+                                    sign</label>
+                                <select class="form-select" id="sign" required>
+                                    <option value="" selected disabled>Select your sign</option>
+                                    <option value="aries">Aries</option>
+                                    <option value="taurus">Taurus</option>
+                                    <option value="gemini">Gemini</option>
+                                    <option value="cancer">Cancer</option>
+                                    <option value="leo">Leo</option>
+                                    <option value="virgo">Virgo</option>
+                                    <option value="libra">Libra</option>
+                                    <option value="scorpio">Scorpio</option>
+                                    <option value="sagittarius">Sagittarius</option>
+                                    <option value="capricorn">Capricorn</option>
+                                    <option value="aquarius">Aquarius</option>
+                                    <option value="pisces">Pisces</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn w-100 text-white" style="background-color: #FF3641;">
+                                Get My Horoscope
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Newsletter Signup -->
+                <div class="card mb-4 text-white" style="background-color: #191C36;">
+                    <div class="card-body">
+                        <h2 class="fs-4 fw-bold mb-3">Subscribe to Our Newsletter</h2>
+                        <p class="small text-light mb-4">
+                            Get daily horoscope updates and exclusive content delivered to your inbox.
+                        </p>
+
+                        <form>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="your@email.com"
+                                    required>
+                            </div>
+
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="terms" required>
+                                <label class="form-check-label small text-light" for="terms">
+                                    I agree to receive emails and accept the terms and conditions
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn w-100 text-white" style="background-color: #FF3641;">
+                                Subscribe Now
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Zodiac Signs Grid -->
+        <div class="py-5">
+            <h2 class="fs-3 fw-bold text-center mb-4" style="color: #191C36;">Zodiac Signs</h2>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                <!-- Aries -->
+                <div class="col">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center" style="background-color: #F3F8FF; height: 160px;">
+                                <div class="d-flex justify-content-center align-items-center h-100">
+                                    <div class="rounded-circle d-flex justify-content-center align-items-center text-white fs-1"
+                                        style="width: 80px; height: 80px; background-color: #191C36;">
+                                        A
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <h3 class="fs-5 fw-bold" style="color: #191C36;">Aries</h3>
+                                <p class="text-secondary small">March 21 - April 19</p>
+                                <span class="badge rounded-pill text-bg-light">Fire Element</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Taurus -->
+                <div class="col">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center" style="background-color: #F3F8FF; height: 160px;">
+                                <div class="d-flex justify-content-center align-items-center h-100">
+                                    <div class="rounded-circle d-flex justify-content-center align-items-center text-white fs-1"
+                                        style="width: 80px; height: 80px; background-color: #191C36;">
+                                        T
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <h3 class="fs-5 fw-bold" style="color: #191C36;">Taurus</h3>
+                                <p class="text-secondary small">April 20 - May 20</p>
+                                <span class="badge rounded-pill text-bg-light">Earth Element</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Gemini -->
+                <div class="col">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center" style="background-color: #F3F8FF; height: 160px;">
+                                <div class="d-flex justify-content-center align-items-center h-100">
+                                    <div class="rounded-circle d-flex justify-content-center align-items-center text-white fs-1"
+                                        style="width: 80px; height: 80px; background-color: #191C36;">
+                                        G
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <h3 class="fs-5 fw-bold" style="color: #191C36;">Gemini</h3>
+                                <p class="text-secondary small">May 21 - June 20</p>
+                                <span class="badge rounded-pill text-bg-light">Air Element</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Cancer -->
+                <div class="col">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center" style="background-color: #F3F8FF; height: 160px;">
+                                <div class="d-flex justify-content-center align-items-center h-100">
+                                    <div class="rounded-circle d-flex justify-content-center align-items-center text-white fs-1"
+                                        style="width: 80px; height: 80px; background-color: #191C36;">
+                                        C
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <h3 class="fs-5 fw-bold" style="color: #191C36;">Cancer</h3>
+                                <p class="text-secondary small">June 21 - July 22</p>
+                                <span class="badge rounded-pill text-bg-light">Water Element</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-5 text-white" style="background-color: #191C36;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <h3 class="fs-5 fw-bold mb-3">About Us</h3>
+                    <p class="small text-light">
+                        We provide daily horoscope readings and astrological insights to help you navigate life's
+                        journey with confidence and clarity.
+                    </p>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <h3 class="fs-5 fw-bold mb-3">Quick Links</h3>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 small text-light">Home</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 small text-light">Daily Horoscope</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 small text-light">Zodiac Signs</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 small text-light">Compatibility</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 small text-light">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <h3 class="fs-5 fw-bold mb-3">Follow Us</h3>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-light fs-4">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="text-light fs-4">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="text-light fs-4">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="text-light fs-4">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <h3 class="fs-5 fw-bold mb-3">Contact Us</h3>
+                    <address class="small text-light">
+                        <p class="mb-1">123 Astrology Lane</p>
+                        <p class="mb-1">Cosmic City, Universe 12345</p>
+                        <p class="mb-1">Email: info@horoscope.com</p>
+                        <p class="mb-1">Phone: +1 (555) 123-4567</p>
+                    </address>
+                </div>
+            </div>
+
+            <div class="border-top border-secondary pt-4 mt-4">
+                <p class="text-center small text-light mb-0">
+                    &copy; 2023 Horoscope Website. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
