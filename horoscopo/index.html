@@ -23,6 +23,9 @@
 	<link rel="stylesheet" href="./styles/slider_detail.css" />
 	<link rel="stylesheet" href="/styles/menu-desplegable.css" />
 	<link rel="stylesheet" href="/styles/actualidad.css" />
+	<link rel="stylesheet" href="/static/components/button/button.css" />
+	<link rel="stylesheet" href="/static/components/cardNotice/cardNotice.css" />
+	<link rel="stylesheet" href="/static/components/Text/index.css" />
 
 
 	<!-- JavaScript-->
@@ -42,7 +45,9 @@
 	<div id="main-header-cine"></div>
 	<div id="main-menu-despegable"></div>
 
-	<main class="main-container">
+
+	<!-- desktop start  -->
+	<main class="main-container d-none d-sm-block">
 		<section class="main-section-content slider-estreno-mobile py-5 bg-white ">
 			<div class="tabs">
 				<input type="radio" name="tabset" id="tab1" checked>
@@ -704,7 +709,7 @@
 							</div>
 						</div>
 
-						<h1>asdasds</h1>
+
 
 
 
@@ -777,7 +782,7 @@
 		<!-- maultimedia end -->
 
 
-		<h1>asdad asdasds</h1>
+
 
 
 
@@ -791,8 +796,775 @@
 			</div>
 		</section>
 	</main>
+	<!-- desktop end  -->
+
+	<!-- %mobile start  -->
+
+	<section class="d-block d-sm-none ">
 
 
+		<!-- slider start  -->
+		<section class=" justify-content-center align-items-center py-5">
+			<div class="d-flex align-items-center gap-3 p-4 rounded shadow" style="
+      background-image: url('./img/bg card horoscopo.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: auto;
+	  height: 300px;
+      
+    ">
+
+				<button class="btn btn-light rounded-circle">
+					<span>&lt;</span>
+				</button>
+
+				<div class="text-center text-white w-100">
+					<h5 class="fw-bold mb-3">Los mejores días <br>de la primera <br>semana de abril <br>según tu signo
+					</h5>
+					<div class="mb-2">
+						<i class="text-warning bi bi-star-fill"></i>
+						<i class="text-warning bi bi-star-fill"></i>
+						<i class="text-warning bi bi-star-fill"></i>
+						<i class="text-warning bi bi-star-fill"></i>
+						<i class="text-secondary bi bi-star"></i>
+					</div>
+					<p class="mb-0 text-white">Media: 3.2 Votos: 8</p>
+				</div>
+
+				<button class="btn btn-light rounded-circle">
+					<span>&gt;</span>
+				</button>
+			</div>
+		</section>
+
+		<!-- slider end  -->
+
+		<!-- img cptan short start -->
+
+		<section>
+
+			<div class="col text-center py-4">
+				<img src="./img/short captan mobile.png" alt="">
+			</div>
+		</section>
+
+		<!-- img cptan short end -->
+
+
+		<!-- cards slide start -->
+
+		<section class="py-4">
+
+			<div id="carouselCards" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner px-5">
+
+					<!-- Slide 1 -->
+					<div class="carousel-item active bg-white">
+						<div class="d-flex justify-content-center gap-3">
+							<!-- Card 1 -->
+							<div class="card text-white text-center"
+								style=" height: 14rem; background-image: url('./img/bg card horoscopo.png'); background-size: cover; background-position: center; border-radius: 1rem;">
+								<div class="card-body d-flex flex-column justify-content-center h-100">
+									<h4 class="fw-bold mb-1">Lunes</h4>
+									<p class="mb-0">31 de Marzo</p>
+								</div>
+							</div>
+							<!-- Card 2 -->
+							<div class="card text-white text-center"
+								style="height: 14rem; background-image: url('./img/bg card horoscopo.png'); background-size: cover; background-position: center; border-radius: 1rem;">
+								<div class="card-body d-flex flex-column justify-content-center h-100">
+									<h4 class="fw-bold mb-1">Domingo</h4>
+									<p class="mb-0">30 de Marzo</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Slide 2 -->
+					<div class="carousel-item bg-white">
+						<div class="d-flex justify-content-center gap-3">
+							<!-- Card 3 -->
+							<div class="card text-white text-center"
+								style=" height: 14rem; background-image: url('./img/bg card horoscopo.png'); background-size: cover; background-position: center; border-radius: 1rem;">
+								<div class="card-body d-flex flex-column justify-content-center h-100">
+									<h4 class="fw-bold mb-1">Sábado</h4>
+									<p class="mb-0">29 de Marzo</p>
+								</div>
+							</div>
+							<!-- Card 4 -->
+							<div class="card text-white text-center"
+								style=" height: 14rem; background-image: url('./img/bg card horoscopo.png'); background-size: cover; background-position: center; border-radius: 1rem;">
+								<div class="card-body d-flex flex-column justify-content-center h-100">
+									<h4 class="fw-bold mb-1">Viernes</h4>
+									<p class="mb-0">28 de Marzo</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Controles -->
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselCards"
+					data-bs-slide="prev">
+					<span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+					<span class="visually-hidden">Anterior</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselCards"
+					data-bs-slide="next">
+					<span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+					<span class="visually-hidden">Siguiente</span>
+				</button>
+			</div>
+
+			<div class="d-flex justify-content-center py-4 ">
+				<a href="#" class="button w-75">Ver más</a>
+			</div>
+
+
+		</section>
+
+		<!-- cards slide end -->
+
+
+
+		<!-- conoce los signos start  -->
+
+		<section>
+
+			<div class="container my-4">
+				<div class="row text-center gy-4">
+
+					<!-- Aries -->
+					<div class="col-4 col-md-2">
+						<div class="bg-light rounded-circle d-flex justify-content-center align-items-center mx-auto"
+							style="width: 80px; height: 80px;">
+							<img src="./img/aries.png" alt="Aries" style="width: 40px;">
+						</div>
+						<p class="fw-bold text-primary mt-2">Aries</p>
+					</div>
+
+					<!-- Tauro -->
+					<div class="col-4 col-md-2">
+						<div class="bg-light rounded-circle d-flex justify-content-center align-items-center mx-auto"
+							style="width: 80px; height: 80px;">
+							<img src="./img/aries.png" alt="Aries" style="width: 40px;">
+						</div>
+						<p class="fw-bold text-primary mt-2">Aries</p>
+					</div>
+
+					<!-- Géminis -->
+					<div class="col-4 col-md-2">
+						<div class="bg-light rounded-circle d-flex justify-content-center align-items-center mx-auto"
+							style="width: 80px; height: 80px;">
+							<img src="./img/aries.png" alt="Aries" style="width: 40px;">
+						</div>
+						<p class="fw-bold text-primary mt-2">Aries</p>
+					</div>
+
+					<!-- Cáncer -->
+					<div class="col-4 col-md-2">
+						<div class="bg-light rounded-circle d-flex justify-content-center align-items-center mx-auto"
+							style="width: 80px; height: 80px;">
+							<img src="./img/aries.png" alt="Aries" style="width: 40px;">
+						</div>
+						<p class="fw-bold text-primary mt-2">Aries</p>
+					</div>
+
+					<!-- Leo -->
+					<div class="col-4 col-md-2">
+						<div class="bg-light rounded-circle d-flex justify-content-center align-items-center mx-auto"
+							style="width: 80px; height: 80px;">
+							<img src="./img/aries.png" alt="Aries" style="width: 40px;">
+						</div>
+						<p class="fw-bold text-primary mt-2">Aries</p>
+					</div>
+
+					<!-- Virgo -->
+					<div class="col-4 col-md-2">
+						<div class="bg-light rounded-circle d-flex justify-content-center align-items-center mx-auto"
+							style="width: 80px; height: 80px;">
+							<img src="./img/aries.png" alt="Aries" style="width: 40px;">
+						</div>
+						<p class="fw-bold text-primary mt-2">Aries</p>
+					</div>
+
+					<!-- Aries -->
+					<div class="col-4 col-md-2">
+						<div class="bg-light rounded-circle d-flex justify-content-center align-items-center mx-auto"
+							style="width: 80px; height: 80px;">
+							<img src="./img/aries.png" alt="Aries" style="width: 40px;">
+						</div>
+						<p class="fw-bold text-primary mt-2">Aries</p>
+					</div>
+
+					<!-- Tauro -->
+					<div class="col-4 col-md-2">
+						<div class="bg-light rounded-circle d-flex justify-content-center align-items-center mx-auto"
+							style="width: 80px; height: 80px;">
+							<img src="./img/aries.png" alt="Aries" style="width: 40px;">
+						</div>
+						<p class="fw-bold text-primary mt-2">Aries</p>
+					</div>
+
+					<!-- Géminis -->
+					<div class="col-4 col-md-2">
+						<div class="bg-light rounded-circle d-flex justify-content-center align-items-center mx-auto"
+							style="width: 80px; height: 80px;">
+							<img src="./img/aries.png" alt="Aries" style="width: 40px;">
+						</div>
+						<p class="fw-bold text-primary mt-2">Aries</p>
+					</div>
+
+					<!-- Cáncer -->
+					<div class="col-4 col-md-2">
+						<div class="bg-light rounded-circle d-flex justify-content-center align-items-center mx-auto"
+							style="width: 80px; height: 80px;">
+							<img src="./img/aries.png" alt="Aries" style="width: 40px;">
+						</div>
+						<p class="fw-bold text-primary mt-2">Aries</p>
+					</div>
+
+					<!-- Leo -->
+					<div class="col-4 col-md-2">
+						<div class="bg-light rounded-circle d-flex justify-content-center align-items-center mx-auto"
+							style="width: 80px; height: 80px;">
+							<img src="./img/aries.png" alt="Aries" style="width: 40px;">
+						</div>
+						<p class="fw-bold text-primary mt-2">Aries</p>
+					</div>
+
+					<!-- Virgo -->
+					<div class="col-4 col-md-2">
+						<div class="bg-light rounded-circle d-flex justify-content-center align-items-center mx-auto"
+							style="width: 80px; height: 80px;">
+							<img src="./img/aries.png" alt="Aries" style="width: 40px;">
+						</div>
+						<p class="fw-bold text-primary mt-2">Aries</p>
+					</div>
+
+				</div>
+			</div>
+
+
+		</section>
+
+		<!-- conoce los signos end  -->
+
+
+		<!-- img cptan short start -->
+
+		<section>
+
+			<div class="col text-center py-4">
+				<img src="./img/short captan mobile.png" alt="">
+			</div>
+		</section>
+
+		<!-- img cptan short end -->
+
+		<!-- titulo seccion start -->
+
+		<section>
+
+
+			<div class="container my-4">
+				<div class="card">
+					<div class="card-body text-center">
+						<img src="./img/card img.png" alt="">
+						<h1 class="card-title py-3">Ritual - Mhoni vidente</h1>
+						<h2 class="card-subtitle mb-3">Ritual de Mhoni Vidente para el 1 de abril: <br>dinero, éxito y
+							abundancia en tu vida</h2>
+
+						<hr class="my-3">
+
+						<div class="d-flex justify-content-center py-4 ">
+							<a href="#" class="button w-50">Ver más</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="container my-4">
+				<div class="card">
+					<div class="card-body text-center">
+						<img src="./img/card img.png" alt="">
+						<h1 class="card-title py-3">Ritual - Mhoni vidente</h1>
+						<h2 class="card-subtitle mb-3">Ritual de Mhoni Vidente para el 1 de abril: <br>dinero, éxito y
+							abundancia en tu vida</h2>
+
+						<hr class="my-3">
+
+						<div class="d-flex justify-content-center py-4 ">
+							<a href="#" class="button w-50">Ver más</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="container my-4">
+				<div class="card">
+					<div class="card-body text-center">
+						<img src="./img/card img.png" alt="">
+						<h1 class="card-title py-3">Ritual - Mhoni vidente</h1>
+						<h2 class="card-subtitle mb-3">Ritual de Mhoni Vidente para el 1 de abril: <br>dinero, éxito y
+							abundancia en tu vida</h2>
+
+						<hr class="my-3">
+
+						<div class="d-flex justify-content-center py-4 ">
+							<a href="#" class="button w-50">Ver más</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="container my-4">
+				<div class="card">
+					<div class="card-body text-center">
+						<img src="./img/card img.png" alt="">
+						<h1 class="card-title py-3">Ritual - Mhoni vidente</h1>
+						<h2 class="card-subtitle mb-3">Ritual de Mhoni Vidente para el 1 de abril: <br>dinero, éxito y
+							abundancia en tu vida</h2>
+
+						<hr class="my-3">
+
+						<div class="d-flex justify-content-center py-4 ">
+							<a href="#" class="button w-50">Ver más</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+		<!-- titulo seccion end -->
+
+		<!-- img cptan short start -->
+
+		<section>
+
+			<div class="col text-center py-4">
+				<img src="./img/short captan mobile.png" alt="">
+			</div>
+		</section>
+
+		<!-- img cptan short end -->
+
+		<!-- titulo seccion start -->
+
+		<section>
+
+
+			<div class="container my-4">
+				<div class="card">
+					<div class="card-body text-center">
+						<img src="./img/card img.png" alt="">
+						<h1 class="card-title py-3">Ritual - Mhoni vidente</h1>
+						<h2 class="card-subtitle mb-3">Ritual de Mhoni Vidente para el 1 de abril: <br>dinero, éxito y
+							abundancia en tu vida</h2>
+
+						<hr class="my-3">
+
+						<div class="d-flex justify-content-center py-4 ">
+							<a href="#" class="button w-50">Ver más</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="container my-4">
+				<div class="card">
+					<div class="card-body text-center">
+						<img src="./img/card img.png" alt="">
+						<h1 class="card-title py-3">Ritual - Mhoni vidente</h1>
+						<h2 class="card-subtitle mb-3">Ritual de Mhoni Vidente para el 1 de abril: <br>dinero, éxito y
+							abundancia en tu vida</h2>
+
+						<hr class="my-3">
+
+						<div class="d-flex justify-content-center py-4 ">
+							<a href="#" class="button w-50">Ver más</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="container my-4">
+				<div class="card">
+					<div class="card-body text-center">
+						<img src="./img/card img.png" alt="">
+						<h1 class="card-title py-3">Ritual - Mhoni vidente</h1>
+						<h2 class="card-subtitle mb-3">Ritual de Mhoni Vidente para el 1 de abril: <br>dinero, éxito y
+							abundancia en tu vida</h2>
+
+						<hr class="my-3">
+
+						<div class="d-flex justify-content-center py-4 ">
+							<a href="#" class="button w-50">Ver más</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="container my-4">
+				<div class="card">
+					<div class="card-body text-center">
+						<img src="./img/card img.png" alt="">
+						<h1 class="card-title py-3">Ritual - Mhoni vidente</h1>
+						<h2 class="card-subtitle mb-3">Ritual de Mhoni Vidente para el 1 de abril: <br>dinero, éxito y
+							abundancia en tu vida</h2>
+
+						<hr class="my-3">
+
+						<div class="d-flex justify-content-center py-4 ">
+							<a href="#" class="button w-50">Ver más</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+		<!-- titulo seccion end -->
+
+
+
+		<!-- lo mas leido en turisimo start -->
+
+		<section class="colombiaNews">
+			<span class="text color-primary weight-bold text-center">LO MAS LEIDO EN TURISMO</span>
+			<div class="news">
+				<card-notice-component id="main-card-one" image="../assets/img/breaking-news-5.png"
+					news="Donald Trump reconoció a Edmundo González" orientation="vertical"
+					author="Por Juan Carlos Garcia Sierra" distribution="none" classnames="new">
+					<div class="card-news  orientation-vertical distribution-none new">
+						<img src="../assets/img/breaking-news-5.png" alt="news">
+
+						<div class="news-content">
+
+							<span class="title">Donald Trump reconoció a Edmundo González</span>
+							<span class="read-more">Leer más</span>
+							<span class="author">Por Juan Carlos Garcia Sierra</span>
+
+						</div>
+					</div>
+				</card-notice-component>
+				<card-notice-component id="main-card-one" image="../assets/img/breaking-news-5.png"
+					news="Donald Trump reconoció a Edmundo González" orientation="horizontal"
+					author="Por Juan Carlos Garcia Sierra" distribution="equals" classnames="new">
+					<div class="card-news  orientation-horizontal distribution-equals new">
+						<img src="../assets/img/breaking-news-5.png" alt="news">
+
+						<div class="news-content">
+
+							<span class="title">Donald Trump reconoció a Edmundo González</span>
+							<span class="read-more">Leer más</span>
+							<span class="author">Por Juan Carlos Garcia Sierra</span>
+
+						</div>
+					</div>
+				</card-notice-component>
+				<card-notice-component id="main-card-one" image="../assets/img/breaking-news-5.png"
+					news="Donald Trump reconoció a Edmundo González" orientation="horizontal"
+					author="Por Juan Carlos Garcia Sierra" distribution="equals" classnames="new">
+					<div class="card-news  orientation-horizontal distribution-equals new">
+						<img src="../assets/img/breaking-news-5.png" alt="news">
+
+						<div class="news-content">
+
+							<span class="title">Donald Trump reconoció a Edmundo González</span>
+							<span class="read-more">Leer más</span>
+							<span class="author">Por Juan Carlos Garcia Sierra</span>
+
+						</div>
+					</div>
+				</card-notice-component>
+				<card-notice-component id="main-card-one" image="../assets/img/breaking-news-5.png"
+					news="Donald Trump reconoció a Edmundo González" orientation="horizontal"
+					author="Por Juan Carlos Garcia Sierra" distribution="equals" classnames="new">
+					<div class="card-news  orientation-horizontal distribution-equals new">
+						<img src="../assets/img/breaking-news-5.png" alt="news">
+
+						<div class="news-content">
+
+							<span class="title">Donald Trump reconoció a Edmundo González</span>
+							<span class="read-more">Leer más</span>
+							<span class="author">Por Juan Carlos Garcia Sierra</span>
+
+						</div>
+					</div>
+				</card-notice-component>
+				<div class="d-flex justify-content-center">
+					<a href="#" class="button">Ver más</a>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- lo mas leido en turisimo end -->
+
+
+
+
+		<!-- 1 card start  -->
+
+
+		<div class="container my-4">
+			<div class="card">
+				<div class="card-body text-center">
+					<img src="./img/card img.png" alt="">
+					<h1 class="card-title py-3">Ritual - Mhoni vidente</h1>
+					<h2 class="card-subtitle mb-3">Ritual de Mhoni Vidente para el 1 de abril: <br>dinero, éxito y
+						abundancia en tu vida</h2>
+
+					<hr class="my-3">
+
+					<div class="d-flex justify-content-center py-4 ">
+						<a href="#" class="button w-50">Ver más</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 1 card end  -->
+
+
+
+
+		<!-- mas noticias start  -->
+
+
+		<section>
+
+
+			<div class="container mt-4">
+				<!-- Primera fila - Tarjeta ancha -->
+				<div class="container mt-4">
+					<div class="card">
+						<!-- Imagen encima del texto -->
+						<img src="./img/money img.png" class="card-img-top" alt="Cotización del dólar">
+
+						<div class="card-body">
+							<h2 class="card-title mb-3">Cotización del dólar en Colombia: este es su precio hoy, 10 de
+								enero
+							</h2>
+							<div class="d-flex justify-content-between align-items-center">
+								<a href="#" class="btn btn-primary">Leer más</a>
+								<p class="card-text text-muted mb-0"><small>Por: Juan Carlos García Sierra</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+
+
+
+			</div>
+
+
+			<div class="container mt-4">
+				<div class="row ">
+					<!-- Primera noticia -->
+					<div class="col-md-6 w-50">
+						<div class="card h-100">
+							<img src="./img/plane img.png" class="card-img-top img-fluid"
+								alt="Galán respalda movilizaciones" style="height: 180px; object-fit: cover;">
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title">Galán respaldó las movilizaciones de venezolanos</h5>
+								<div class="d-flex justify-content-between align-items-center mt-auto">
+									<a href="#">Leer más</a>
+									<p class="card-text text-muted mb-0"><small>Por: Juan Carlos García Sierra</small>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Segunda noticia -->
+					<div class="col-md-6 w-50">
+						<div class="card h-100">
+							<img src="./img/plane img.png" class="card-img-top img-fluid"
+								alt="Reconocimiento a Edmundo González" style="height: 180px; object-fit: cover;">
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title">Reconoció a Edmundo González</h5>
+								<div class="d-flex justify-content-between align-items-center mt-auto">
+									<a href="#">Leer más</a>
+									<p class="card-text text-muted mb-0"><small>Por: Juan Carlos García Sierra</small>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<div class="container my-4">
+				<div class="row ">
+					<!-- Primera noticia -->
+					<div class="col-md-6 w-50">
+						<div class="card h-100">
+							<img src="./img/plane img.png" class="card-img-top img-fluid"
+								alt="Galán respalda movilizaciones" style="height: 180px; object-fit: cover;">
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title">Galán respaldó las movilizaciones de venezolanos</h5>
+								<div class="d-flex justify-content-between align-items-center mt-auto">
+									<a href="#">Leer más</a>
+									<p class="card-text text-muted mb-0"><small>Por: Juan Carlos García Sierra</small>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Segunda noticia -->
+					<div class="col-md-6 w-50">
+						<div class="card h-100">
+							<img src="./img/plane img.png" class="card-img-top img-fluid"
+								alt="Reconocimiento a Edmundo González" style="height: 180px; object-fit: cover;">
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title">Reconoció a Edmundo González</h5>
+								<div class="d-flex justify-content-between align-items-center mt-auto">
+									<a href="#">Leer más</a>
+									<p class="card-text text-muted mb-0"><small>Por: Juan Carlos García Sierra</small>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="d-flex justify-content-center py-4 ">
+				<a href="#" class="button w-50">Ver más</a>
+			</div>
+		</section>
+
+		<!-- mas noticias end  -->
+
+
+
+		<!-- multimedia start  -->
+
+		<section>
+
+
+			<div class="container mt-4">
+				<div class="card border-0 shadow-sm text-center">
+					<div class="position-relative">
+						<iframe src="https://www.youtube.com/embed/Q7yrRaY488A?si=07MGk24bTobMn2mB"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen=""></iframe>
+
+
+						<button
+							class="btn btn-light rounded-circle p-3 position-absolute top-50 start-50 translate-middle"
+							style="opacity: 0.8;">
+							<i class="bi bi-play-fill text-primary" style="font-size: 2rem;"></i>
+						</button>
+					</div>
+					<div class="card-body">
+						<h6 class="card-subtitle mb-2 text-muted">CINE</h6>
+						<h5 class="card-title text-primary">Reapareció María Corina Machado: "Estoy Bien,
+							Estoy Segura"</h5>
+						<p class="card-text"><small class="text-muted">Por: Juan Carlos García
+								Sierra</small></p>
+						<p class="card-text"><small class="text-muted">María Corina Machado reaparece en un
+								video y dice que ya está libre. <a href="#" class="text-primary">Leer
+									más</a></small></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="grid-articles-2">
+				<div class="card-article-2 card-bottom-separator">
+					<img src="/assets/img/breaking-news-6.png" alt="Maduro y Petro">
+					<div class="card-article-2-content">
+						<p class="card-article-2-tag">CINE</p>
+						<h2 class="card-article-2-title">
+							Venezuela tiene carteles de se busca con la cara expresidentes
+						</h2>
+						<a href="#" class="card-article-2-leer-mas">Leer más</a>
+						<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+					</div>
+				</div>
+				<div class="card-article-2 card-bottom-separator">
+					<img src="/assets/img/breaking-news-5.png" alt="Maduro y Petro">
+					<div class="card-article-2-content">
+						<p class="card-article-2-tag">CINE</p>
+						<h2 class="card-article-2-title">
+							¡Qué alivio! Colombianos en EE.UU pueden recibir apoyo por discapacidad
+						</h2>
+						<a href="#" class="card-article-2-leer-mas">Leer más</a>
+						<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+					</div>
+				</div>
+				<div class="card-article-2 card-bottom-separator">
+					<img src="/assets/img/breaking-news-13.png" alt="Maduro y Petro">
+					<div class="card-article-2-content">
+						<p class="card-article-2-tag">CINE</p>
+						<h2 class="card-article-2-title">
+							<i class="fas fa-circle text-warning me-1"></i>
+							La hora en la que arranca el nuevo capítulo de "Dragon Ball Daima"
+						</h2>
+						<a href="#" class="card-article-2-leer-mas">Leer más</a>
+						<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+					</div>
+				</div>
+				<div class="card-article-2 card-bottom-separator mb-4">
+					<img src="/assets/img/breaking-news-12.png" alt="Maduro y Petro">
+					<div class="card-article-2-content">
+						<p class="card-article-2-tag">CINE</p>
+						<h2 class="card-article-2-title">
+							<i class="fas fa-circle text-warning me-1"></i>
+							La hora en la que arranca el nuevo capítulo de "Dragon Ball Daima"
+						</h2>
+						<a href="#" class="card-article-2-leer-mas">Leer más</a>
+						<p class="card-article-2-autor">Por: <b>Juan Carlos García Sierra</b></p>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+
+
+
+		<!-- multimedia end  -->
+
+
+	</section>
+
+
+
+
+
+
+
+
+
+	<!-- mobile end  -->
 
 
 	<div id="main-footer"></div>
