@@ -535,6 +535,37 @@ p {
   .small-news-container {
     flex-direction: column;
   }
+
+  .news-container, 
+  .paranormal-container,
+  .news-with-side-image,
+  .news-with-image {
+      width: 100%;
+      padding: 0 15px;
+      box-sizing: border-box;
+  }
+
+  .side-image,
+  .news-image,
+  .news-image-right,
+  .paranormal-image {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .news-right {
+      width: 100%;
+      max-width: 100%;
+      padding: 0 15px;
+      box-sizing: border-box;
+  }
+
+  .left-content {
+      width: 100%;
+      max-width: 100%;
+      padding: 0 15px;
+      box-sizing: border-box;
+  }
 }
 
 /* Estilos específicos para móvil */
@@ -4071,4 +4102,23 @@ p {
 
 .day-night-checkbox:checked+.day-night-label .switch-icon.moon svg {
   opacity: 1;
+}
+
+.carousel-gallery {
+    overflow: hidden;
+    width: 100%;
+    max-width: clamp(18.75rem, 10.75rem + 35.556vw, 42.75rem);
+}
+
+.grid-articles-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .grid-articles-1 {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+    }
 }
