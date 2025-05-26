@@ -23,7 +23,41 @@
         margin-left: 20px;
         margin-right: 20px;
     }
+
+    .sc-section,
+    .hc-section {
+        padding: 20px 15px;
+    }
+
+    .sc-image-mobile,
+    .hc-image-mobile {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+    }
+
+    .sc-image-mobile img,
+    .hc-image-mobile img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .sc-card-mobile,
+    .hc-card-mobile {
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .sc-content-mobile,
+    .hc-content-mobile {
+        padding: 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
 }
+
 .search-section {
 	background-color: #0A4296;
 	color: white;
