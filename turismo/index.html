@@ -25,7 +25,8 @@
 	<link rel="stylesheet" href="./styles/slider_detail.css" />
 	<link rel="stylesheet" href="/styles/menu-desplegable.css" />
 	<link rel="stylesheet" href="/static/components/button/button.css" />
-
+	<link rel="stylesheet" href="/static/components/cardNotice/cardNotice.css" />
+	<link rel="stylesheet" href="/static/components/Text/index.css" />
 
 
 	<!-- JavaScript-->
@@ -1609,26 +1610,140 @@
 		<!-- Nacionalidad colombiana end -->
 
 
+		<!-- mas noticias start  -->
+
+
+		<section>
+
+			<h2 class="section-title m-0 my-4 text-center ">MAS NOTICIAS</h2>
+
+			<div class="container mt-4">
+				<!-- Primera fila - Tarjeta ancha -->
+				<div class="container mt-4">
+					<div class="card">
+						<!-- Imagen encima del texto -->
+						<img src="./mobileImg/mas noticias img 1.png" class="card-img-top" alt="Cotización del dólar">
+
+						<div class="card-body">
+							<h2 class="card-title mb-3 text-lowercase">Cotización del dólar en Colombia: este es su
+								precio hoy, 10 de
+								enero
+
+							</h2>
+							<div class="d-flex flex-column align-items-start mt-auto">
+								<span class="read-more">Leer más</span>
+								<p class="card-text text-muted mb-0"><small>Por: Juan Carlos García Sierra</small>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+
+
+
+			</div>
+
+
+			<div class="container mt-4">
+				<div class="row ">
+					<!-- Primera noticia -->
+					<div class="col-md-6 w-50">
+						<div class="card h-100">
+							<img src="./mobileImg/mas noticias img2.png" class="card-img-top img-fluid"
+								alt="Galán respalda movilizaciones" style="height: 180px; object-fit: cover;">
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title">Galán respaldó las movilizaciones de venezolanos </h5>
+								<div class="d-flex flex-column align-items-start mt-auto">
+									<span class="read-more">Leer más</span>
+									<p class="card-text text-muted mb-0"><small>Por: Juan Carlos García Sierra</small>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Segunda noticia -->
+					<div class="col-md-6 w-50">
+						<div class="card h-100">
+							<img src="./mobileImg/mas noticias img2.png" class="card-img-top img-fluid"
+								alt="Reconocimiento a Edmundo González" style="height: 180px; object-fit: cover;">
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title">Reconoció a Edmundo González </h5>
+								<div class="d-flex flex-column align-items-start mt-auto">
+									<span class="read-more">Leer más</span>
+									<p class="card-text text-muted mb-0"><small>Por: Juan Carlos García Sierra</small>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<div class="container my-4">
+				<div class="row ">
+					<!-- Primera noticia -->
+					<div class="col-md-6 w-50">
+						<div class="card h-100">
+							<img src="./mobileImg/mas noticias img2.png" class="card-img-top img-fluid"
+								alt="Galán respalda movilizaciones" style="height: 180px; object-fit: cover;">
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title">Galán respaldó las movilizaciones de venezolanos</h5>
+								<div class="d-flex flex-column align-items-start mt-auto">
+									<span class="read-more">Leer más</span>
+									<p class="card-text text-muted mb-0"><small>Por: Juan Carlos García Sierra</small>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Segunda noticia -->
+					<div class="col-md-6 w-50">
+						<div class="card h-100">
+							<img src="./mobileImg/mas noticias img2.png" class="card-img-top img-fluid"
+								alt="Reconocimiento a Edmundo González" style="height: 180px; object-fit: cover;">
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title">Reconoció a Edmundo González</h5>
+								<div class="d-flex flex-column align-items-start mt-auto">
+									<span class="read-more">Leer más</span>
+									<p class="card-text text-muted mb-0"><small>Por: Juan Carlos García Sierra</small>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="d-flex justify-content-center py-4 ">
+				<a href="#" class="button w-75">Ver más</a>
+			</div>
+		</section>
+
+		<!-- mas noticias end  -->
+
+
 		<!-- lo mas leido en turisimo start -->
 
-		<section class="colombiaNews">
-			<span class="text color-primary weight-bold text-center fs-5 ">Lo mas leido en turismo</span>
+		<section class="colombiaNews ">
+			<span class="text color-primary weight-bold ">LO MAS LEIDO EN COLOMBIA</span>
 			<div class="news">
 				<card-notice-component id="main-card-one" image="../assets/img/breaking-news-5.png"
 					news="Donald Trump reconoció a Edmundo González" orientation="vertical"
 					author="Por Juan Carlos Garcia Sierra" distribution="none" classnames="new">
-					<div class="card-news  orientation-vertical distribution-none new">
-						<img src="../assets/img/breaking-news-5.png" alt="news">
 
-						<div class="news-content">
-
-							<span class="title">Donald Trump reconoció a Edmundo González</span>
-
-							<span class="author">Por Juan Carlos Garcia Sierra</span>
-
-						</div>
-					</div>
 				</card-notice-component>
+
 				<card-notice-component id="main-card-one" image="../assets/img/breaking-news-5.png"
 					news="Donald Trump reconoció a Edmundo González" orientation="horizontal"
 					author="Por Juan Carlos Garcia Sierra" distribution="equals" classnames="new">
@@ -1659,23 +1774,10 @@
 						</div>
 					</div>
 				</card-notice-component>
-				<card-notice-component id="main-card-one" image="../assets/img/breaking-news-5.png"
-					news="Donald Trump reconoció a Edmundo González" orientation="horizontal"
-					author="Por Juan Carlos Garcia Sierra" distribution="equals" classnames="new">
-					<div class="card-news  orientation-horizontal distribution-equals new">
-						<img src="../assets/img/breaking-news-5.png" alt="news">
 
-						<div class="news-content">
 
-							<span class="title">Donald Trump reconoció a Edmundo González</span>
-							<span class="read-more">Leer más</span>
-							<span class="author">Por Juan Carlos Garcia Sierra</span>
-
-						</div>
-					</div>
-				</card-notice-component>
-				<div class="d-flex justify-content-center">
-					<a href="#" class="button">Ver más</a>
+				<div class="d-flex justify-content-center py-5 ">
+					<a href="#" class="button w-75">Ver más</a>
 				</div>
 			</div>
 		</section>
@@ -1713,126 +1815,7 @@
 
 
 
-		<!-- mas noticias start  -->
 
-
-		<section>
-
-
-			<div class="container mt-4">
-				<!-- Primera fila - Tarjeta ancha -->
-				<div class="container mt-4">
-					<div class="card">
-						<!-- Imagen encima del texto -->
-						<img src="./img/money img.png" class="card-img-top" alt="Cotización del dólar">
-
-						<div class="card-body">
-							<h2 class="card-title mb-3 text-lowercase">Cotización del dólar en Colombia: este es su
-								precio hoy, 10 de
-								enero
-
-							</h2>
-							<div class="d-flex flex-column align-items-start mt-auto">
-								<span class="read-more">Leer más</span>
-								<p class="card-text text-muted mb-0"><small>Por: Juan Carlos García Sierra</small>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-
-
-
-
-
-
-
-			</div>
-
-
-			<div class="container mt-4">
-				<div class="row ">
-					<!-- Primera noticia -->
-					<div class="col-md-6 w-50">
-						<div class="card h-100">
-							<img src="./img/plane img.png" class="card-img-top img-fluid"
-								alt="Galán respalda movilizaciones" style="height: 180px; object-fit: cover;">
-							<div class="card-body d-flex flex-column">
-								<h5 class="card-title">Galán respaldó las movilizaciones de venezolanos </h5>
-								<div class="d-flex flex-column align-items-start mt-auto">
-									<span class="read-more">Leer más</span>
-									<p class="card-text text-muted mb-0"><small>Por: Juan Carlos García Sierra</small>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Segunda noticia -->
-					<div class="col-md-6 w-50">
-						<div class="card h-100">
-							<img src="./img/plane img.png" class="card-img-top img-fluid"
-								alt="Reconocimiento a Edmundo González" style="height: 180px; object-fit: cover;">
-							<div class="card-body d-flex flex-column">
-								<h5 class="card-title">Reconoció a Edmundo González </h5>
-								<div class="d-flex flex-column align-items-start mt-auto">
-									<span class="read-more">Leer más</span>
-									<p class="card-text text-muted mb-0"><small>Por: Juan Carlos García Sierra</small>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-
-
-			<div class="container my-4">
-				<div class="row ">
-					<!-- Primera noticia -->
-					<div class="col-md-6 w-50">
-						<div class="card h-100">
-							<img src="./img/plane img.png" class="card-img-top img-fluid"
-								alt="Galán respalda movilizaciones" style="height: 180px; object-fit: cover;">
-							<div class="card-body d-flex flex-column">
-								<h5 class="card-title">Galán respaldó las movilizaciones de venezolanos</h5>
-								<div class="d-flex flex-column align-items-start mt-auto">
-									<span class="read-more">Leer más</span>
-									<p class="card-text text-muted mb-0"><small>Por: Juan Carlos García Sierra</small>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Segunda noticia -->
-					<div class="col-md-6 w-50">
-						<div class="card h-100">
-							<img src="./img/plane img.png" class="card-img-top img-fluid"
-								alt="Reconocimiento a Edmundo González" style="height: 180px; object-fit: cover;">
-							<div class="card-body d-flex flex-column">
-								<h5 class="card-title">Reconoció a Edmundo González</h5>
-								<div class="d-flex flex-column align-items-start mt-auto">
-									<span class="read-more">Leer más</span>
-									<p class="card-text text-muted mb-0"><small>Por: Juan Carlos García Sierra</small>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-			<div class="d-flex justify-content-center py-4 ">
-				<a href="#" class="button w-75">Ver más</a>
-			</div>
-		</section>
-
-		<!-- mas noticias end  -->
 
 
 
