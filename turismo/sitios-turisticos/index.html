@@ -40,6 +40,10 @@
     <script src="../static/slider-cartelera.js"></script>
     <script src="../static/slider-detail.js"></script>
     <script src="./static/index.js"></script>
+    <script src="../static/components/cardNotice/cardNotice.js"></script>
+
+    <script src="/static/components/cardNotice/cardNotice.js"></script>
+
 
 </head>
 
@@ -1521,11 +1525,69 @@
 
     <!-- %%%%%%mobile start  -->
 
+
+
+
     <section class="d-block d-sm-none ">
+        <h1>sdfsdf</h1>
+        <form>
+            <div class="row g-3">
+                <!-- Categoría -->
+                <div class="col-md-6">
+                    <label for="categoria" class="form-label">Categoría (*)</label>
+                    <select id="categoria" class="form-select rounded-pill fw-bold text-primary">
+                        <option selected>Agencia De Viajes</option>
+                        <!-- Agrega más opciones si deseas -->
+                    </select>
+                </div>
+
+                <!-- Sub Categoría -->
+                <div class="col-md-6">
+                    <label for="subcategoria" class="form-label">Sub Categoría (*)</label>
+                    <select id="subcategoria" class="form-select rounded-pill fw-bold text-primary">
+                        <option selected>Todas</option>
+                        <!-- Agrega más opciones si deseas -->
+                    </select>
+                </div>
+
+                <!-- Ciudad -->
+                <div class="col-md-6">
+                    <label for="ciudad" class="form-label">Ciudad, Municipio O Departamento</label>
+                    <select id="ciudad" class="form-select rounded-pill fw-bold text-primary">
+                        <option selected>Ingresar Datos</option>
+                        <!-- Agrega más opciones si deseas -->
+                    </select>
+                </div>
+
+                <!-- Nombre -->
+                <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" id="nombre" class="form-control rounded-pill">
+                </div>
+            </div>
+        </form>
+
+        <div class="cine-horarios-header mb-4 col-10">
+            <div class="d-flex flex-column">
+                <div class="d-flex align-items-start group-title">
+                    <span class="cine-title">
+                        PRESTADORES DE SERVICIOS TURISTICOS
+                    </span>
+
+                </div>
+                <p class="mb-4">Seleccione los establecimientos de su interés</p>
+
+                <div class="container py-4" style="background-color: #f4f9ff;">
 
 
+                </div>
+                <div class="d-flex justify-content-end mt-4">
+                    <button type="submit" class="btn btn-primary px-4 rounded-pill">Buscar</button>
+                </div>
 
 
+            </div>
+        </div>
 
         <!-- sitios turisticos start  -->
 
@@ -1582,6 +1644,7 @@
 
 
         <!-- sitios turisticos  end  -->
+
 
 
         <!--mas informacion  start  -->
@@ -1943,6 +2006,7 @@
         </section>
 
 
+
         <!-- mas informacion  end  -->
 
 
@@ -2002,121 +2066,19 @@
         <!-- Te puede interesar end-->
 
 
-        <!-- hotel start  -->
-
-        <h2 class="section-title m-0 mt-5 text-center pb-4">Hoteles</h2>
-
-        <section class="d-flex justify-content-center">
 
 
+        <!-- images start  -->
 
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <img src="/turismo/mobileImg/hotels img.png" alt="" class="img-fluid">
-                    <h5 class="card-title text-center w-75 mx-auto">Hotel de las americas Pasto</h5>
-                    <div class="d-flex align-items-center mb-2 gap-3 mx-auto text-center">
-                        <div class="col-auto ">
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star text-secondary"></i>
-                        </div>
-                        <small class="text-muted"><small>Media: 3.2 Votos: 8</small></small>
-                    </div>
-                    <hr>
-                    <p class="card-text text-muted mb-1 text-center">
-                        <i class="bi bi-geo-alt-fill"></i> Avenida de los Estudiantes Cra 33 20 27, 520002 Pasto,
-                        Colombia
-                    </p>
-
-                    <div class=" d-flex justify-content-center pt-4">
-                        <a href="#" class="button w-50 text-center">Ver mas</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- hotel  end  -->
+        <div class="col text-center py-4">
+            <img src="/turismo/mobileImg/copa america img.png" alt="">
+        </div>
 
 
-
-
-
-
-
-        <hr class="mx-4">
-
-        <!-- atractivos turisticos start  -->
-
-        <section>
-
-            <h2 class="section-title mx-3 py-5 text-center">ATRACTIVOS turisticos</h2>
-
-
-            <div class="card mx-auto pb-3" style="width: 18rem; border: none;">
-                <img src="/turismo/mobileImg/atractivos turisticos.png" class="card-img-top rounded-top"
-                    alt="La Guajira" />
-                <div class="card-body text-center">
-                    <h6 class="text-primary fw-bold">Santuario de las Lajas</h6>
-
-                    <p class="card-text">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt ipsam assumenda sint
-
-                        <span><a href="#" class="text-primary fw-semibold text-decoration-none">Leer más</a></span>
-                    </p>
-                </div>
-            </div>
-
-            <div class="card mx-auto pb-3" style="width: 18rem; border: none;">
-                <img src="/turismo/mobileImg/atractivos turisticos.png" class="card-img-top rounded-top"
-                    alt="La Guajira" />
-                <div class="card-body text-center">
-                    <h6 class="text-primary fw-bold">Santuario de las Lajas</h6>
-
-                    <p class="card-text">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt ipsam assumenda sint
-
-                        <span><a href="#" class="text-primary fw-semibold text-decoration-none">Leer más</a></span>
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="card mx-auto pb-3" style="width: 18rem; border: none;">
-                <img src="/turismo/mobileImg/atractivos turisticos.png" class="card-img-top rounded-top"
-                    alt="La Guajira" />
-                <div class="card-body text-center">
-                    <h6 class="text-primary fw-bold">Santuario de las Lajas</h6>
-
-                    <p class="card-text">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt ipsam assumenda sint
-
-                        <span><a href="#" class="text-primary fw-semibold text-decoration-none">Leer más</a></span>
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="card mx-auto pb-3" style="width: 18rem; border: none;">
-                <img src="/turismo/mobileImg/atractivos turisticos.png" class="card-img-top rounded-top"
-                    alt="La Guajira" />
-                <div class="card-body text-center">
-                    <h6 class="text-primary fw-bold">Santuario de las Lajas</h6>
-
-                    <p class="card-text">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt ipsam assumenda sint
-
-                        <span><a href="#" class="text-primary fw-semibold text-decoration-none">Leer más</a></span>
-                    </p>
-                </div>
-            </div>
-
-
-
-        </section>
-
-        <!-- atractivos turisticos end  -->
+        <div class="col text-center py-4">
+            <img src="/turismo/mobileImg/map.png" alt="" class="img-fluid">
+        </div>
+        <!-- images  end  -->
 
 
 
@@ -2130,11 +2092,16 @@
 
 
 
-        <!-- lo mas leido en turisimo start -->
+
+
+
+
+
+        <!-- lo mas leido en turismo start -->
 
         <section class="colombiaNews ">
-            <span class="text color-primary weight-bold ">LO MAS LEIDO EN COLOMBIA</span>
-            <div class="news">
+            <span class="text color-primary weight-bold ">LO MAS LEIDO EN TURISMO</span>
+            <div class="news py-3">
                 <card-notice-component id="main-card-one" image="/assets/img/breaking-news-5.png"
                     news="Donald Trump reconoció a Edmundo González" orientation="vertical"
                     author="Por Juan Carlos Garcia Sierra" distribution="none" classnames="new">
@@ -2180,109 +2147,76 @@
         </section>
 
 
-        <!-- lo mas leido en turisimo end -->
+        <!-- lo mas leido en turismo end -->
 
 
 
+        <!-- lo mas leido en colombia start -->
+
+        <section class="colombiaNews ">
+            <span class="text color-primary weight-bold ">LO MAS LEIDO EN COLOMBIA.COM</span>
+            <div class="news py-3">
+                <card-notice-component id="main-card-one" image="/assets/img/breaking-news-5.png"
+                    news="Donald Trump reconoció a Edmundo González" orientation="vertical"
+                    author="Por Juan Carlos Garcia Sierra" distribution="none" classnames="new">
+
+                </card-notice-component>
+
+                <card-notice-component id="main-card-one" image="/assets/img/breaking-news-5.png"
+                    news="Donald Trump reconoció a Edmundo González" orientation="vertical"
+                    author="Por Juan Carlos Garcia Sierra" distribution="none" classnames="new">
+
+                </card-notice-component>
 
 
+                <card-notice-component id="main-card-one" image="/assets/img/breaking-news-5.png"
+                    news="Donald Trump reconoció a Edmundo González" orientation="vertical"
+                    author="Por Juan Carlos Garcia Sierra" distribution="none" classnames="new">
+
+                </card-notice-component>
 
 
+                <div class="d-flex flex-row py-5 gap-2">
 
+                    <div class="card-news   distribution-equals new">
+                        <img src="/assets/img/breaking-news-5.png" alt="news" class="img-fluid">
 
+                        <div class="news-content">
 
-        <!-- multimedia start  -->
+                            <span class="title">Donald Trump reconoció a Edmundo González</span>
+                            <span class="read-more">Leer más</span>
+                            <span class="author">Por Juan Carlos Garcia Sierra</span>
 
-        <section class="text-center mx-3">
-
-            <span class="text color-primary weight-bold text-center fs-5 ">MULTIMEDIA</span>
-
-
-
-            <span class="read-more">Leer más</span>
-
-
-            <div class="container mt-4">
-                <div class="card border-0 shadow-sm text-center">
-                    <div class="position-relative">
-                        <iframe src="https://www.youtube.com/embed/Q7yrRaY488A?si=07MGk24bTobMn2mB"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen=""></iframe>
-
-
-                        <button
-                            class="btn btn-light rounded-circle p-3 position-absolute top-50 start-50 translate-middle"
-                            style="opacity: 0.8;">
-                            <i class="bi bi-play-fill text-primary" style="font-size: 2rem;"></i>
-                        </button>
+                        </div>
                     </div>
-                    <div class="card-body">
 
-                        <h5 class="card-title ">Reapareció María Corina Machado: "Estoy Bien,
-                            Estoy Segura"</h5>
-                        <p class="card-text"><small class="text-muted">Por: Juan Carlos García
-                                Sierra</small></p>
-                        <p class="card-text"><small class="text-muted">María Corina Machado reaparece en un
-                                video y dice que ya está libre. <span class="read-more">Leer más</span></small></p>
+
+                    <div class="card-news  distribution-equals new">
+                        <img src="/assets/img/breaking-news-5.png" alt="news" class="img-fluid">
+
+                        <div class="news-content">
+
+                            <span class="title">Donald Trump reconoció a Edmundo González</span>
+                            <span class="read-more">Leer más</span>
+                            <span class="author">Por Juan Carlos Garcia Sierra</span>
+
+                        </div>
                     </div>
+
                 </div>
+
+
+
             </div>
-
-            <div class="grid-articles-2">
-                <div class="card-article-2 card-bottom-separator">
-                    <img src="/assets/img/breaking-news-6.png" alt="Maduro y Petro">
-                    <div class="card-article-2-content">
-
-                        <h2 class="card-article-2-title text-start text-capitalize">
-                            Venezuela tiene carteles de se busca con la cara expresidentes
-                        </h2>
-                        <span class="read-more">Leer más</span>
-                        <p class="card-article-2-autor text-start">Por: <b>Juan Carlos García Sierra</b></p>
-                    </div>
-                </div>
-                <div class="card-article-2 card-bottom-separator">
-                    <img src="/assets/img/breaking-news-5.png" alt="Maduro y Petro">
-                    <div class="card-article-2-content">
-
-                        <h2 class="card-article-2-title text-start text-capitalize">
-                            Venezuela tiene carteles de se busca con la cara expresidentes
-                        </h2>
-                        <span class="read-more">Leer más</span>
-                        <p class="card-article-2-autor text-start">Por: <b>Juan Carlos García Sierra</b></p>
-                    </div>
-                </div>
-                <div class="card-article-2 card-bottom-separator">
-                    <img src="/assets/img/breaking-news-13.png" alt="Maduro y Petro">
-                    <div class="card-article-2-content">
-
-                        <h2 class="card-article-2-title text-start text-capitalize">
-                            Venezuela tiene carteles de se busca con la cara expresidentes
-                        </h2>
-                        <span class="read-more">Leer más</span>
-                        <p class="card-article-2-autor text-start">Por: <b>Juan Carlos García Sierra</b></p>
-                    </div>
-                </div>
-                <div class="card-article-2 card-bottom-separator mb-4">
-                    <img src="/assets/img/breaking-news-12.png" alt="Maduro y Petro">
-                    <div class="card-article-2-content">
-
-                        <h2 class="card-article-2-title text-start text-capitalize">
-                            Venezuela tiene carteles de se busca con la cara expresidentes
-                        </h2>
-                        <span class="read-more">Leer más</span>
-                        <p class="card-article-2-autor text-start">Por: <b>Juan Carlos García Sierra</b></p>
-                    </div>
-                </div>
-            </div>
-
         </section>
 
 
+        <!-- lo mas leido en colombia end -->
 
 
 
-        <!-- multimedia end  -->
+
+
 
 
     </section>
